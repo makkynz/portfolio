@@ -9,6 +9,11 @@ Setup
 npm install
 
 
+Run locally with live reload 
+---
+webpack-dev-server --hot --inline
+
+
 Compile
 ---
 
