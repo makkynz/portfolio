@@ -14,7 +14,7 @@ var config = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['babel'],
+        loaders: ['react-hot','babel'],
       },
     ],
   },
@@ -27,6 +27,10 @@ var config = {
     root: [
       path.join(__dirname, 'node_modules'),
     ],
+  },
+  devServer: {
+    contentBase: "./www",
+    hot: true
   },
 };
 module.exports = config;
