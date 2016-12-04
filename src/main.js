@@ -1,11 +1,13 @@
-console.log('Hello World!');
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Counter from './Counter';
+import { render, findDOMNode, ReactDOM } from 'react-dom'
+import { Router, Route, Link, browserHistory } from 'react-router';
+import counter from './components/counter';
+import blog from './components/blog';
  
-document.addEventListener('DOMContentLoaded', function() {
-  ReactDOM.render(
-    React.createElement(Counter),
-    document.getElementById('mount')
-  );
-});
+
+render((
+ <Router history={browserHistory}>
+    <Route path="/" component={counter}/>
+    <Route path="/blog" component={blog}/>      
+  </Router>
+), document.getElementById('app'));

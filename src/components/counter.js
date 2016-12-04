@@ -10,14 +10,14 @@ class Counter extends React.Component {
       count: 0,
     };
   }
+
+  onClickHandler(){
+       this.setState({ count: this.state.count + 1 });
+  }
  
   render() {
     return (
-      <button
-        onClick={() => {
-          this.setState({ count: this.state.count + 1 });
-        }}
-      >
+      <button onClick={this.onClickHandler.bind(this)}>
         Count: {this.state.count}
       </button>
     );
