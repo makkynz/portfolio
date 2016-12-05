@@ -14,7 +14,7 @@ Run locally with live reload
 webpack-dev-server --hot --inline --history-api-fallback
 
 
-Compile
+Compile JS
 ---
 
 npm run compile
@@ -26,3 +26,5 @@ npm run build-css
 
 
 Compile and Watch SASS
+---
+npm run watch-css
