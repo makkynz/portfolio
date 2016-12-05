@@ -12,7 +12,7 @@ npm install
 Run locally with live reload 
 ---
 webpack-dev-server --hot --inline --history-api-fallback
-
+browse to http://localhost:8080/
 
 Compile JS
 ---
