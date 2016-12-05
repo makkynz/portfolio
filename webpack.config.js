@@ -30,7 +30,9 @@ var config = {
   },
   devServer: {
     contentBase: "./www",
-    hot: true
+    hot: true,
+    historyApiFallback: true
   },
+  
 };
 module.exports = config;
