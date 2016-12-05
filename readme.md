@@ -18,3 +18,11 @@ Compile
 ---
 
 npm run compile
+
+
+Compile SASS
+---
+npm run build-css
+
+
+Compile and Watch SASS

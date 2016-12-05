@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "compile": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss src/styles/styles.scss   www/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/makkynz/portfolio.git"
+   
   },
   "keywords": [],
   "author": "",
@@ -29,6 +32,8 @@
     "webpack": "^1.13.3"
   },
   "devDependencies": {
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0",
     "react-hot-loader": "^1.3.1",
     "webpack-dev-server": "^1.16.2"
   }
