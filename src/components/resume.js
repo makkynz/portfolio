@@ -8,7 +8,12 @@ class Resume extends React.Component {
       count: 0,
     };
   }
-
+  componentWillMount(){
+    document.body.classList.add('resume-page');
+  }
+  componentWillUnmount(){
+     document.body.classList.remove('resume-page');
+  }
   
   render() {
     return (

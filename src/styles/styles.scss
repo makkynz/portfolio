@@ -1,6 +1,8 @@
-$offWhite: #F4F4F4;
 
-body { 
-  margin: 0; 
-  background-color: $offWhite; 
-}
+@import "shared/reset";
+@import "shared/variables";
+@import "shared/layout";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/resume";

@@ -6,7 +6,10 @@ class App extends React.Component {
     super();
   
   }
-
+  static willTransitionTo(transition, params, query, props) {
+      debuger;
+    
+  }
   
   render() {
     return (

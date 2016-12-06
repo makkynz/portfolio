@@ -8,7 +8,12 @@ class Home extends React.Component {
       count: 0,
     };
   }
-
+  componentWillMount(){
+    document.body.classList.add('home-page');
+  }
+  componentWillUnmount(){
+     document.body.classList.remove('home-page');
+  }
   
   render() {
     return (
