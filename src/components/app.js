@@ -14,8 +14,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Nav />        
-        {this.props.children}
+        <Nav />    
+        <section className="page-content">    
+          {this.props.children}
+        </section>
       </div>
     );
   }

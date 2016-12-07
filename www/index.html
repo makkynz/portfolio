@@ -1,9 +1,63 @@
 <html>
+
 <head>
- <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/vendor/component.css">
+  <link rel="stylesheet" href="/vendor/demo.css">
 </head>
-<body> 
+
+<body>
   <div id="app"></div>
-   <script src="/bundle.js" ></script> 
+  <script src="/bundle.js"></script>
+  <script src="/vendor/modernizr-custom.js"></script>
+  <script src="/vendor/classie.js"></script>
+  <script src="/bundle.js"></script>
+  <script src="/vendor/revealer.js"></script>
+  <script>
+		(function() {
+			var pages = [].slice.call(document.querySelectorAll('.page-content')),
+				currentPage = 0,
+				
+				revealerOpts = {
+					// the layers are the elements that move from the sides
+					nmbLayers : 1,
+					// bg color of each layer
+					bgcolor : ['#0092DD', '#fff', '#3E3A35'],
+					// effect classname
+					effect : 'anim--effect-3',
+					onStart : function(direction) {
+						// next page gets class page--animate-[direction]
+						var nextPage = pages[0];
+						classie.add(nextPage, 'page--animate-' + direction);
+					},
+					onEnd : function(direction) {
+						// remove class page--animate-[direction] from next page
+						var nextPage = pages[0];
+						nextPage.className = 'page-content';
+					}
+				};
+				revealer = new Revealer(revealerOpts);
+
+			// clicking the page nav buttons
+			document.querySelector('#app > div > nav > ul > li:nth-child(2) > a').addEventListener('click', function() { reveal('top'); });
+					// triggers the effect by calling instance.reveal(direction, callbackTime, callbackFn)
+			function reveal(direction) {
+				var callbackTime = 750,
+					callbackFn = function() {
+						classie.remove(pages[currentPage], 'page--current');
+						currentPage = currentPage === 0 ? 1 : 0;
+						classie.add(pages[currentPage], 'page--current');	
+					};
+
+				revealer.reveal(direction, callbackTime, callbackFn);
+			}
+
+		
+				
+				revealer = new Revealer(revealerOpts);
+			
+		})();
+		</script>
 </body>
+
 </html>

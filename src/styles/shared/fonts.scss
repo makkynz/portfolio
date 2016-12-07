@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Gentium+Basic|Julius+Sans+One|Open+Sans');
+
+/* Headings
+--------------------------------------------------------------*/
+html,
+body {
+	font-family: 'Gentium Basic', serif;
+	font-family: 'Julius Sans One', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Catamaran', sans-serif;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+a {
+	color: inherit;
+}
+
+/* Breaks
+--------------------------------------------------------------*/
+hr {
+
+}
+
+/* Paragraphs
+--------------------------------------------------------------*/
+p {
+	//line-height:
+	margin: 0;
+}
+
+/* Type Styles
+--------------------------------------------------------------*/
+.ltrspc {
+	letter-spacing: 1px;
+}
+

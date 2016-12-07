@@ -1,3 +1,15 @@
 body { 
   margin: 0;  
 }
+
+div[data-reactroot]{
+    height: 100vh;
+}
+
+
+section.page-content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);    
+    text-align: center;
+}
