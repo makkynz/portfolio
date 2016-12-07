@@ -2,20 +2,16 @@ import React from 'react';
  
 
 class Resume extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      count: 0,
-    };
-  }
+ 
   componentWillMount(){
-    document.body.classList.add('resume-page');
+    document.body.classList.add('resume-page');  
   }
+
   componentWillUnmount(){
      document.body.classList.remove('resume-page');
   }
   
-  render() {
+  render() { 
     return (
       <h1>Resume</h1>
     );

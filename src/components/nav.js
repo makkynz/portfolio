@@ -1,22 +1,21 @@
 import React from 'react';
-import {Link} from 'react-router';
 
+import { Router, Route,  browserHistory } from 'react-router';
 class Nav extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      selectedItem: 0,
-    };
+ 
+  changeRoute(route, direction){   
+    window.reveal(direction, function(){
+          browserHistory.push(route);
+    });
   }
 
-  
   render() {
     return (
       <nav>
         <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About me</Link></li>
-        <li><Link to="/resume">Resume</Link></li>
+        <li onClick={this.changeRoute.bind(this, '/','cornertopleft')}>Home</li>
+        <li onClick={this.changeRoute.bind(this, '/about','cornertopleft')}>About me</li>
+        <li onClick={this.changeRoute.bind(this, '/resume','cornertopleft')}>Resume</li>
         </ul>
       </nav>
     );

@@ -5,15 +5,11 @@ class App extends React.Component {
   constructor() {
     super();
   
-  }
-  static willTransitionTo(transition, params, query, props) {
-      debuger;
-    
-  }
+  } 
   
   render() {
     return (
-      <div>
+      <div >
         <Nav />    
         <section className="page-content">    
           {this.props.children}

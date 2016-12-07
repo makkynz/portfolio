@@ -224,3 +224,45 @@
 	window.Revealer = Revealer;
 
 })(window);
+
+
+(function() {
+			var pages = [].slice.call(document.querySelectorAll('.page-content')),
+				currentPage = 0,
+				
+				revealerOpts = {
+					// the layers are the elements that move from the sides
+					nmbLayers : 1,
+					// bg color of each layer
+					bgcolor : ['#565555', '#fff', '#3E3A35'],
+					// effect classname
+					effect : 'anim--effect-3',
+					onStart : function(direction) {
+						// next page gets class page--animate-[direction]
+						var nextPage = pages[0];
+						classie.add(nextPage, 'page--animate-' + direction);
+					},
+					onEnd : function(direction) {
+						// remove class page--animate-[direction] from next page
+						var nextPage = pages[0];
+						nextPage.className = 'page-content';
+					}
+				};
+				revealer = new Revealer(revealerOpts);
+
+      window.reveal = function (direction, callback) {
+				var callbackTime = 750,
+					callbackFn = function() {
+            console.log('finished reveal');
+						classie.remove(pages[0], 'page--current');
+						currentPage = 0;//currentPage === 0 ? 1 : 0;
+						classie.add(pages[currentPage], 'page--current');	
+            callback();
+					};
+
+				revealer.reveal(direction, callbackTime, callbackFn);
+			}		
+				
+				revealer = new Revealer(revealerOpts);
+			
+		})();
