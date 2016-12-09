@@ -17,7 +17,14 @@ class Home extends React.Component {
   
   render() {
     return (
-      <h1>Home</h1>
+      <section className="content">
+        <div className="photo"></div>
+        <div className="detail">
+          <h1>Anthony Marshall</h1>
+          <h2>Software Developer</h2>
+          <a href="mailto:hello@anthonymarhall.io">hello@anthonymarhall.io</a>
+        </div>
+      </section>
     );
   }
 }

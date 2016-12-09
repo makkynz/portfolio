@@ -1,0 +1,24 @@
+.bg{
+     &::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.6;
+        background-image: url(/imgs/auckland.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    &:hover{
+        &::before {
+            opacity: 1;
+        }
+    }
+}

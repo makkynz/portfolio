@@ -1,3 +1,6 @@
 .about-page{
-     background :$lightBlue 
+     
+    &::before {       
+        background-image: url(/imgs/bg-2.jpg);       
+    }  
 }
