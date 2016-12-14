@@ -1,0 +1,107 @@
+.brands{
+    background-img: url(/imgs/brands/sprite.png);
+    background-position-y: 0;
+
+   
+        &.anz-logo-logotype{
+            background-position: 0 0;                    
+            width: 499px;
+            height: 157px;
+        }
+
+        &.asb-bank-logo{
+            background-position: 500 0;                    
+            width: 500px;
+            height: 115px;
+        }
+
+        &.avis-logo{
+            background-position: 1000 0;                    
+            width: 500px;
+            height: 168px;
+        }
+
+        &.cadbury-logo{
+            background-position: 1500 0;                    
+            width: 499px;
+            height: 194px;
+        }
+
+        &.carlsberg-logo-vector{
+            background-position: 1999 0;                    
+            width: 500px;
+            height: 195px;
+        }
+
+        &.channel4{
+            background-position: 2499 0;                    
+            width: 209px;
+            height: 209px;
+        }
+
+        &.colourplan{
+            background-position: 2708 0;                    
+            width: 189px;
+            height: 144px;
+        }
+
+        &.converse-logo-new-1024x768{
+            background-position: 2897 0;                    
+            width: 500px;
+            height: 70px;
+        }
+
+        &.de-beers{
+            background-position: 3397 0;                    
+            width: 500px;
+            height: 90px;
+        }
+
+        &.ebay-logo{
+            background-position: 3897 0;                    
+            width: 500px;
+            height: 190px;
+        }
+
+        &.header-gfsmith-logo{
+            background-position: 4397 0;                    
+            width: 233px;
+            height: 157px;
+        }
+
+        &.jti-vector-logo{
+            background-position: 4630 0;                    
+            width: 329px;
+            height: 245px;
+        }
+
+        &.kinder-logo-1210x447{
+            background-position: 4959 0;                    
+            width: 500px;
+            height: 146px;
+        }
+
+        &.logo-pc{
+            background-position: 5459 0;                    
+            width: 500px;
+            height: 260px;
+        }
+
+        &.sony-logo.svg{
+            background-position: 5959 0;                    
+            width: 500px;
+            height: 87px;
+        }
+
+        &.vitaminwater-logo{
+            background-position: 6459 0;                    
+            width: 500px;
+            height: 90px;
+        }
+
+        &.westpac{
+            background-position: 6959 0;                    
+            width: 499px;
+            height: 94px;
+        }
+}
