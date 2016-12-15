@@ -12,11 +12,19 @@ body {
 
 h1 {
 	font-size: 50px;
+	color: $black;
+	margin-bottom: $spacingMin;
+}
+
+h2{
+	font-size: 30px;
+	color: $black;
 }
 
 a {
-	color: inherit;
+	 color: $darkBlue;
 }
+
 
 /* Breaks
 --------------------------------------------------------------*/

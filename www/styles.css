@@ -72,10 +72,16 @@ body {
   font-family: 'Catamaran', sans-serif; }
 
 h1 {
-  font-size: 50px; }
+  font-size: 50px;
+  color: #444444;
+  margin-bottom: 30px; }
+
+h2 {
+  font-size: 30px;
+  color: #444444; }
 
 a {
-  color: inherit; }
+  color: #2c5b7d; }
 
 /* Breaks
 --------------------------------------------------------------*/
@@ -110,15 +116,21 @@ body {
 div[data-reactroot] {
   height: 100vh; }
 
+.copy-block {
+  margin: 30px 0; }
+
 section.page-content {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  padding-top: 80px;
   text-align: center; }
+  body.home-page section.page-content {
+    top: 50%;
+    transform: translateY(-50%); }
 
 nav {
   margin: 20px 0 0 20px;
-  position: fixed; }
+  position: fixed;
+  z-index: 2; }
   nav ul li {
     display: inline;
     margin: 20px;
@@ -126,6 +138,9 @@ nav {
 
 .home-page::before {
   background-image: url(/imgs/bg-1.jpg); }
+
+.home-page h1 {
+  margin-bottom: 0; }
 
 .home-page section.content {
   display: block;
@@ -143,23 +158,18 @@ nav {
   display: inline-block;
   vertical-align: middle;
   padding: 20px;
-  margin-left: 30px;
-  background: rgba(0, 0, 0, 0.32);
-  border-radius: 4px; }
+  margin-left: 30px; }
   .detail h1 {
-    text-align: left;
-    font-size: 50px; }
+    text-align: left; }
   .detail h2 {
-    text-align: left;
-    font-size: 40px;
-    color: #ececec; }
+    text-align: left; }
   .detail a {
     font-size: 30px;
     text-align: left;
     display: block; }
 
 .about-page::before {
-  background-image: url(/imgs/bg-2.jpg); }
+  background-color: #E0F7FA; }
 
 .resume-page {
   background: #FF9800; }
@@ -890,11 +900,6 @@ body {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-a {
-  outline: none;
-  color: #45a8f1;
-  text-decoration: none; }
 
 a:hover,
 a:focus {

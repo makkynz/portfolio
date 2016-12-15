@@ -1,6 +1,8 @@
 nav{
     margin: 20px 0 0 20px;
     position: fixed;
+    z-index: 2;
+    
     ul{        
         li{
             display: inline;

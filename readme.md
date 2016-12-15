@@ -28,3 +28,8 @@ npm run build-css
 Compile and Watch SASS
 ---
 npm run watch-css
+
+
+Live CSS reload
+---
+livereload C:\work\portfolio\www
