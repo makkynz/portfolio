@@ -32,4 +32,5 @@ npm run watch-css
 
 Live CSS reload
 ---
-livereload C:\work\portfolio\www
+run Reload App  (download from http://livereload.com/)
+install LiveReload Chrome extension 
