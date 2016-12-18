@@ -1,7 +1,7 @@
 [
     {
         "sprite": {
-            "x": 500,
+            "x": 0,
             "y": 0,
             "width": 499,
             "height": 157
@@ -12,11 +12,12 @@
             "Magento"
         ],
         "name": "anz-logo-logotype",
+        "fileName": "ANZ-logo-logotype.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 1499,
+            "x": -500,
             "y": 0,
             "width": 500,
             "height": 115
@@ -27,11 +28,12 @@
             "Magento"
         ],
         "name": "asb-bank-logo",
+        "fileName": "ASB_Bank_logo.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 2499,
+            "x": -1000,
             "y": 0,
             "width": 500,
             "height": 168
@@ -42,11 +44,12 @@
             "Magento"
         ],
         "name": "avis-logo",
+        "fileName": "avis-logo.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 3498,
+            "x": -1500,
             "y": 0,
             "width": 499,
             "height": 194
@@ -57,11 +60,12 @@
             "Magento"
         ],
         "name": "cadbury-logo",
+        "fileName": "Cadbury-logo.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 4497,
+            "x": -1999,
             "y": 0,
             "width": 500,
             "height": 195
@@ -72,11 +76,12 @@
             "Magento"
         ],
         "name": "carlsberg-logo-vector",
+        "fileName": "Carlsberg-logo-vector.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 5206,
+            "x": -2499,
             "y": 0,
             "width": 209,
             "height": 209
@@ -87,11 +92,12 @@
             "Magento"
         ],
         "name": "channel4",
+        "fileName": "Channel4.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 5604,
+            "x": -2708,
             "y": 0,
             "width": 189,
             "height": 144
@@ -102,11 +108,12 @@
             "Magento"
         ],
         "name": "colourplan",
+        "fileName": "colourplan.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 6293,
+            "x": -2897,
             "y": 0,
             "width": 500,
             "height": 70
@@ -117,11 +124,12 @@
             "Magento"
         ],
         "name": "converse-logo-new-1024x768",
+        "fileName": "Converse-Logo-New-1024x768.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 7293,
+            "x": -3397,
             "y": 0,
             "width": 500,
             "height": 90
@@ -132,11 +140,12 @@
             "Magento"
         ],
         "name": "de-beers",
+        "fileName": "de-beers.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 8293,
+            "x": -3897,
             "y": 0,
             "width": 500,
             "height": 190
@@ -147,11 +156,12 @@
             "Magento"
         ],
         "name": "ebay-logo",
+        "fileName": "EBay_logo.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 9026,
+            "x": -4397,
             "y": 0,
             "width": 233,
             "height": 157
@@ -162,11 +172,12 @@
             "Magento"
         ],
         "name": "header-gfsmith-logo",
+        "fileName": "header-gfsmith-logo.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 9588,
+            "x": -4630,
             "y": 0,
             "width": 329,
             "height": 245
@@ -177,11 +188,12 @@
             "Magento"
         ],
         "name": "jti-vector-logo",
+        "fileName": "jti-vector-logo.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 10417,
+            "x": -4959,
             "y": 0,
             "width": 500,
             "height": 146
@@ -192,11 +204,12 @@
             "Magento"
         ],
         "name": "kinder-logo-1210x447",
+        "fileName": "kinder-logo-1210x447.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 11417,
+            "x": -5459,
             "y": 0,
             "width": 500,
             "height": 260
@@ -207,11 +220,12 @@
             "Magento"
         ],
         "name": "logo-pc",
+        "fileName": "logo_pc.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 12417,
+            "x": -5959,
             "y": 0,
             "width": 500,
             "height": 87
@@ -222,11 +236,12 @@
             "Magento"
         ],
         "name": "sony-logo.svg",
+        "fileName": "Sony_logo.svg.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 13417,
+            "x": -6459,
             "y": 0,
             "width": 500,
             "height": 90
@@ -237,11 +252,12 @@
             "Magento"
         ],
         "name": "vitaminwater-logo",
+        "fileName": "vitaminwater-logo.png",
         "description": "Lorem Ipsum"
     },
     {
         "sprite": {
-            "x": 14416,
+            "x": -6959,
             "y": 0,
             "width": 499,
             "height": 94
@@ -252,6 +268,7 @@
             "Magento"
         ],
         "name": "westpac",
+        "fileName": "westpac.png",
         "description": "Lorem Ipsum"
     }
 ]

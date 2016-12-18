@@ -3,6 +3,7 @@ var path = require('path');
 var config = {
   context: path.join(__dirname, 'src'),
   entry: [
+    'whatwg-fetch',
     './main.js',
   ],
   output: {
