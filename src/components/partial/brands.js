@@ -1,12 +1,14 @@
 import React from 'react';
 import 'whatwg-fetch';
+import Brand from '../partial/brand';
 
 class Brands extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      brands: []
+      brands: [],
+      selectedBrand: null
     };
   }
 
@@ -41,15 +43,28 @@ class Brands extends React.Component {
       };
   }
 
+  setSelectedBrand(brand){
+    this.setState({selectedBrand: brand})
+  }
+
+  unselectBrand(){
+    this.setState({selectedBrand: null})
+  }
+
   render() {   
     return (
-     <ul className="brands">
-        {
-          this.state.brands.map(brand =>
-            <li key={brand.key}  style={this.getStyle(brand)}></li>
-          )
-        }     
-     </ul>
+      <div>
+        <ul className="brands">
+            {this.state.brands.map(brand =>
+                <li 
+                key={brand.key}  
+                style={this.getStyle(brand)} 
+                onClick={this.setSelectedBrand.bind(this, brand)}
+                ></li>
+              )}     
+        </ul>
+        <Brand brandData={this.state.selectedBrand} onClose={this.unselectBrand.bind(this)}></Brand>        
+      </div>
     );
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Brands from '../partial/brands';
 
+
 class Projects extends React.Component {
     
   componentWillMount(){
@@ -19,6 +20,7 @@ class Projects extends React.Component {
           <p>Some brands that I have done work for...</p>          
         </div>
         <Brands></Brands> 
+       
       </div> 
     );
   }
