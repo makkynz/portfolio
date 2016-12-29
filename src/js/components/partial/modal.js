@@ -1,17 +1,14 @@
 import React from 'react';
 import 'whatwg-fetch';
 import classNames from 'classnames';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
 class Modal extends React.Component {
-  constructor(props) {
-    super();
-    this.state = {  
-        isOpen : true    
-    };
-  } 
-
+  
   close(){
-      this.props.onClose();      
+      //this.props.onClose(); 
+      console.log('click');     
   }
 
   render() {   
@@ -19,7 +16,7 @@ class Modal extends React.Component {
     var modalClasses = classNames({
       'md-modal': true,
       'md-effect-3': true,
-      'md-show': this.state.isOpen 
+      'md-show': this.props.app[0].showModal 
     });
 
     return (
@@ -35,4 +32,14 @@ class Modal extends React.Component {
     );
   }
 }
-export default Modal;
+
+// Get apps state and pass it as props to UserList
+//      > whenever state changes, the UserList will automatically re-render
+function mapStateToProps(state) {
+    return {
+        app: state.app
+    };
+}
+
+export default connect(mapStateToProps)(Modal);
+//export default Modal;
