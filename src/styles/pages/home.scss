@@ -12,6 +12,10 @@
        display: block;
        margin: 0 auto;
     }
+
+
+
+    
 }
 
 .photo{
@@ -28,6 +32,10 @@
     vertical-align: middle;
     padding: 20px;
     margin-left: $spacingMin;  
+
+    @include mobile {
+        margin-left: 0; 
+    }
     
 
     h1{
@@ -41,5 +49,17 @@
         font-size: 30px;
         text-align: left;
         display: block;       
+    }
+
+    @include mobile {        
+       h1,h2,a{
+            text-align: center;
+            margin-bottom: 10px;
+       }  
+       a{
+           font-size: 25px;
+       } 
+
+             
     }
 }

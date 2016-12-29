@@ -11,12 +11,10 @@ class Modal extends React.Component {
   } 
 
   close(){
-      this.props.onClose();
-      //this.setState({isOpen: false})
+      this.props.onClose();      
   }
 
   render() {   
-
 
     var modalClasses = classNames({
       'md-modal': true,
@@ -26,14 +24,13 @@ class Modal extends React.Component {
 
     return (
         <div>
-            <div className={modalClasses} id="modal-1">
+            <div className={modalClasses}>
                 <div className="md-content">
-                <a onClick={this.close.bind(this)}>Close</a>        
+                <a className="close" onClick={this.close.bind(this)}>Close</a>        
                     {this.props.children}        
                 </div>
             </div>        
             <div className="md-overlay"></div>
-
         </div>
     );
   }

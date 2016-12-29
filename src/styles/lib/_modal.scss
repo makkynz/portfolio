@@ -10,6 +10,10 @@
 	visibility: hidden;
 	backface-visibility: hidden;
 	transform: translateX(-50%) translateY(-50%);
+
+	.close{
+		cursor: pointer;
+	}
 }
 
 .md-show {
@@ -27,6 +31,7 @@
 	opacity: 0;
 	background: rgba(171, 160, 159, 0.8);
 	transition: all 0.3s;
+	
 }
 
 .md-show ~ .md-overlay {

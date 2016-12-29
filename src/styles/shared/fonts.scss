@@ -14,11 +14,19 @@ h1 {
 	font-size: 50px;
 	color: $black;
 	margin-bottom: $spacingMin;
+
+	@include mobile {        
+        font-size: 35px; 
+    }
 }
 
 h2{
 	font-size: 30px;
 	color: $black;
+	
+	@include mobile {        
+        font-size: 25px; 
+    }
 }
 
 a {
