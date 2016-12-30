@@ -15,14 +15,12 @@ class App extends React.Component {
   
   render() {
     return (
-      <div >
+      <div>
         <Nav />    
         <section className="page-content">    
-          {this.props.children}
+            {this.props.children}
         </section>
-         <Modal>
-          <h2>Yeah Boi!</h2>
-        </Modal>
+        <Modal></Modal>
       </div>
     );
   }
