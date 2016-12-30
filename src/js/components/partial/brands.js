@@ -1,33 +1,20 @@
 import React from 'react';
 import 'whatwg-fetch';
-import Brand from '../partial/brand';
+import Brand from '../../containers/brand.container';
 
 class Brands extends React.Component {
   constructor() {
-    super();
-
-    this.state = {
-      brands: [],
-      selectedBrand: null
-    };
+    super();   
   }
 
   getBrandsData(){
     
-    fetch('/data/brands.json')
-      .then(response => response.json())
-      .then(json=> {    
-        json.forEach((item, i)=> {
-           json[i].key = i;           
-         })             
-         this.setState({brands : json});
-      })
   }
 
   componentWillMount() {
 
-    this.getBrandsData();
-      
+   // this.getBrandsData();
+      this.props.fetchPosts();
   }
 
   getStyle(brandItem){
@@ -52,10 +39,11 @@ class Brands extends React.Component {
   }
 
   render() {   
+    if(this.props.brands === null) return null;
     return (
       <div>
         <ul className="brands">
-            {this.state.brands.map(brand =>
+            {this.props.brands.map(brand =>
                 <li 
                 key={brand.key}  
                 style={this.getStyle(brand)} 
@@ -63,7 +51,7 @@ class Brands extends React.Component {
                 ></li>
               )}     
         </ul>
-        <Brand brandData={this.state.selectedBrand} onClose={this.unselectBrand.bind(this)}></Brand>        
+         <Brand></Brand>        
       </div>
     );
   }

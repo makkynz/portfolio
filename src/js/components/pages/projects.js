@@ -1,5 +1,5 @@
 import React from 'react';
-import Brands from '../partial/brands';
+import Brands from '../../containers/brands.container';
 
 
 class Projects extends React.Component {
