@@ -155,8 +155,8 @@ nav {
 .home-page::before {
   background-image: url(/imgs/bg-1.jpg); }
 
-.home-page h1 {
-  margin-bottom: 0; }
+.home-page h1, .home-page h2 {
+  margin-bottom: 10px; }
 
 .home-page section.content {
   display: block;
