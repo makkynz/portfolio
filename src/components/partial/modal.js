@@ -1,6 +1,8 @@
 import React from 'react';
+import {findDOMNode} from 'react-dom'
 import 'whatwg-fetch';
 import classNames from 'classnames';
+import Portal from 'react-portal';
 
 class Modal extends React.Component {
   constructor(props) {
@@ -8,9 +10,26 @@ class Modal extends React.Component {
     this.state = {  
         isOpen : true    
     };
+    this.handleMouseClickOutside = this.handleMouseClickOutside.bind(this);
   } 
+  componentDidMount() {
+    document.addEventListener('mousedown', this.handleMouseClickOutside);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleMouseClickOutside);
+  }
+
+   handleMouseClickOutside(e) {
+    if (isNodeInRoot(e.target, findDOMNode(this.refs.content))) {
+      return;
+    }
+    e.stopPropagation();
+    this.close();
+  }
 
   close(){
+      this.setState({isOpen : false});
       this.props.onClose();      
   }
 
@@ -23,7 +42,8 @@ class Modal extends React.Component {
     });
 
     return (
-        <div>
+        <Portal isOpened={this.state.isOpen} closeOnEsc closeOnOutsideClick>
+            <div>
             <div className={modalClasses}>
                 <div className="md-content">
                 <a className="close" onClick={this.close.bind(this)}>Close</a>        
@@ -31,8 +51,19 @@ class Modal extends React.Component {
                 </div>
             </div>        
             <div className="md-overlay"></div>
-        </div>
+            </div>
+        </Portal>
     );
   }
 }
 export default Modal;
+
+function isNodeInRoot(node, root) {
+  while (node) {
+    if (node === root) {
+      return true;
+    }
+    node = node.parentNode;
+  }
+  return false;
+}
