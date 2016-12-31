@@ -3,40 +3,20 @@ import 'whatwg-fetch';
 import Brand from '../../containers/brand.container';
 
 class Brands extends React.Component {
-  constructor() {
-    super();   
-  }
-
-  getBrandsData(){
-    
-  }
-
+ 
   componentWillMount() {
-
-   // this.getBrandsData();
       this.props.fetchPosts();
   }
 
-  getStyle(brandItem){
-
-    let scale = 1
-    let width = brandItem.sprite.width * scale
-    let height = brandItem.sprite.height * scale
-    let x = brandItem.sprite.x * scale
+  getStyle(brandItem){   
     let file = '/imgs/brands/'+ brandItem.fileName
-    return  {                        
-            
+    return  {                       
         backgroundImage: "url("+file+")"           
       };
   }
 
   setSelectedBrand(brand){
     dispatch(selectBrand(brand));
-    //this.setState({selectedBrand: brand})
-  }
-
-  unselectBrand(){
-    this.setState({selectedBrand: null})
   }
 
   render() {   

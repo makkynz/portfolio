@@ -1,11 +1,7 @@
 [
     {
-        "sprite": {
-            "x": 0,
-            "y": 0,
-            "width": 499,
-            "height": 157
-        },
+        "width": 499,
+        "height": 157,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -16,12 +12,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -500,
-            "y": 0,
-            "width": 500,
-            "height": 115
-        },
+        "width": 500,
+        "height": 115,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -32,12 +24,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -1000,
-            "y": 0,
-            "width": 500,
-            "height": 168
-        },
+        "width": 500,
+        "height": 168,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -48,12 +36,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -1500,
-            "y": 0,
-            "width": 499,
-            "height": 194
-        },
+        "width": 499,
+        "height": 194,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -64,12 +48,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -1999,
-            "y": 0,
-            "width": 500,
-            "height": 195
-        },
+        "width": 500,
+        "height": 195,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -80,12 +60,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -2499,
-            "y": 0,
-            "width": 209,
-            "height": 209
-        },
+        "width": 209,
+        "height": 209,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -96,12 +72,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -2708,
-            "y": 0,
-            "width": 189,
-            "height": 144
-        },
+        "width": 189,
+        "height": 144,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -112,12 +84,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -2897,
-            "y": 0,
-            "width": 500,
-            "height": 70
-        },
+        "width": 500,
+        "height": 70,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -128,12 +96,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -3397,
-            "y": 0,
-            "width": 500,
-            "height": 90
-        },
+        "width": 500,
+        "height": 90,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -144,12 +108,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -3897,
-            "y": 0,
-            "width": 500,
-            "height": 190
-        },
+        "width": 500,
+        "height": 190,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -160,12 +120,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -4397,
-            "y": 0,
-            "width": 233,
-            "height": 157
-        },
+        "width": 233,
+        "height": 157,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -176,12 +132,20 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -4630,
-            "y": 0,
-            "width": 329,
-            "height": 245
-        },
+        "width": 419,
+        "height": 140,
+        "year": 2016,
+        "skills": [
+            "Asp.net",
+            "Magento"
+        ],
+        "name": "investec-logo",
+        "fileName": "Investec_logo.png",
+        "description": "Lorem Ipsum"
+    },
+    {
+        "width": 329,
+        "height": 245,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -192,12 +156,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -4959,
-            "y": 0,
-            "width": 500,
-            "height": 146
-        },
+        "width": 500,
+        "height": 146,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -208,12 +168,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -5459,
-            "y": 0,
-            "width": 500,
-            "height": 260
-        },
+        "width": 500,
+        "height": 260,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -224,12 +180,20 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -5959,
-            "y": 0,
-            "width": 500,
-            "height": 87
-        },
+        "width": 1000,
+        "height": 581,
+        "year": 2016,
+        "skills": [
+            "Asp.net",
+            "Magento"
+        ],
+        "name": "pfizer",
+        "fileName": "pfizer.png",
+        "description": "Lorem Ipsum"
+    },
+    {
+        "width": 500,
+        "height": 87,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -240,12 +204,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -6459,
-            "y": 0,
-            "width": 500,
-            "height": 90
-        },
+        "width": 500,
+        "height": 90,
         "year": 2016,
         "skills": [
             "Asp.net",
@@ -256,12 +216,8 @@
         "description": "Lorem Ipsum"
     },
     {
-        "sprite": {
-            "x": -6959,
-            "y": 0,
-            "width": 499,
-            "height": 94
-        },
+        "width": 499,
+        "height": 94,
         "year": 2016,
         "skills": [
             "Asp.net",

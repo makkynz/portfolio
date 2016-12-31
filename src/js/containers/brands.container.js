@@ -4,14 +4,12 @@ import Brands from '../components/partial/brands';
 
 
 const mapStateToProps = (state) => {
- 
-  return { 
+   return { 
     brands: state.brands
   };
 }
 
-const mapDispatchToProps = (dispatch) => {
-  
+const mapDispatchToProps = (dispatch) => {  
   return {
     
     fetchPosts: () => {

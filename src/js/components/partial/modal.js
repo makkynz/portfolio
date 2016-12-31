@@ -20,7 +20,7 @@ class Modal extends React.Component {
     document.removeEventListener('mousedown', this.handleMouseClickOutside);
   }
 
-   handleMouseClickOutside(e) {
+  handleMouseClickOutside(e) {
     if (isNodeInRoot(e.target, findDOMNode(this.refs.content))) {
       return;
     }
