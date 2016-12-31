@@ -8,14 +8,14 @@ class Modal extends React.Component {
   constructor(props) {
     super();
    
-    this.handleMouseClickOutside = this.handleMouseClickOutside.bind(this);
+    //this.handleMouseClickOutside = this.handleMouseClickOutside.bind(this);
   } 
   componentDidMount() {
-    document.addEventListener('mousedown', this.handleMouseClickOutside);
+   // document.addEventListener('mousedown', this.handleMouseClickOutside);
   }
 
   componentWillUnmount() {
-    document.removeEventListener('mousedown', this.handleMouseClickOutside);
+   // document.removeEventListener('mousedown', this.handleMouseClickOutside);
   }
 
   handleMouseClickOutside(e) {
@@ -27,8 +27,8 @@ class Modal extends React.Component {
   }
 
   close(){
-      this.setState({isOpen : false});
-      this.props.onClose();      
+   
+     this.props.onClose();      
   }
 
   render() {  
@@ -39,9 +39,9 @@ class Modal extends React.Component {
       'md-effect-3': true,
       'md-show': this.props.app.isModalOpen
     });
-
+    
     return (
-        <Portal isOpened={this.props.app.isModalOpen} closeOnEsc closeOnOutsideClick>
+      
             <div>
             <div className={modalClasses}>
                 <div className="md-content">
@@ -51,7 +51,7 @@ class Modal extends React.Component {
             </div>        
             <div className="md-overlay"></div>
             </div>
-        </Portal>
+       
     );
   }
 }

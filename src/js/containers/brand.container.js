@@ -2,6 +2,7 @@ import { connect } from 'react-redux'
 import Brand from '../components/partial/brand';
 import {  deselectBrand } from '../actions/brands.actions';
 import { closeModal } from '../actions/app.actions';
+
 const mapStateToProps = (state) => { 
  
   return { 
@@ -13,6 +14,7 @@ const mapDispatchToProps = (dispatch) => {
   
   return {   
     deselectBrand: (brand)=>{
+     
       dispatch(deselectBrand(brand));
     },
     closeModal: ()=>{

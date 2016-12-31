@@ -18,7 +18,7 @@ const mapDispatchToProps = (dispatch) => {
     },
 
     selectBrand: (brand)=>{
-    
+     
       dispatch(selectBrand(brand));
     },
 

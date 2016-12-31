@@ -19,8 +19,10 @@ nav{
 
     @include mobile { 
         left: 50%;
-        transform: translateX(-50%);  
-        margin: 20px 0; 
+        transform: translateX(-50%);          
+        background: rgba(239, 246, 247, 0.9);
+        padding: 20px 0;
+        margin: 0;
     }
         
 }

@@ -9,12 +9,14 @@ class Brand extends React.Component {
   }
 
   render() {   
-    
-    if(this.props.brand === undefined) return null;
+    var content
+    if(this.props.brand !== undefined) {
+      content = <h2>{this.props.brand.name}</h2>
+    };
   
     return (
       <Modal onClose={this.onClose.bind(this, this.props.brand)}>
-        <h2>{this.props.brand.name}</h2>
+        {content}        
       </Modal>
     );
   }
