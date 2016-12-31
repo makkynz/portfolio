@@ -32,3 +32,21 @@ export const fetchBrands = () => {
         payload: brands        
     }
 };
+
+ export const selectBrand = (brand) => {
+    console.log("Set Selected Brand: ", brand);            
+         
+    return {
+        type: 'SELECT_BRAND',
+        payload: brand        
+    }
+};
+
+export const deselectBrand = (brand) => {
+    console.log("De Selected Brand: ", brand);            
+         
+    return {
+        type: 'DESELECT_BRAND',
+        payload: brand        
+    }
+};

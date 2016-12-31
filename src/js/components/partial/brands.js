@@ -31,7 +31,8 @@ class Brands extends React.Component {
   }
 
   setSelectedBrand(brand){
-    this.setState({selectedBrand: brand})
+    dispatch(selectBrand(brand));
+    //this.setState({selectedBrand: brand})
   }
 
   unselectBrand(){
@@ -47,7 +48,7 @@ class Brands extends React.Component {
                 <li 
                 key={brand.key}  
                 style={this.getStyle(brand)} 
-                onClick={this.setSelectedBrand.bind(this, brand)}
+                onClick={this.props.selectBrand.bind(this, brand)}
                 ></li>
               )}     
         </ul>

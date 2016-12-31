@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { fetchBrands } from '../actions/brands.actions';
+import { fetchBrands, selectBrand } from '../actions/brands.actions';
 import Brands from '../components/partial/brands';
 
 
@@ -16,6 +16,10 @@ const mapDispatchToProps = (dispatch) => {
     
     fetchPosts: () => {
       dispatch(fetchBrands());
+    },
+
+    selectBrand: (brand)=>{
+      dispatch(selectBrand(brand));
     }
   }
 }

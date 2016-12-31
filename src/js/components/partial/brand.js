@@ -6,14 +6,14 @@ class Brand extends React.Component {
     super();    
   } 
 
-  onClose(){
-    this.props.onClose();
+  onClose(brand){
+    this.props.deselectBrand(brand);
   }
 
   render() {   
     if(this.props.brandData === undefined) return null;
     return (
-      <Modal onClose={this.onClose.bind(this)}>
+      <Modal onClose={this.onClose.bind(this, this.props.brandData)}>
         <h2>{this.props.brandData.name}</h2>
       </Modal>
     );
