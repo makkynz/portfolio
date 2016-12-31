@@ -7,9 +7,7 @@ import Portal from 'react-portal';
 class Modal extends React.Component {
   constructor(props) {
     super();
-    this.state = {  
-        isOpen : true    
-    };
+   
     this.handleMouseClickOutside = this.handleMouseClickOutside.bind(this);
   } 
   componentDidMount() {
@@ -33,16 +31,17 @@ class Modal extends React.Component {
       this.props.onClose();      
   }
 
-  render() {   
+  render() {  
 
+   
     var modalClasses = classNames({
       'md-modal': true,
       'md-effect-3': true,
-      'md-show': this.state.isOpen 
+      'md-show': this.props.app.isModalOpen
     });
 
     return (
-        <Portal isOpened={this.state.isOpen} closeOnEsc closeOnOutsideClick>
+        <Portal isOpened={this.props.app.isModalOpen} closeOnEsc closeOnOutsideClick>
             <div>
             <div className={modalClasses}>
                 <div className="md-content">

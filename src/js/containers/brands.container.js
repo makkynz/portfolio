@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import { fetchBrands, selectBrand } from '../actions/brands.actions';
+import { openModal } from '../actions/app.actions';
 import Brands from '../components/partial/brands';
 
 
@@ -12,12 +13,17 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {  
   return {
     
-    fetchPosts: () => {
+    fetchBrands: () => {
       dispatch(fetchBrands());
     },
 
     selectBrand: (brand)=>{
+    
       dispatch(selectBrand(brand));
+    },
+
+    openModal: () =>{
+      dispatch(openModal());
     }
   }
 }

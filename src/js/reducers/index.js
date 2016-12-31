@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux';
 import BrandReducer from './brand.reducer';
-
+import AppReducer from './app.reducer';
 
 /*
  * We combine all reducers into a single object before updated data is dispatched (sent) to store
@@ -8,6 +8,7 @@ import BrandReducer from './brand.reducer';
  * */
 
 const allReducers = combineReducers({
+    app: AppReducer,
     brands: BrandReducer   
 });
 

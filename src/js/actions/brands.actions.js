@@ -1,8 +1,4 @@
 import React from 'react';
-import 'whatwg-fetch';
-
-export const FETCH_BRANDS = 'FETCH_BRANDS';
-export const RECEIVE_BRANDS = 'RECEIVE_BRANDS';
 
 export const fetchBrands = () => {
 

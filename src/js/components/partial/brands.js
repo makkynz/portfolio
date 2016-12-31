@@ -5,7 +5,7 @@ import Brand from '../../containers/brand.container';
 class Brands extends React.Component {
  
   componentWillMount() {
-      this.props.fetchPosts();
+      this.props.fetchBrands();
   }
 
   getStyle(brandItem){   
@@ -16,7 +16,9 @@ class Brands extends React.Component {
   }
 
   setSelectedBrand(brand){
-    dispatch(selectBrand(brand));
+     
+     this.props.selectBrand(brand);
+     this.props.openModal();
   }
 
   render() {   
@@ -28,7 +30,7 @@ class Brands extends React.Component {
                 <li 
                 key={brand.key}  
                 style={this.getStyle(brand)} 
-                onClick={this.props.selectBrand.bind(this, brand)}
+                onClick={this.setSelectedBrand.bind(this, brand)}
                 ></li>
               )}     
         </ul>
