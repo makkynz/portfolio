@@ -1,7 +1,7 @@
 
 
 export default function (state = null, action) {
-    console.log('ACTION: ',action.type);
+   
     switch (action.type) {
         case 'GET_BRANDS':           
             return action.payload;

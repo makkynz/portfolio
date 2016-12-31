@@ -5,7 +5,6 @@ export const FETCH_BRANDS = 'FETCH_BRANDS';
 export const RECEIVE_BRANDS = 'RECEIVE_BRANDS';
 
 export const fetchBrands = () => {
-    console.log("Fetching  brands: ", "wooho");
 
     return dispatch => {
         dispatch({
@@ -22,7 +21,7 @@ export const fetchBrands = () => {
 };
 
  const receiveBrands = (brands) => {
-    console.log("Receiving  brands: ", brands);
+    
     brands.forEach((item, i)=> {
         brands[i].key = i;           
     })             
@@ -33,8 +32,7 @@ export const fetchBrands = () => {
     }
 };
 
- export const selectBrand = (brand) => {
-    console.log("Set Selected Brand: ", brand);            
+ export const selectBrand = (brand) => {        
          
     return {
         type: 'SELECT_BRAND',
@@ -42,8 +40,7 @@ export const fetchBrands = () => {
     }
 };
 
-export const deselectBrand = (brand) => {
-    console.log("De Selected Brand: ", brand);            
+export const deselectBrand = (brand) => {        
          
     return {
         type: 'DESELECT_BRAND',

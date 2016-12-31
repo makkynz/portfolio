@@ -253,7 +253,7 @@
       window.reveal = function (direction, callback) {
 				var callbackTime = 750,
 					callbackFn = function() {
-            console.log('finished reveal');
+           
 						classie.remove(pages[0], 'page--current');
 						currentPage = 0;//currentPage === 0 ? 1 : 0;
 						classie.add(pages[currentPage], 'page--current');	
