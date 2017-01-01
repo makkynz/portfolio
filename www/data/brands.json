@@ -2,14 +2,22 @@
     {
         "width": 499,
         "height": 157,
-        "year": 2016,
+        "year": 2010,
         "skills": [
             "Asp.net",
-            "Magento"
-        ],
+            "Sql Server",
+            "Crystal Reports",
+            "JQuery"
+        ],        
         "name": "anz-logo-logotype",
         "fileName": "ANZ-logo-logotype.png",
-        "description": "Lorem Ipsum"
+        "description": "asdgsdfkdsf",
+        "ref":"anz",
+        "carousel":[
+            {"image":"airpoints.jpg", "caption":"ANZ AirNZ Airpoints"},
+            {"image":"anz-world-visa-1.png", "caption":"ANZ World Visa site"},
+            {"image":"anz-world-visa-2.png", "caption":"ANZ World Visa site"}
+        ]
     },
     {
         "width": 500,
@@ -141,7 +149,7 @@
         ],
         "name": "investec-logo",
         "fileName": "Investec_logo.png",
-        "description": "Lorem Ipsum"
+        "description": "Yeah boi<h1>test</h2>"
     },
     {
         "width": 329,

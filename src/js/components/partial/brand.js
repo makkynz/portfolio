@@ -8,10 +8,20 @@ class Brand extends React.Component {
     this.props.closeModal();
   }
 
+  getContent(){
+    var b= this.props.brand;
+    return (
+      <div>
+        <h2>{b.name}</h2>          
+        <div  dangerouslySetInnerHTML={{__html: b.description}}></div>
+      </div>
+    );
+  }
+
   render() {   
     var content
     if(this.props.brand !== undefined) {
-      content = <h2>{this.props.brand.name}</h2>
+      content = this.getContent();
     };
   
     return (
