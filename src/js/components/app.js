@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from './partial/nav';
+import Nav from './shared/nav';
 import Promise from 'promise-polyfill'; 
 
 class App extends React.Component {

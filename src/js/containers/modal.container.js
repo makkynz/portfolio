@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Modal from '../components/partial/modal';
+import Modal from '../components/shared/modal';
 import {  deselectBrand } from '../actions/app.actions';
 
 const mapStateToProps = (state) => { 

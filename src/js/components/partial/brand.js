@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from '../../containers/modal.container';
+import Carousel from '../shared/carousel';
 
 class Brand extends React.Component {
   
@@ -11,9 +12,9 @@ class Brand extends React.Component {
   getContent(){
     var b= this.props.brand;
     return (
-      <div>
-        <h2>{b.name}</h2>          
-        <div  dangerouslySetInnerHTML={{__html: b.description}}></div>
+      <div>       
+        <Carousel brand={b} /> 
+        <div dangerouslySetInnerHTML={{__html: b.description}}></div>
       </div>
     );
   }

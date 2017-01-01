@@ -94,7 +94,7 @@ a {
 /* Paragraphs
 --------------------------------------------------------------*/
 p {
-  margin: 0; }
+  margin: 20px 0; }
 
 /* Type Styles
 --------------------------------------------------------------*/
@@ -155,9 +155,37 @@ nav {
       margin: 0; } }
 
 .md-content {
-  background: #E0F7FA;
+  background: #ffffff;
   border: 1px solid #444444;
-  padding: 30px; }
+  padding: 30px;
+  text-align: left; }
+  .md-content .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px; }
+
+.carousel ul {
+  overflow: hidden;
+  white-space: nowrap; }
+
+.carousel li {
+  background-size: cover;
+  width: 100%;
+  min-height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  transition: all 0.5s; }
+
+.carousel .caption {
+  margin-top: 10px;
+  background: #E0F7FA;
+  padding: 10px;
+  color: #444444;
+  text-align: center;
+  font-weight: bold; }
 
 .home-page::before {
   background-image: url(/imgs/bg-1.jpg); }
