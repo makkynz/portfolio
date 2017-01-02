@@ -9,11 +9,17 @@ class Brand extends React.Component {
     this.props.closeModal();
   }
 
-  getContent(){
+  renderCarousel(){    
+    if(!this.props.brand.carousel) return;
+    return <Carousel items={this.props.brand.carousel} refs={this.props.brand.ref} /> 
+  }
+
+  renderContent(){
     var b= this.props.brand;
+   
     return (
       <div>       
-        <Carousel brand={b} /> 
+        {this.renderCarousel()}
         <div dangerouslySetInnerHTML={{__html: b.description}}></div>
       </div>
     );
@@ -22,7 +28,7 @@ class Brand extends React.Component {
   render() {   
     var content
     if(this.props.brand !== undefined) {
-      content = this.getContent();
+      content = this.renderContent();
     };
   
     return (

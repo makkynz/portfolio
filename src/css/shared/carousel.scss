@@ -17,8 +17,8 @@
     }
 
     .caption{       
-        margin-top: $spacingSuperMin;
-        background: $offWhite;             
+        margin-top: $spacingSuperMin;        
+        border-bottom: 1px solid $grey;          
         padding: $spacingSuperMin;
         color: $black;
         text-align: center;

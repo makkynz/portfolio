@@ -10,7 +10,7 @@ class Carousel extends React.Component {
   } 
   
   getStyle(item, index){   
-      let file = '/imgs/brands/'+this.props.brand.ref+'/'+ item.image
+      let file = '/imgs/brands/'+this.props.refs+'/'+ item.image
       let left = index == 0 ? (570 * index) - (570 * this.state.currentPage) : 0;
 
       return  {                       
@@ -20,29 +20,29 @@ class Carousel extends React.Component {
   }
 
   next(){
-    let nextPage = this.props.brand.carousel.length === this.state.currentPage + 1 ? 0 : this.state.currentPage + 1;   
+    let nextPage = this.props.items.length === this.state.currentPage + 1 ? 0 : this.state.currentPage + 1;   
     this.setState({currentPage: nextPage});    
   }
 
   renderItems(){
-    if(!this.props.brand.carousel) return;
+    if(!this.props.items) return;
     return (         
-            <ul>
-                {this.props.brand.carousel.map((item, i) =>
-                    <li 
-                    key={i}                   
-                    style={this.getStyle(item, i)} 
-                    onClick={this.next.bind(this)}
-                    ></li>
-                  )}     
-            </ul>               
+      <ul>
+          {this.props.items.map((item, i) =>
+              <li 
+              key={i}                   
+              style={this.getStyle(item, i)} 
+              onClick={this.next.bind(this)}
+              ></li>
+            )}     
+      </ul>               
       );
   }
 
   renderCaption(){
-     if(!this.props.brand.carousel) return;
+     if(!this.props.items) return;
       return (
-        <div className="caption">{this.props.brand.carousel[this.state.currentPage].caption}</div>   
+        <div className="caption">{this.props.items[this.state.currentPage].caption}</div>   
       )
   }
   
