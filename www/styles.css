@@ -166,19 +166,28 @@ nav {
     top: 10px;
     font-size: 30px; }
 
-.carousel ul {
+.carousel ul.images {
   overflow: hidden;
   white-space: nowrap; }
+  .carousel ul.images li {
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    transition: all 0.5s; }
 
-.carousel li {
-  background-size: cover;
-  width: 100%;
-  min-height: 300px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: inline-block;
-  transition: all 0.5s; }
+.carousel ul.pagination {
+  text-align: center;
+  margin-top: 10px; }
+  .carousel ul.pagination li {
+    font-size: 12px;
+    display: inline;
+    margin: 10px;
+    cursor: pointer;
+    color: #8d8a8a; }
 
 .carousel .caption {
   margin-top: 10px;

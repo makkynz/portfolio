@@ -1,21 +1,35 @@
 .carousel{
-    ul{
+    ul.images{
         overflow: hidden;
         white-space: nowrap;
+
+        li{
+            background-size: cover; 
+            width: 100%;
+            min-height: 300px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: inline-block;  
+            transition: all 0.5s;
+        }
+
+    }
+
+    ul.pagination{
+        text-align: center;
+        margin-top: $spacingSuperMin;     
+        li{
+            font-size: 12px;
+            display: inline;
+            margin: 10px; 
+            cursor: pointer; 
+            color: $darkGrey;
+        }
     }
   
 
-    li{
-        background-size: cover; 
-        width: 100%;
-        min-height: 300px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-        display: inline-block;  
-        transition: all 0.5s;
-    }
-
+    
     .caption{       
         margin-top: $spacingSuperMin;        
         border-bottom: 1px solid $grey;          

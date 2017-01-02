@@ -12,6 +12,7 @@ import Resume from './components/pages/resume';
 import Projects from './components/pages/projects';
 import allReducers from './reducers';
 
+
 const logger = createLogger();
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(allReducers, composeEnhancers( applyMiddleware(thunk, logger) ));

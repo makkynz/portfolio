@@ -560,7 +560,7 @@
 
 	var _projects2 = _interopRequireDefault(_projects);
 
-	var _reducers = __webpack_require__(297);
+	var _reducers = __webpack_require__(298);
 
 	var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -31505,6 +31505,14 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactDom = __webpack_require__(34);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _reactSwipeable = __webpack_require__(297);
+
+	var _reactSwipeable2 = _interopRequireDefault(_reactSwipeable);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -31524,14 +31532,18 @@
 	    _this.state = {
 	      currentPage: 0
 	    };
+	    _this.isSwiping = false;
 	    return _this;
 	  }
 
 	  _createClass(Carousel, [{
 	    key: 'getStyle',
 	    value: function getStyle(item, index) {
+
 	      var file = '/imgs/brands/' + this.props.refs + '/' + item.image;
-	      var left = index == 0 ? 570 * index - 570 * this.state.currentPage : 0;
+	      var padding = 30; //should read css for this
+	      var width = document.querySelector('div.md-modal').clientWidth - padding * 2;
+	      var left = index == 0 ? width * index - width * this.state.currentPage : 0;
 
 	      return {
 	        backgroundImage: "url(" + file + ")",
@@ -31545,21 +31557,78 @@
 	      this.setState({ currentPage: nextPage });
 	    }
 	  }, {
+	    key: 'goto',
+	    value: function goto(i) {
+	      this.setState({ currentPage: i });
+	    }
+	  }, {
+	    key: 'onSwipeLeft',
+	    value: function onSwipeLeft() {
+	      if (!this.isSwiping) {
+	        this.isSwiping = true;
+	        if (this.state.currentPage < this.props.items.length - 1) {
+	          this.setState({ currentPage: this.state.currentPage + 1 });
+	        }
+
+	        console.log('Swipgin left');
+	      }
+	    }
+	  }, {
+	    key: 'onSwipeRight',
+	    value: function onSwipeRight() {
+	      if (!this.isSwiping) {
+	        this.isSwiping = true;
+	        if (this.state.currentPage > 0) {
+	          this.setState({ currentPage: this.state.currentPage - 1 });
+	        }
+	        console.log('Swipgin right');
+	      }
+	    }
+	  }, {
+	    key: 'onSwipingEnd',
+	    value: function onSwipingEnd() {
+	      console.log('End swiping');
+	      this.isSwiping = false;
+	    }
+	  }, {
 	    key: 'renderItems',
 	    value: function renderItems() {
 	      var _this2 = this;
 
 	      if (!this.props.items) return;
 	      return _react2.default.createElement(
-	        'ul',
+	        'div',
 	        null,
-	        this.props.items.map(function (item, i) {
-	          return _react2.default.createElement('li', {
-	            key: i,
-	            style: _this2.getStyle(item, i),
-	            onClick: _this2.next.bind(_this2)
-	          });
-	        })
+	        _react2.default.createElement(
+	          _reactSwipeable2.default,
+	          {
+	            onSwipingLeft: this.onSwipeLeft.bind(this),
+	            onSwipingRight: this.onSwipeRight.bind(this),
+	            onSwiped: this.onSwipingEnd.bind(this)
+	          },
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'images' },
+	            this.props.items.map(function (item, i) {
+	              return _react2.default.createElement('li', {
+	                key: i,
+	                style: _this2.getStyle(item, i),
+	                onClick: _this2.next.bind(_this2)
+	              });
+	            })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'pagination' },
+	          this.props.items.map(function (item, i) {
+	            return _react2.default.createElement('li', {
+	              key: i,
+	              className: "fa fa-circle-o " + (_this2.state.currentPage === i ? 'fa-circle selected' : ''),
+	              onClick: _this2.goto.bind(_this2, i)
+	            });
+	          })
+	        )
 	      );
 	    }
 	  }, {
@@ -31595,6 +31664,219 @@
 /* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var React = __webpack_require__(3);
+
+	var Swipeable = React.createClass({
+	  displayName: 'Swipeable',
+
+	  propTypes: {
+	    onSwiped: React.PropTypes.func,
+	    onSwiping: React.PropTypes.func,
+	    onSwipingUp: React.PropTypes.func,
+	    onSwipingRight: React.PropTypes.func,
+	    onSwipingDown: React.PropTypes.func,
+	    onSwipingLeft: React.PropTypes.func,
+	    onSwipedUp: React.PropTypes.func,
+	    onSwipedRight: React.PropTypes.func,
+	    onSwipedDown: React.PropTypes.func,
+	    onSwipedLeft: React.PropTypes.func,
+	    flickThreshold: React.PropTypes.number,
+	    delta: React.PropTypes.number,
+	    preventDefaultTouchmoveEvent: React.PropTypes.bool,
+	    stopPropagation: React.PropTypes.bool,
+	    nodeName: React.PropTypes.string,
+	    trackMouse: React.PropTypes.bool
+	  },
+
+	  getInitialState: function getInitialState() {
+	    return {
+	      x: null,
+	      y: null,
+	      swiping: false,
+	      start: 0
+	    };
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      flickThreshold: 0.6,
+	      delta: 10,
+	      preventDefaultTouchmoveEvent: true,
+	      stopPropagation: false,
+	      nodeName: 'div'
+	    };
+	  },
+
+	  calculatePos: function calculatePos(e) {
+	    var x = void 0,
+	        y = void 0;
+	    // If not a touch, determine point from mouse coordinates
+	    if (e.changedTouches) {
+	      x = e.changedTouches[0].clientX;
+	      y = e.changedTouches[0].clientY;
+	    } else {
+	      x = e.clientX;
+	      y = e.clientY;
+	    }
+
+	    var xd = this.state.x - x;
+	    var yd = this.state.y - y;
+
+	    var axd = Math.abs(xd);
+	    var ayd = Math.abs(yd);
+
+	    var time = Date.now() - this.state.start;
+	    var velocity = Math.sqrt(axd * axd + ayd * ayd) / time;
+
+	    return {
+	      deltaX: xd,
+	      deltaY: yd,
+	      absX: axd,
+	      absY: ayd,
+	      velocity: velocity
+	    };
+	  },
+
+	  eventStart: function eventStart(e) {
+	    if (e.touches && e.touches.length > 1) {
+	      return;
+	    }
+	    // If not a touch, determine point from mouse coordinates
+	    var touches = e.touches;
+	    if (!touches) {
+	      touches = [{ clientX: e.clientX, clientY: e.clientY }];
+	    }
+	    if (this.props.stopPropagation) e.stopPropagation();
+
+	    this.setState({
+	      start: Date.now(),
+	      x: touches[0].clientX,
+	      y: touches[0].clientY,
+	      swiping: false
+	    });
+	  },
+
+	  eventMove: function eventMove(e) {
+	    if (!this.state.x || !this.state.y || e.touches && e.touches.length > 1) {
+	      return;
+	    }
+
+	    var cancelPageSwipe = false;
+	    var pos = this.calculatePos(e);
+
+	    if (pos.absX < this.props.delta && pos.absY < this.props.delta) {
+	      return;
+	    }
+
+	    if (this.props.stopPropagation) e.stopPropagation();
+
+	    if (this.props.onSwiping) {
+	      this.props.onSwiping(e, pos.deltaX, pos.deltaY, pos.absX, pos.absY, pos.velocity);
+	    }
+
+	    if (pos.absX > pos.absY) {
+	      if (pos.deltaX > 0) {
+	        if (this.props.onSwipingLeft || this.props.onSwipedLeft) {
+	          this.props.onSwipingLeft && this.props.onSwipingLeft(e, pos.absX);
+	          cancelPageSwipe = true;
+	        }
+	      } else {
+	        if (this.props.onSwipingRight || this.props.onSwipedRight) {
+	          this.props.onSwipingRight && this.props.onSwipingRight(e, pos.absX);
+	          cancelPageSwipe = true;
+	        }
+	      }
+	    } else {
+	      if (pos.deltaY > 0) {
+	        if (this.props.onSwipingUp || this.props.onSwipedUp) {
+	          this.props.onSwipingUp && this.props.onSwipingUp(e, pos.absY);
+	          cancelPageSwipe = true;
+	        }
+	      } else {
+	        if (this.props.onSwipingDown || this.props.onSwipedDown) {
+	          this.props.onSwipingDown && this.props.onSwipingDown(e, pos.absY);
+	          cancelPageSwipe = true;
+	        }
+	      }
+	    }
+
+	    this.setState({ swiping: true });
+
+	    if (cancelPageSwipe && this.props.preventDefaultTouchmoveEvent) {
+	      e.preventDefault();
+	    }
+	  },
+
+	  eventEnd: function eventEnd(e) {
+	    if (this.state.swiping) {
+	      var pos = this.calculatePos(e);
+
+	      if (this.props.stopPropagation) e.stopPropagation();
+
+	      var isFlick = pos.velocity > this.props.flickThreshold;
+
+	      this.props.onSwiped && this.props.onSwiped(e, pos.deltaX, pos.deltaY, isFlick, pos.velocity);
+
+	      if (pos.absX > pos.absY) {
+	        if (pos.deltaX > 0) {
+	          this.props.onSwipedLeft && this.props.onSwipedLeft(e, pos.deltaX, isFlick);
+	        } else {
+	          this.props.onSwipedRight && this.props.onSwipedRight(e, pos.deltaX, isFlick);
+	        }
+	      } else {
+	        if (pos.deltaY > 0) {
+	          this.props.onSwipedUp && this.props.onSwipedUp(e, pos.deltaY, isFlick);
+	        } else {
+	          this.props.onSwipedDown && this.props.onSwipedDown(e, pos.deltaY, isFlick);
+	        }
+	      }
+	    }
+
+	    this.setState(this.getInitialState());
+	  },
+
+	  render: function render() {
+	    var newProps = _extends({}, this.props, {
+	      onTouchStart: this.eventStart,
+	      onTouchMove: this.eventMove,
+	      onTouchEnd: this.eventEnd,
+	      onMouseDown: this.props.trackMouse && this.eventStart,
+	      onMouseMove: this.props.trackMouse && this.eventMove,
+	      onMouseUp: this.props.trackMouse && this.eventEnd
+	    });
+
+	    delete newProps.onSwiped;
+	    delete newProps.onSwiping;
+	    delete newProps.onSwipingUp;
+	    delete newProps.onSwipingRight;
+	    delete newProps.onSwipingDown;
+	    delete newProps.onSwipingLeft;
+	    delete newProps.onSwipedUp;
+	    delete newProps.onSwipedRight;
+	    delete newProps.onSwipedDown;
+	    delete newProps.onSwipedLeft;
+	    delete newProps.flickThreshold;
+	    delete newProps.delta;
+	    delete newProps.preventDefaultTouchmoveEvent;
+	    delete newProps.stopPropagation;
+	    delete newProps.nodeName;
+	    delete newProps.children;
+	    delete newProps.trackMouse;
+
+	    return React.createElement(this.props.nodeName, newProps, this.props.children);
+	  }
+	});
+
+	module.exports = Swipeable;
+
+/***/ },
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\work\\portfolio\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\work\\portfolio\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
@@ -31605,11 +31887,11 @@
 
 	var _redux = __webpack_require__(244);
 
-	var _brand = __webpack_require__(298);
+	var _brand = __webpack_require__(299);
 
 	var _brand2 = _interopRequireDefault(_brand);
 
-	var _app = __webpack_require__(299);
+	var _app = __webpack_require__(300);
 
 	var _app2 = _interopRequireDefault(_app);
 
@@ -31630,7 +31912,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\work\\portfolio\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 298 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\work\\portfolio\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\work\\portfolio\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -31675,7 +31957,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\work\\portfolio\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "brand.reducer.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 299 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\work\\portfolio\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\work\\portfolio\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
