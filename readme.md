@@ -36,7 +36,7 @@ run Reload App  (download from http://livereload.com/)
 install LiveReload Chrome extension 
 
 
-Deploy
+Deploy  (via DeployHq.com)
 ---
 Hosted on Azure
 Live IP: 13.70.95.31
