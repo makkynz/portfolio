@@ -158,7 +158,8 @@ nav {
   background: #ffffff;
   border: 1px solid #444444;
   padding: 30px;
-  text-align: left; }
+  text-align: left;
+  box-shadow: 3px 2px 44px -6px rgba(0, 0, 0, 0.75); }
   .md-content .close {
     position: absolute;
     right: 15px;
