@@ -31016,13 +31016,20 @@
 	      this.props.closeModal();
 	    }
 	  }, {
-	    key: 'getContent',
-	    value: function getContent() {
+	    key: 'renderCarousel',
+	    value: function renderCarousel() {
+	      if (!this.props.brand.carousel) return;
+	      return _react2.default.createElement(_carousel2.default, { items: this.props.brand.carousel, refs: this.props.brand.ref });
+	    }
+	  }, {
+	    key: 'renderContent',
+	    value: function renderContent() {
 	      var b = this.props.brand;
+
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_carousel2.default, { brand: b }),
+	        this.renderCarousel(),
 	        _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: b.description } })
 	      );
 	    }
@@ -31031,7 +31038,7 @@
 	    value: function render() {
 	      var content;
 	      if (this.props.brand !== undefined) {
-	        content = this.getContent();
+	        content = this.renderContent();
 	      };
 
 	      return _react2.default.createElement(
@@ -31523,7 +31530,7 @@
 	  _createClass(Carousel, [{
 	    key: 'getStyle',
 	    value: function getStyle(item, index) {
-	      var file = '/imgs/brands/' + this.props.brand.ref + '/' + item.image;
+	      var file = '/imgs/brands/' + this.props.refs + '/' + item.image;
 	      var left = index == 0 ? 570 * index - 570 * this.state.currentPage : 0;
 
 	      return {
@@ -31534,7 +31541,7 @@
 	  }, {
 	    key: 'next',
 	    value: function next() {
-	      var nextPage = this.props.brand.carousel.length === this.state.currentPage + 1 ? 0 : this.state.currentPage + 1;
+	      var nextPage = this.props.items.length === this.state.currentPage + 1 ? 0 : this.state.currentPage + 1;
 	      this.setState({ currentPage: nextPage });
 	    }
 	  }, {
@@ -31542,11 +31549,11 @@
 	    value: function renderItems() {
 	      var _this2 = this;
 
-	      if (!this.props.brand.carousel) return;
+	      if (!this.props.items) return;
 	      return _react2.default.createElement(
 	        'ul',
 	        null,
-	        this.props.brand.carousel.map(function (item, i) {
+	        this.props.items.map(function (item, i) {
 	          return _react2.default.createElement('li', {
 	            key: i,
 	            style: _this2.getStyle(item, i),
@@ -31558,11 +31565,11 @@
 	  }, {
 	    key: 'renderCaption',
 	    value: function renderCaption() {
-	      if (!this.props.brand.carousel) return;
+	      if (!this.props.items) return;
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'caption' },
-	        this.props.brand.carousel[this.state.currentPage].caption
+	        this.props.items[this.state.currentPage].caption
 	      );
 	    }
 	  }, {
