@@ -53,7 +53,7 @@ export const fetchBrandHTML = (brand) => {
         dispatch({
             type: 'FETCH_BRAND_HTML'            
         })
-       return  fetch('/data/brand-html/'+brand.ref+'/index.html')
+       return  fetch('/data/brand-html/'+brand.ref+'.html')
             .then(response => {               
                 return response.text()
             })

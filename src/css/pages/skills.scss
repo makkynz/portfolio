@@ -1,0 +1,32 @@
+.skills {
+  
+    max-width: 1200px;
+    margin: 0 auto;
+   
+    li{
+        
+        background-size: cover; 
+        width: 150px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-block;  
+        filter: grayscale(1);   
+        margin: $spacingMin;
+        cursor: pointer;
+
+        @include mobile {
+            font-size: 18px;
+            width: 100px;
+            height: 50px;
+        }
+
+        &:hover{
+            filter: grayscale(0);   
+        }       
+    }
+
+   
+   
+}

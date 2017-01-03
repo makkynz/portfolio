@@ -1210,7 +1210,7 @@ section {
 
 section.page-content {
   position: relative;
-  padding-top: 80px;
+  padding: 80px 20px;
   text-align: center; }
   body.home-page section.page-content {
     top: 50%;
@@ -1337,6 +1337,28 @@ p {
 
 .brand section.tags h3 {
   display: inline-block; }
+
+.skills {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .skills li {
+    background-size: cover;
+    width: 150px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    filter: grayscale(1);
+    margin: 20px;
+    cursor: pointer; }
+    @media (max-width: 767px) {
+      .skills li {
+        font-size: 18px;
+        width: 100px;
+        height: 50px; } }
+    .skills li:hover {
+      filter: grayscale(0); }
 
 nav {
   margin: 20px 0 0 20px;

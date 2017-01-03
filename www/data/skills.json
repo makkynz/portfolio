@@ -1,0 +1,135 @@
+[
+    {
+        "width": 300,
+        "height": 112,
+        "name": "Amazon AWS",
+        "fileName": "amazon.png"
+    },
+    {
+        "width": 300,
+        "height": 76,
+        "name": "Angular 1 and 2",
+        "fileName": "angular.png"
+    },
+    {
+        "width": 300,
+        "height": 192,
+        "name": "Asp.Net",
+        "fileName": "asp.net.png"
+    },
+    {
+        "width": 300,
+        "height": 331,
+        "name": "C#",
+        "fileName": "csharp.png"
+    },
+    {
+        "width": 300,
+        "height": 39,
+        "name": "Episerver CMS 6",
+        "fileName": "episerver-logo.png"
+    },
+    {
+        "width": 300,
+        "height": 125,
+        "name": "GIT",
+        "fileName": "git.png"
+    },
+    {
+        "width": 227,
+        "height": 506,
+        "name": "Gulp",
+        "fileName": "gulp.png"
+    },
+    {
+        "width": 300,
+        "height": 246,
+        "name": "Html/JS/CSS",
+        "fileName": "html-js-css.png"
+    },
+    {
+        "width": 300,
+        "height": 72,
+        "name": "Laravel",
+        "fileName": "laravel.png"
+    },
+    {
+        "width": 299,
+        "height": 385,
+        "name": "Redux",
+        "fileName": "logo-redux.png"
+    },
+    {
+        "width": 300,
+        "height": 82,
+        "name": "Magento",
+        "fileName": "magento.png"
+    },
+    {
+        "width": 300,
+        "height": 155,
+        "name": "MySql",
+        "fileName": "mysql.png"
+    },
+    {
+        "width": 300,
+        "height": 63,
+        "name": "Nginx",
+        "fileName": "nginx.png"
+    },
+    {
+        "width": 300,
+        "height": 158,
+        "name": "PHP",
+        "fileName": "php.png"
+    },
+    {
+        "width": 300,
+        "height": 100,
+        "name": "React",
+        "fileName": "react.png"
+    },
+    {
+        "width": 300,
+        "height": 224,
+        "name": "Sass",
+        "fileName": "sass.png"
+    },
+    {
+        "width": 300,
+        "height": 75,
+        "name": "Sql Server",
+        "fileName": "sql-server.png"
+    },
+    {
+        "width": 300,
+        "height": 65,
+        "name": "Team City",
+        "fileName": "teamcity.png"
+    },
+    {
+        "width": 300,
+        "height": 67,
+        "name": "Ubuntu",
+        "fileName": "ubuntu.png"
+    },
+    {
+        "width": 300,
+        "height": 74,
+        "name": "Varnish",
+        "fileName": "varnish.png"
+    },
+    {
+        "width": 300,
+        "height": 84,
+        "name": "Visual Studio",
+        "fileName": "visualstudio.png"
+    },
+    {
+        "width": 300,
+        "height": 49,
+        "name": "WPF.Net",
+        "fileName": "wpf_logo_2.png"
+    }
+   
+]

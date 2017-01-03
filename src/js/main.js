@@ -24,7 +24,7 @@ render((
             <Route component={App}>
                 <Route path="/" component={Home} />
                 <Route path="/about" component={About} />
-                <Route path="/Skills" component={Skills} />
+                <Route path="/skills" component={Skills} />
                 <Route path="/projects" component={Projects} />
             </Route>
         </Router>

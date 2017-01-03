@@ -1,5 +1,6 @@
 import {combineReducers} from 'redux';
 import BrandReducer from './brand.reducer';
+import SkillReducer from './skill.reducer';
 import AppReducer from './app.reducer';
 
 /*
@@ -9,7 +10,8 @@ import AppReducer from './app.reducer';
 
 const allReducers = combineReducers({
     app: AppReducer,
-    brands: BrandReducer   
+    brands: BrandReducer,   
+    skills: SkillReducer
 });
 
 export default allReducers
