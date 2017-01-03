@@ -552,9 +552,9 @@
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _resume = __webpack_require__(284);
+	var _skills = __webpack_require__(284);
 
-	var _resume2 = _interopRequireDefault(_resume);
+	var _skills2 = _interopRequireDefault(_skills);
 
 	var _projects = __webpack_require__(285);
 
@@ -581,7 +581,7 @@
 	            { component: _app2.default },
 	            _react2.default.createElement(_reactRouter.Route, { path: '/', component: _home2.default }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/resume', component: _resume2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/Skills', component: _skills2.default }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _projects2.default })
 	        )
 	    )
@@ -30031,12 +30031,12 @@
 	          _react2.default.createElement(
 	            'li',
 	            { onClick: this.changeRoute.bind(this, '/about', 'cornertopleft') },
-	            'About me'
+	            'About'
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.changeRoute.bind(this, '/resume', 'cornertopleft') },
-	            'Resume'
+	            { onClick: this.changeRoute.bind(this, '/skills', 'cornertopleft') },
+	            'Skills'
 	          ),
 	          _react2.default.createElement(
 	            'li',
@@ -30449,8 +30449,8 @@
 	          ),
 	          _react2.default.createElement(
 	            'a',
-	            { href: 'mailto:me@amarshall.io' },
-	            'me@amarshall.io'
+	            { href: 'mailto:hello@anthonymarshall.io' },
+	            'hello@anthonymarshall.io'
 	          )
 	        )
 	      );
@@ -30553,16 +30553,16 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Resume = function (_React$Component) {
-	  _inherits(Resume, _React$Component);
+	var Skills = function (_React$Component) {
+	  _inherits(Skills, _React$Component);
 
-	  function Resume() {
-	    _classCallCheck(this, Resume);
+	  function Skills() {
+	    _classCallCheck(this, Skills);
 
-	    return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (Skills.__proto__ || Object.getPrototypeOf(Skills)).apply(this, arguments));
 	  }
 
-	  _createClass(Resume, [{
+	  _createClass(Skills, [{
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      document.body.classList.add('resume-page');
@@ -30578,17 +30578,17 @@
 	      return _react2.default.createElement(
 	        'h1',
 	        null,
-	        'Resume'
+	        'Skills'
 	      );
 	    }
 	  }]);
 
-	  return Resume;
+	  return Skills;
 	}(_react2.default.Component);
 
-	exports.default = Resume;
+	exports.default = Skills;
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\work\\portfolio\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "resume.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\work\\portfolio\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "skills.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 285 */
@@ -30632,12 +30632,12 @@
 	  _createClass(Projects, [{
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
-	      document.body.classList.add('about-page');
+	      document.body.classList.add('projects-page');
 	    }
 	  }, {
 	    key: 'componentWillUnmount',
 	    value: function componentWillUnmount() {
-	      document.body.classList.remove('about-page');
+	      document.body.classList.remove('projects-page');
 	    }
 	  }, {
 	    key: 'render',
@@ -31182,7 +31182,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'md-content' },
-	            _react2.default.createElement('a', { className: 'close fa fa-close', onClick: this.close.bind(this) }),
+	            _react2.default.createElement('a', { className: 'close ion-android-close', onClick: this.close.bind(this) }),
 	            this.props.children
 	          )
 	        ),

@@ -1,6 +1,6 @@
 import React from 'react';
-
 import { Router, Route,  browserHistory } from 'react-router';
+
 class Nav extends React.Component {
  
   changeRoute(route, direction){   
@@ -14,8 +14,8 @@ class Nav extends React.Component {
       <nav>
         <ul>
         <li onClick={this.changeRoute.bind(this, '/','cornertopleft')}>Home</li>
-        <li onClick={this.changeRoute.bind(this, '/about','cornertopleft')}>About me</li>
-        <li onClick={this.changeRoute.bind(this, '/resume','cornertopleft')}>Resume</li>
+        <li onClick={this.changeRoute.bind(this, '/about','cornertopleft')}>About</li>
+        <li onClick={this.changeRoute.bind(this, '/skills','cornertopleft')}>Skills</li>
         <li onClick={this.changeRoute.bind(this, '/projects','cornertopleft')}>Projects</li>
         </ul>
       </nav>

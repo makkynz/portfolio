@@ -45,7 +45,7 @@ class Modal extends React.Component {
             <div>
             <div className={modalClasses}>
                 <div className="md-content">
-                <a className="close fa fa-close" onClick={this.close.bind(this)}></a>        
+                <a className="close ion-android-close" onClick={this.close.bind(this)}></a>        
                     {this.props.children}        
                 </div>
             </div>        

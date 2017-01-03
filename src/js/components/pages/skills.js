@@ -1,7 +1,7 @@
 import React from 'react';
  
 
-class Resume extends React.Component {
+class Skills extends React.Component {
  
   componentWillMount(){
     document.body.classList.add('resume-page');  
@@ -13,8 +13,8 @@ class Resume extends React.Component {
   
   render() { 
     return (
-      <h1>Resume</h1>
+      <h1>Skills</h1>
     );
   }
 }
-export default Resume;
+export default Skills;

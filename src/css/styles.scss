@@ -1,18 +1,19 @@
 
+@import "lib/_component";
+@import "lib/_demo";
+@import "lib/_modal";    
+
 @import "shared/reset";
 @import "shared/variables";
 @import "shared/mixins";
-@import "shared/fonts";
 @import "shared/layout";
 @import "shared/nav";
 @import "shared/modal";
 @import "shared/carousel"; 
+@import "shared/fonts";
 
 @import "pages/home";
 @import "pages/about";
 @import "pages/resume";
 @import "pages/projects";
 
-@import "lib/_component";
-@import "lib/_demo";
-@import "lib/_modal";

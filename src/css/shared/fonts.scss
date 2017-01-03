@@ -30,7 +30,12 @@ h2{
 }
 
 a {
-	 color: $darkBlue;
+	 color: $black;
+
+	 &:hover{
+		  color: $darkBlue;
+		  
+	 }
 }
 
 
