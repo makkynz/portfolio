@@ -7,14 +7,15 @@
 @import "shared/variables";
 @import "shared/mixins";
 @import "shared/layout";
-@import "shared/nav";
-@import "shared/modal";
-@import "shared/carousel"; 
 @import "shared/fonts";
-@import "shared/tags";
 
 @import "pages/home";
 @import "pages/about";
 @import "pages/resume";
 @import "pages/projects";
 @import "pages/brand";
+
+@import "component/nav";
+@import "component/modal";
+@import "component/carousel"; 
+@import "component/tags";

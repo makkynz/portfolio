@@ -1,13 +1,24 @@
-.md-content{
-    background: $white;    
-    padding: $spacingMin;
-    text-align: left;
-    box-shadow: 3px 2px 44px -6px rgba(0,0,0,0.75);  
-    
-    .close{       
+
+.md-modal{
+    @include mobile {
         position: absolute;
-        right: 20px;
-        top: 10px;
-        font-size: 30px;
+        top: 0px;
+        left: 50%;        
+        width: 95%;       
+        transform: translateX(-50%);
+    }
+
+    .md-content{
+        background: $white;    
+        padding: $spacingMin;
+        text-align: left;
+        box-shadow: 3px 2px 44px -6px rgba(0,0,0,0.75);  
+        
+        .close{       
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 30px;
+        }
     }
 }

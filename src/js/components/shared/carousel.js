@@ -16,7 +16,7 @@ class Carousel extends React.Component {
   getStyle(item, index){   
     
       let file = '/imgs/brands/'+this.props.refs+'/'+ item.image
-      let padding = 30; //should read css for this
+      let padding = 20; //should read css for this
       let width = document.querySelector('div.md-modal').clientWidth - (padding * 2);
       let left = index == 0 ? (width * index) - (width * this.state.currentPage) : 0;
 

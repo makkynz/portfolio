@@ -1217,69 +1217,6 @@ section.page-content {
     transform: translateY(-50%);
     padding-top: 0px; }
 
-nav {
-  margin: 20px 0 0 20px;
-  position: fixed;
-  z-index: 2; }
-  nav ul {
-    white-space: nowrap; }
-    nav ul li {
-      display: inline;
-      margin: 20px;
-      cursor: pointer; }
-      @media (max-width: 767px) {
-        nav ul li {
-          margin: 10px; } }
-  @media (max-width: 767px) {
-    nav {
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 20px 0;
-      margin: 0;
-      width: 100%;
-      text-align: center; }
-      body.projects-page nav {
-        background: rgba(239, 246, 247, 0.9); } }
-
-.md-content {
-  background: #ffffff;
-  padding: 20px;
-  text-align: left;
-  box-shadow: 3px 2px 44px -6px rgba(0, 0, 0, 0.75); }
-  .md-content .close {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    font-size: 30px; }
-
-.carousel ul.images {
-  overflow: hidden;
-  white-space: nowrap; }
-  .carousel ul.images li {
-    background-size: cover;
-    width: 100%;
-    min-height: 300px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: inline-block;
-    transition: all 0.5s; }
-
-.carousel ul.pagination {
-  text-align: center;
-  margin-top: 10px; }
-  .carousel ul.pagination li {
-    font-size: 12px;
-    display: inline;
-    margin: 10px;
-    cursor: pointer; }
-
-.carousel .caption {
-  margin-top: 10px;
-  color: #444444;
-  text-align: center;
-  font-weight: bold; }
-
 /* Headings
 --------------------------------------------------------------*/
 html,
@@ -1321,26 +1258,13 @@ a {
 /* Paragraphs
 --------------------------------------------------------------*/
 p {
-  margin: 20px 0; }
+  margin: 20px 0;
+  line-height: 20px; }
 
 /* Type Styles
 --------------------------------------------------------------*/
 .ltrspc {
   letter-spacing: 1px; }
-
-ul.tags {
-  display: inline-block;
-  margin-left: 20px; }
-  ul.tags li {
-    border: 1px solid #2c5b7d;
-    background: #2c5b7d;
-    border-radius: 3px;
-    color: #ffffff;
-    text-transform: lowercase;
-    font-size: 12px;
-    display: inline-block;
-    padding: 3px 6px;
-    margin-right: 5px; }
 
 .home-page::before {
   background-image: url(/imgs/bg-1.jpg); }
@@ -1413,3 +1337,91 @@ ul.tags {
 
 .brand section.tags h3 {
   display: inline-block; }
+
+nav {
+  margin: 20px 0 0 20px;
+  position: fixed;
+  z-index: 2; }
+  nav ul {
+    white-space: nowrap; }
+    nav ul li {
+      display: inline;
+      margin: 20px;
+      cursor: pointer; }
+      @media (max-width: 767px) {
+        nav ul li {
+          margin: 10px; } }
+  @media (max-width: 767px) {
+    nav {
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 20px 0;
+      margin: 0;
+      width: 100%;
+      text-align: center; }
+      body.projects-page nav {
+        background: rgba(255, 255, 255, 0.9); } }
+
+@media (max-width: 767px) {
+  .md-modal {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%); } }
+
+.md-modal .md-content {
+  background: #ffffff;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 3px 2px 44px -6px rgba(0, 0, 0, 0.75); }
+  .md-modal .md-content .close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px; }
+
+.carousel ul.images {
+  overflow: hidden;
+  white-space: nowrap; }
+  .carousel ul.images li {
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    transition: all 0.5s; }
+
+.carousel ul.pagination {
+  text-align: center;
+  margin-top: 10px; }
+  .carousel ul.pagination li {
+    font-size: 12px;
+    display: inline;
+    margin: 10px;
+    cursor: pointer; }
+
+.carousel .caption {
+  margin-top: 10px;
+  color: #444444;
+  text-align: center;
+  font-weight: bold; }
+
+ul.tags {
+  display: inline-block;
+  margin-left: 20px; }
+  @media (max-width: 767px) {
+    ul.tags {
+      margin: 10px 0 0 0; } }
+  ul.tags li {
+    border: 1px solid #2c5b7d;
+    background: #2c5b7d;
+    border-radius: 3px;
+    color: #ffffff;
+    text-transform: lowercase;
+    font-size: 12px;
+    display: inline-block;
+    padding: 3px 6px;
+    margin: 5px 5px 0 0; }

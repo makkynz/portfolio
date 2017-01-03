@@ -31625,7 +31625,7 @@
 	    value: function getStyle(item, index) {
 
 	      var file = '/imgs/brands/' + this.props.refs + '/' + item.image;
-	      var padding = 30; //should read css for this
+	      var padding = 20; //should read css for this
 	      var width = document.querySelector('div.md-modal').clientWidth - padding * 2;
 	      var left = index == 0 ? width * index - width * this.state.currentPage : 0;
 
