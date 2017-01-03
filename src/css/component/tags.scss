@@ -1,0 +1,17 @@
+ul.tags{
+    display: inline-block;
+    margin-left: $spacingMin;
+    
+    li{
+        border: 1px solid $darkBlue;
+        background: $darkBlue;
+        border-radius: 3px;
+        color:  $white;
+        text-transform: lowercase;
+        font-size: $fontSizeSmall;
+        display: inline-block;
+        padding: 3px 6px;
+        margin-right: 5px;
+    }
+}
+

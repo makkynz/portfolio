@@ -11,16 +11,30 @@ class Brand extends React.Component {
 
   renderCarousel(){    
     if(!this.props.brand.carousel) return;
-    return <Carousel items={this.props.brand.carousel} refs={this.props.brand.ref} /> 
+    return <section><Carousel items={this.props.brand.carousel} refs={this.props.brand.ref} /></section>
+  }
+
+  renderTags(){
+    return (
+      <section className="tags">
+        <h3>Tech stack:</h3>
+        <ul className="tags">
+            {this.props.brand.tags.map((item, i) =>
+                <li key={i}>{item}</li>
+            )}   
+        </ul> 
+      </section>
+    )
   }
 
   renderContent(){
     var b= this.props.brand;
    
     return (
-      <div>       
+      <div className="brand">       
         {this.renderCarousel()}
-        <div dangerouslySetInnerHTML={{__html: b.html}}></div>
+        {this.renderTags()}
+        <section dangerouslySetInnerHTML={{__html: b.html}}></section>
       </div>
     );
   }

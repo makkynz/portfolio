@@ -33,6 +33,14 @@ div[data-reactroot]{
     margin: $spacingMin 0;
 }
 
+section{
+    margin: $spacingMin 0 0 0;
+
+    &:first-child{
+        margin: 0 0 0 0;
+    }
+}
+
 section.page-content{
     position: relative;
     padding-top: 80px;

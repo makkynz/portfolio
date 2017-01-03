@@ -3,11 +3,12 @@
         "width": 499,
         "height": 157,
         "year": 2010,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Sql Server",
+            "SSIS",
             "Crystal Reports",
-            "JQuery"
+            "HTML/CSS/JS"
         ],        
         "name": "anz-logo-logotype",
         "fileName": "ANZ-logo-logotype.png",
@@ -23,7 +24,7 @@
         "width": 500,
         "height": 115,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -35,7 +36,7 @@
         "width": 500,
         "height": 168,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -47,7 +48,7 @@
         "width": 499,
         "height": 194,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -59,7 +60,7 @@
         "width": 500,
         "height": 195,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -71,7 +72,7 @@
         "width": 209,
         "height": 209,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -83,7 +84,7 @@
         "width": 189,
         "height": 144,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -95,7 +96,7 @@
         "width": 500,
         "height": 70,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -107,7 +108,7 @@
         "width": 500,
         "height": 90,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -119,7 +120,7 @@
         "width": 500,
         "height": 190,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -131,7 +132,7 @@
         "width": 233,
         "height": 157,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -143,7 +144,7 @@
         "width": 419,
         "height": 140,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -155,7 +156,7 @@
         "width": 329,
         "height": 245,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -167,7 +168,7 @@
         "width": 500,
         "height": 146,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -179,7 +180,7 @@
         "width": 500,
         "height": 260,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -191,7 +192,7 @@
         "width": 1000,
         "height": 581,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -203,7 +204,7 @@
         "width": 500,
         "height": 87,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -215,7 +216,7 @@
         "width": 500,
         "height": 90,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],
@@ -227,7 +228,7 @@
         "width": 499,
         "height": 94,
         "year": 2016,
-        "skills": [
+        "tags": [
             "Asp.net",
             "Magento"
         ],

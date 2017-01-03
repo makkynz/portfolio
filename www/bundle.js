@@ -30797,7 +30797,7 @@
 	        dispatch({
 	            type: 'FETCH_BRAND_HTML'
 	        });
-	        return fetch('/data/html/' + brand.ref + '/index.html').then(function (response) {
+	        return fetch('/data/brand-html/' + brand.ref + '/index.html').then(function (response) {
 	            return response.text();
 	        }).then(function (html) {
 	            return dispatch(receiveBrandHTML(brand, html));
@@ -31073,7 +31073,35 @@
 	    key: 'renderCarousel',
 	    value: function renderCarousel() {
 	      if (!this.props.brand.carousel) return;
-	      return _react2.default.createElement(_carousel2.default, { items: this.props.brand.carousel, refs: this.props.brand.ref });
+	      return _react2.default.createElement(
+	        'section',
+	        null,
+	        _react2.default.createElement(_carousel2.default, { items: this.props.brand.carousel, refs: this.props.brand.ref })
+	      );
+	    }
+	  }, {
+	    key: 'renderTags',
+	    value: function renderTags() {
+	      return _react2.default.createElement(
+	        'section',
+	        { className: 'tags' },
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Tech stack:'
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'tags' },
+	          this.props.brand.tags.map(function (item, i) {
+	            return _react2.default.createElement(
+	              'li',
+	              { key: i },
+	              item
+	            );
+	          })
+	        )
+	      );
 	    }
 	  }, {
 	    key: 'renderContent',
@@ -31082,9 +31110,10 @@
 
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'brand' },
 	        this.renderCarousel(),
-	        _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: b.html } })
+	        this.renderTags(),
+	        _react2.default.createElement('section', { dangerouslySetInnerHTML: { __html: b.html } })
 	      );
 	    }
 	  }, {

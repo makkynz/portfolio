@@ -10,6 +10,10 @@ body {
 	font-family: 'Catamaran', sans-serif;
 }
 
+*{
+	font-size: $fontSizeNormal;
+}
+
 h1 {
 	font-size: 50px;
 	color: $black;
@@ -27,6 +31,12 @@ h2{
 	@include mobile {        
         font-size: 25px; 
     }
+}
+
+h3{
+	
+	font-size: $fontSizeNormal;
+    font-weight: bold;
 }
 
 a {

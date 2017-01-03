@@ -1177,6 +1177,7 @@ select::-ms-expand {
 
 /* colours */
 /* spacing */
+/* font size */
 body {
   margin: 0;
   color: #444444;
@@ -1200,7 +1201,12 @@ div[data-reactroot] {
   height: 100vh; }
 
 .copy-block {
-  margin: 30px 0; }
+  margin: 20px 0; }
+
+section {
+  margin: 20px 0 0 0; }
+  section:first-child {
+    margin: 0 0 0 0; }
 
 section.page-content {
   position: relative;
@@ -1237,7 +1243,7 @@ nav {
 
 .md-content {
   background: #ffffff;
-  padding: 30px;
+  padding: 20px;
   text-align: left;
   box-shadow: 3px 2px 44px -6px rgba(0, 0, 0, 0.75); }
   .md-content .close {
@@ -1270,8 +1276,6 @@ nav {
 
 .carousel .caption {
   margin-top: 10px;
-  border-bottom: 1px solid #cccccc;
-  padding: 10px;
   color: #444444;
   text-align: center;
   font-weight: bold; }
@@ -1285,10 +1289,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Catamaran', sans-serif; }
 
+* {
+  font-size: 16px; }
+
 h1 {
   font-size: 50px;
   color: #444444;
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
   @media (max-width: 767px) {
     h1 {
       font-size: 35px; } }
@@ -1299,6 +1306,10 @@ h2 {
   @media (max-width: 767px) {
     h2 {
       font-size: 25px; } }
+
+h3 {
+  font-size: 16px;
+  font-weight: bold; }
 
 a {
   color: #444444; }
@@ -1316,6 +1327,20 @@ p {
 --------------------------------------------------------------*/
 .ltrspc {
   letter-spacing: 1px; }
+
+ul.tags {
+  display: inline-block;
+  margin-left: 20px; }
+  ul.tags li {
+    border: 1px solid #2c5b7d;
+    background: #2c5b7d;
+    border-radius: 3px;
+    color: #ffffff;
+    text-transform: lowercase;
+    font-size: 12px;
+    display: inline-block;
+    padding: 3px 6px;
+    margin-right: 5px; }
 
 .home-page::before {
   background-image: url(/imgs/bg-1.jpg); }
@@ -1339,7 +1364,7 @@ p {
   display: inline-block;
   vertical-align: middle;
   padding: 20px;
-  margin-left: 30px; }
+  margin-left: 20px; }
   @media (max-width: 767px) {
     .detail {
       margin-left: 0; } }
@@ -1376,7 +1401,7 @@ p {
     background-position: center center;
     display: inline-block;
     filter: grayscale(1);
-    margin: 30px;
+    margin: 20px;
     cursor: pointer; }
     @media (max-width: 767px) {
       .brands li {
@@ -1385,3 +1410,6 @@ p {
         height: 50px; } }
     .brands li:hover {
       filter: grayscale(0); }
+
+.brand section.tags h3 {
+  display: inline-block; }
