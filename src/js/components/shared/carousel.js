@@ -86,7 +86,7 @@ class Carousel extends React.Component {
             {this.props.items.map((item, i) =>
                 <li 
                   key={i}                   
-                  className={"fa fa-circle-o " + (this.state.currentPage === i ? 'fa-circle selected' : '')} 
+                  className={(this.state.currentPage === i ? 'ion-record' : 'ion-ios-circle-outline')} 
                   onClick={this.goto.bind(this, i)}
                 ></li>
               )}   

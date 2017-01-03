@@ -31624,7 +31624,7 @@
 	          this.props.items.map(function (item, i) {
 	            return _react2.default.createElement('li', {
 	              key: i,
-	              className: "fa fa-circle-o " + (_this2.state.currentPage === i ? 'fa-circle selected' : ''),
+	              className: _this2.state.currentPage === i ? 'ion-record' : 'ion-ios-circle-outline',
 	              onClick: _this2.goto.bind(_this2, i)
 	            });
 	          })
