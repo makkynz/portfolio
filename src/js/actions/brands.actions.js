@@ -1,4 +1,6 @@
 import React from 'react';
+import {batchActions, enableBatching} from 'redux-batched-actions';
+import { openModal } from './app.actions';
 
 export const fetchBrands = () => {
 
@@ -27,19 +29,45 @@ export const fetchBrands = () => {
         payload: brands        
     }
 };
+/***********************/
+ export const selectBrand = (brand) => {  
+    return dispatch => {
+        dispatch(fetchBrandHTML(brand)).then(()=>{;    
+            dispatch({type: 'SELECT_BRAND',payload: brand })
+            dispatch(openModal());
+        })
+    }    
 
- export const selectBrand = (brand) => {        
-         
+};
+
+export const deselectBrand = (brand) => {       
     return {
-        type: 'SELECT_BRAND',
+        type: 'DESELECT_BRAND',
         payload: brand        
     }
 };
 
-export const deselectBrand = (brand) => {        
-         
+export const fetchBrandHTML = (brand) => {
+
+    return dispatch => {
+        dispatch({
+            type: 'FETCH_BRAND_HTML'            
+        })
+       return  fetch('/data/html/'+brand.ref+'/index.html')
+            .then(response => {               
+                return response.text()
+            })
+            .then(html=> {             
+               return dispatch(receiveBrandHTML(brand, html))
+            }
+        )
+  }  
+};
+
+ const receiveBrandHTML = (brand, html) => {
+        
     return {
-        type: 'DESELECT_BRAND',
-        payload: brand        
+        type: 'RECEIVE_BRAND_HTML',
+        payload: {brand: brand,  html: html}        
     }
 };

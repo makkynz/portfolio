@@ -25,6 +25,16 @@ export default function (state = null, action) {
         case 'RECEIVE_BRANDS':
             return action.payload;
             break;
+
+        case 'RECEIVE_BRAND_HTML':
+        
+            state.map(s=>{
+                if (s.key === action.payload.brand.key){
+                    s.html = action.payload.html
+                }
+             });      
+             
+            return Object.assign([], state) ;
     }
     return state;
 }

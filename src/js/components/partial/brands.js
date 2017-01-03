@@ -18,7 +18,7 @@ class Brands extends React.Component {
   setSelectedBrand(brand){
      
      this.props.selectBrand(brand);
-     this.props.openModal();
+    
   }
 
   render() {   
