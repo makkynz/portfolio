@@ -11,9 +11,14 @@ class App extends React.Component {
       window.Promise = Promise;
     }
   } 
+   getChildContext() {
+    return {
+      location: this.props.location
+    }
+  }
   
   render() {
-    
+     
     return (
       <div >
         <Nav />    
@@ -24,4 +29,10 @@ class App extends React.Component {
     );
   }
 }
+
+
+App.childContextTypes = {
+    location: React.PropTypes.object
+}
+
 export default App;

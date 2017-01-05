@@ -22,10 +22,10 @@ render((
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route component={App}>
-                <Route path="/" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/skills" component={Skills} />
-                <Route path="/projects" component={Projects} />
+                <Route path="/" component={Home} name="home" />
+                <Route path="/about" component={About} name="about" />
+                <Route path="/skills" component={Skills} name="skills" />
+                <Route path="/projects" component={Projects} name="projects" />
             </Route>
         </Router>
     </Provider>

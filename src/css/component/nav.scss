@@ -9,7 +9,10 @@ nav{
             display: inline;
             margin: 20px; 
             cursor: pointer; 
-
+            
+            &.active{
+                font-weight: bold;               
+            }
              @include mobile { 
                  margin: 10px;
              }

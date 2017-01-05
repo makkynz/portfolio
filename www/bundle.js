@@ -579,10 +579,10 @@
 	        _react2.default.createElement(
 	            _reactRouter.Route,
 	            { component: _app2.default },
-	            _react2.default.createElement(_reactRouter.Route, { path: '/', component: _home2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/skills', component: _skills2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _projects2.default })
+	            _react2.default.createElement(_reactRouter.Route, { path: '/', component: _home2.default, name: 'home' }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default, name: 'about' }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/skills', component: _skills2.default, name: 'skills' }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _projects2.default, name: 'projects' })
 	        )
 	    )
 	), document.getElementById('app'));
@@ -29948,6 +29948,13 @@
 	  }
 
 	  _createClass(App, [{
+	    key: 'getChildContext',
+	    value: function getChildContext() {
+	      return {
+	        location: this.props.location
+	      };
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 
@@ -29966,6 +29973,10 @@
 
 	  return App;
 	}(_react2.default.Component);
+
+	App.childContextTypes = {
+	  location: _react2.default.PropTypes.object
+	};
 
 	exports.default = App;
 
@@ -30018,6 +30029,8 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
+
+	      var currPath = this.context.location.pathname;
 	      return _react2.default.createElement(
 	        'nav',
 	        null,
@@ -30026,22 +30039,29 @@
 	          null,
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.changeRoute.bind(this, '/', 'cornertopleft') },
+	            {
+	              onClick: this.changeRoute.bind(this, '/', 'cornertopleft'),
+	              className: currPath == '/' ? 'active' : '' },
 	            'Home'
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.changeRoute.bind(this, '/about', 'cornertopleft') },
+	            {
+	              onClick: this.changeRoute.bind(this, '/about', 'cornertopleft'),
+	              className: currPath == '/about' ? 'active' : '' },
 	            'About'
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.changeRoute.bind(this, '/skills', 'cornertopleft') },
+	            {
+	              onClick: this.changeRoute.bind(this, '/skills', 'cornertopleft'),
+	              className: currPath == '/skills' ? 'active' : '' },
 	            'Skills'
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.changeRoute.bind(this, '/projects', 'cornertopleft') },
+	            { onClick: this.changeRoute.bind(this, '/projects', 'cornertopleft'),
+	              className: currPath == '/projects' ? 'active' : '' },
 	            'Projects'
 	          )
 	        )
@@ -30053,6 +30073,11 @@
 	}(_react2.default.Component);
 
 	exports.default = Nav;
+
+
+	Nav.contextTypes = {
+	  location: _react2.default.PropTypes.object
+	};
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\work\\portfolio\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "nav.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
@@ -30516,7 +30541,7 @@
 	      return _react2.default.createElement(
 	        'h1',
 	        null,
-	        'About Me'
+	        'About'
 	      );
 	    }
 	  }]);
@@ -30584,18 +30609,9 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(
-	          'h1',
+	          'h2',
 	          null,
-	          'Skills '
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'copy-block' },
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Skills and technologies that I have good experience with...'
-	          )
+	          'Technologies and development patterns that I have good experience with... '
 	        ),
 	        _react2.default.createElement(_SkillsList2.default, null)
 	      );
@@ -30910,18 +30926,9 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(
-	          'h1',
+	          'h2',
 	          null,
-	          'Projects '
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'copy-block' },
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Some brands that I have done work for...'
-	          )
+	          'Some brands that I have done work for...'
 	        ),
 	        _react2.default.createElement(_brands2.default, null)
 	      );

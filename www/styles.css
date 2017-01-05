@@ -1216,6 +1216,8 @@ section.page-content {
     top: 50%;
     transform: translateY(-50%);
     padding-top: 0px; }
+  section.page-content h2 {
+    margin: 20px; }
 
 /* Headings
 --------------------------------------------------------------*/
@@ -1370,6 +1372,8 @@ nav {
       display: inline;
       margin: 20px;
       cursor: pointer; }
+      nav ul li.active {
+        font-weight: bold; }
       @media (max-width: 767px) {
         nav ul li {
           margin: 10px; } }

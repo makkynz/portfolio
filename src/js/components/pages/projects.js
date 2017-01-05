@@ -15,12 +15,8 @@ class Projects extends React.Component {
   render() {
     return (
       <div>     
-        <h1>Projects </h1> 
-        <div className="copy-block">   
-          <p>Some brands that I have done work for...</p>          
-        </div>
-        <Brands></Brands> 
-       
+        <h2>Some brands that I have done work for...</h2>       
+        <Brands></Brands>        
       </div> 
     );
   }
