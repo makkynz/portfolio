@@ -582,7 +582,8 @@
 	            _react2.default.createElement(_reactRouter.Route, { path: '/', component: _home2.default, name: 'home' }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default, name: 'about' }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/skills', component: _skills2.default, name: 'skills' }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _projects2.default, name: 'projects' })
+	            _react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _projects2.default, name: 'projects' }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/projects/:brand', component: _projects2.default, name: 'brand' })
 	        )
 	    )
 	), document.getElementById('app'));
@@ -30946,13 +30947,15 @@
 	  function Projects() {
 	    _classCallCheck(this, Projects);
 
-	    return _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
 	  }
 
 	  _createClass(Projects, [{
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      document.body.classList.add('projects-page');
+
+	      console.log(this.props.params.anz);
 	    }
 	  }, {
 	    key: 'componentWillUnmount',
@@ -30970,7 +30973,7 @@
 	          null,
 	          'Brands that I have done work for...'
 	        ),
-	        _react2.default.createElement(_brands2.default, null)
+	        _react2.default.createElement(_brands2.default, { params: this.props.params })
 	      );
 	    }
 	  }]);
@@ -31015,8 +31018,8 @@
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 
-	    fetchBrands: function fetchBrands() {
-	      dispatch((0, _brands.fetchBrands)());
+	    fetchBrands: function fetchBrands(deepLinkBrand) {
+	      dispatch((0, _brands.fetchBrands)(deepLinkBrand));
 	    },
 
 	    selectBrand: function selectBrand(brand) {
@@ -31057,7 +31060,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var fetchBrands = exports.fetchBrands = function fetchBrands() {
+	var fetchBrands = exports.fetchBrands = function fetchBrands(selectedBrand) {
 
 	    return function (dispatch) {
 	        dispatch({
@@ -31068,7 +31071,12 @@
 	        fetch('/data/brands.json').then(function (response) {
 	            return response.json();
 	        }).then(function (json) {
-	            return dispatch(receiveBrands(json));
+	            dispatch(receiveBrands(json));
+	            if (selectedBrand) {
+	                dispatch(selectBrand(json.filter(function (b) {
+	                    return b.ref === selectedBrand;
+	                })[0]));
+	            }
 	        });
 	    };
 	};
@@ -31170,7 +31178,8 @@
 	  _createClass(Brands, [{
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
-	      this.props.fetchBrands();
+	      var deepLinkBrand = this.props.params !== undefined && this.props.params.brand !== undefined ? this.props.params.brand : null;
+	      this.props.fetchBrands(deepLinkBrand);
 	    }
 	  }, {
 	    key: 'getStyle',

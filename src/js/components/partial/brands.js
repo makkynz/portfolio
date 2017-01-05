@@ -3,17 +3,24 @@ import 'whatwg-fetch';
 import Brand from '../../containers/brand.container';
 
 class Brands extends React.Component {
+  
  
-  componentWillMount() {
-      this.props.fetchBrands();
-  }
 
+  componentWillMount() {
+    let deepLinkBrand =  (this.props.params !== undefined && this.props.params.brand !== undefined) ? this.props.params.brand  : null;
+    this.props.fetchBrands(deepLinkBrand);
+
+      
+  }
+ 
   getStyle(brandItem){   
     let file = '/imgs/brands/'+ brandItem.fileName
     return  {                       
         backgroundImage: "url("+file+")"           
       };
   }
+
+
 
   setSelectedBrand(brand){
      

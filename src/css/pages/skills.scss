@@ -2,7 +2,12 @@
 .skills-page{
 
     hr{
-       margin-bottom: 30px;
+       margin-top: 50px;
+       margin-bottom: 70px;
+        @include mobile {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
     }
 
     .skills {

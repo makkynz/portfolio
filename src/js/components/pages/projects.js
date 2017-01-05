@@ -3,11 +3,18 @@ import Brands from '../../containers/brands.container';
 
 
 class Projects extends React.Component {
-    
+    constructor() {
+      super();
+      
+    }
   componentWillMount(){
-    document.body.classList.add('projects-page');  
+    document.body.classList.add('projects-page'); 
+
+
+    console.log(this.props.params.anz); 
   }
 
+  
   componentWillUnmount(){
      document.body.classList.remove('projects-page');
   }
@@ -16,7 +23,7 @@ class Projects extends React.Component {
     return (
       <div>     
         <h2>Brands that I have done work for...</h2>       
-        <Brands></Brands>        
+        <Brands params={this.props.params}></Brands>        
       </div> 
     );
   }

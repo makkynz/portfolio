@@ -13,8 +13,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {  
   return {
     
-    fetchBrands: () => {
-      dispatch(fetchBrands());
+    fetchBrands: (deepLinkBrand) => {
+      dispatch(fetchBrands(deepLinkBrand));
     },
 
     selectBrand: (brand)=>{

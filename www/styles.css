@@ -1209,9 +1209,9 @@ hr {
   margin: 20px 0; }
 
 section {
-  margin: 20px 0 0 0; }
+  padding: 20px 0 0 0; }
   section:first-child {
-    margin: 0 0 0 0; }
+    padding: 0 0 0 0; }
 
 section.page-content {
   position: relative;
@@ -1222,7 +1222,7 @@ section.page-content {
     transform: translateY(-50%);
     padding-top: 0px; }
   section.page-content h2 {
-    margin: 20px; }
+    margin: 0 20px 0 0; }
 
 /* Headings
 --------------------------------------------------------------*/
@@ -1277,7 +1277,7 @@ p {
   background-image: url(/imgs/bg-1.jpg); }
 
 .home-page h1, .home-page h2 {
-  margin-bottom: 10px; }
+  margin: 0 10px 0 0; }
 
 .home-page section.content {
   display: block;
@@ -1346,7 +1346,12 @@ p {
   display: inline-block; }
 
 .skills-page hr {
-  margin-bottom: 30px; }
+  margin-top: 50px;
+  margin-bottom: 70px; }
+  @media (max-width: 767px) {
+    .skills-page hr {
+      margin-top: 10px;
+      margin-bottom: 10px; } }
 
 .skills-page .skills {
   max-width: 1200px;

@@ -2,8 +2,8 @@ import React from 'react';
 import {batchActions, enableBatching} from 'redux-batched-actions';
 import { openModal } from './app.actions';
 
-export const fetchBrands = () => {
-
+export const fetchBrands = (selectedBrand) => {
+  
     return dispatch => {
         dispatch({
             type: 'FETCH_BRANDS'
@@ -12,8 +12,12 @@ export const fetchBrands = () => {
 
         fetch('/data/brands.json')
             .then(response => response.json())
-            .then(json=>   
-                dispatch(receiveBrands(json))
+            .then(json=> {  
+                dispatch(receiveBrands(json));
+                    if(selectedBrand){
+                        dispatch(selectBrand(json.filter(b=>b.ref === selectedBrand)[0]));
+                    }
+                }
             )
   }  
 };

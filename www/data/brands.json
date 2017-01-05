@@ -30,7 +30,8 @@
         ],
         "name": "asb-bank-logo",
         "fileName": "ASB_Bank_logo.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref":"asb"
     },
     {
         "width": 500,
@@ -42,7 +43,8 @@
         ],
         "name": "avis-logo",
         "fileName": "avis-logo.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref":"avis"
     },
     {
         "width": 499,

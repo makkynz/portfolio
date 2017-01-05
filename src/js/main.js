@@ -26,6 +26,7 @@ render((
                 <Route path="/about" component={About} name="about" />
                 <Route path="/skills" component={Skills} name="skills" />
                 <Route path="/projects" component={Projects} name="projects" />
+                <Route path="/projects/:brand" component={Projects} name="brand" />
             </Route>
         </Router>
     </Provider>
