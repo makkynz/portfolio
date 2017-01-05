@@ -15,7 +15,7 @@ class Projects extends React.Component {
   render() {
     return (
       <div>     
-        <h2>Some brands that I have done work for...</h2>       
+        <h2>Brands that I have done work for...</h2>       
         <Brands></Brands>        
       </div> 
     );

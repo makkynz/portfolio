@@ -30608,11 +30608,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'Technologies and development patterns that I have good experience with... '
-	        ),
 	        _react2.default.createElement(_SkillsList2.default, null)
 	      );
 	    }
@@ -30841,24 +30836,69 @@
 	      };
 	    }
 	  }, {
-	    key: 'render',
-	    value: function render() {
+	    key: 'renderCoreSkills',
+	    value: function renderCoreSkills() {
 	      var _this2 = this;
 
-	      if (this.props.skills === null) return null;
 	      return _react2.default.createElement(
-	        'div',
+	        'section',
 	        null,
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Core technologies and development patterns that I like working with. '
+	        ),
 	        _react2.default.createElement(
 	          'ul',
 	          { className: 'skills' },
-	          this.props.skills.map(function (skill) {
+	          this.props.skills.filter(function (s) {
+	            return s.tags.indexOf('core-skill') > -1;
+	          }).map(function (skill) {
 	            return _react2.default.createElement('li', {
 	              key: skill.key,
 	              style: _this2.getStyle(skill)
 	            });
 	          })
 	        )
+	      );
+	    }
+	  }, {
+	    key: 'renderOtherSkills',
+	    value: function renderOtherSkills() {
+	      var _this3 = this;
+
+	      return _react2.default.createElement(
+	        'section',
+	        null,
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Other skills that I have good experience with. '
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'skills' },
+	          this.props.skills.filter(function (s) {
+	            return s.tags.indexOf('core-skill') == -1;
+	          }).map(function (skill) {
+	            return _react2.default.createElement('li', {
+	              key: skill.key,
+	              style: _this3.getStyle(skill)
+	            });
+	          })
+	        )
+	      );
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      if (this.props.skills === null) return null;
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        this.renderCoreSkills(),
+	        _react2.default.createElement('hr', null),
+	        this.renderOtherSkills()
 	      );
 	    }
 	  }]);
@@ -30928,7 +30968,7 @@
 	        _react2.default.createElement(
 	          'h2',
 	          null,
-	          'Some brands that I have done work for...'
+	          'Brands that I have done work for...'
 	        ),
 	        _react2.default.createElement(_brands2.default, null)
 	      );

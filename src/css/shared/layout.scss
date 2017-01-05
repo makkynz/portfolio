@@ -29,6 +29,12 @@ div[data-reactroot]{
     height: 100vh;
 }
 
+hr{
+    background: $darkBlue;
+    width: 50%;
+    height: 1px;
+}
+
 .copy-block{
     margin: $spacingMin 0;
 }

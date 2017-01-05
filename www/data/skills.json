@@ -3,133 +3,158 @@
         "width": 300,
         "height": 112,
         "name": "Amazon AWS",
-        "fileName": "amazon.png"
+        "fileName": "amazon.png",
+        "tags": []
     },
     {
         "width": 300,
         "height": 76,
         "name": "Angular 1 and 2",
-        "fileName": "angular.png"
+        "fileName": "angular.png",
+        "tags": ["core-skill"]
     },
     {
         "width": 300,
         "height": 192,
         "name": "Asp.Net",
-        "fileName": "asp.net.png"
+        "fileName": "asp.net.png",
+        "tags": ["core-skill"]
     },
     {
         "width": 300,
         "height": 331,
         "name": "C#",
-        "fileName": "csharp.png"
+        "fileName": "csharp.png",
+        "tags": ["core-skill"]
     },
     {
         "width": 300,
         "height": 39,
         "name": "Episerver CMS 6",
-        "fileName": "episerver-logo.png"
+        "fileName": "episerver-logo.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 125,
         "name": "GIT",
-        "fileName": "git.png"
+        "fileName": "git.png",
+        "tags": ["core-skill"]
+        
     },
     {
         "width": 227,
         "height": 506,
         "name": "Gulp",
-        "fileName": "gulp.png"
+        "fileName": "gulp.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 246,
         "name": "Html/JS/CSS",
-        "fileName": "html-js-css.png"
+        "fileName": "html-js-css.png",
+        "tags": ["core-skill"]
+        
     },
     {
         "width": 300,
         "height": 72,
         "name": "Laravel",
-        "fileName": "laravel.png"
+        "fileName": "laravel.png",
+        "tags":[]
     },
     {
         "width": 299,
         "height": 385,
         "name": "Redux",
-        "fileName": "logo-redux.png"
+        "fileName": "logo-redux.png",
+        "tags": []
+        
     },
     {
         "width": 300,
         "height": 82,
         "name": "Magento",
-        "fileName": "magento.png"
+        "fileName": "magento.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 155,
         "name": "MySql",
-        "fileName": "mysql.png"
+        "fileName": "mysql.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 63,
         "name": "Nginx",
-        "fileName": "nginx.png"
+        "fileName": "nginx.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 158,
         "name": "PHP",
-        "fileName": "php.png"
+        "fileName": "php.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 100,
         "name": "React",
-        "fileName": "react.png"
+        "fileName": "react.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 224,
         "name": "Sass",
-        "fileName": "sass.png"
+        "fileName": "sass.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 75,
         "name": "Sql Server",
-        "fileName": "sql-server.png"
+        "fileName": "sql-server.png",
+        "tags": ["core-skill"]
     },
     {
         "width": 300,
         "height": 65,
         "name": "Team City",
-        "fileName": "teamcity.png"
+        "fileName": "teamcity.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 67,
         "name": "Ubuntu",
-        "fileName": "ubuntu.png"
+        "fileName": "ubuntu.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 74,
         "name": "Varnish",
-        "fileName": "varnish.png"
+        "fileName": "varnish.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 84,
         "name": "Visual Studio",
-        "fileName": "visualstudio.png"
+        "fileName": "visualstudio.png",
+        "tags":[]
     },
     {
         "width": 300,
         "height": 49,
         "name": "WPF.Net",
-        "fileName": "wpf_logo_2.png"
+        "fileName": "wpf_logo_2.png",
+        "tags":[]
     }
    
 ]

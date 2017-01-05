@@ -1200,6 +1200,11 @@ body {
 div[data-reactroot] {
   height: 100vh; }
 
+hr {
+  background: #2c5b7d;
+  width: 50%;
+  height: 1px; }
+
 .copy-block {
   margin: 20px 0; }
 
@@ -1340,10 +1345,13 @@ p {
 .brand section.tags h3 {
   display: inline-block; }
 
-.skills {
+.skills-page hr {
+  margin-bottom: 30px; }
+
+.skills-page .skills {
   max-width: 1200px;
   margin: 0 auto; }
-  .skills li {
+  .skills-page .skills li {
     background-size: cover;
     width: 150px;
     height: 100px;
@@ -1355,11 +1363,11 @@ p {
     margin: 20px;
     cursor: pointer; }
     @media (max-width: 767px) {
-      .skills li {
+      .skills-page .skills li {
         font-size: 18px;
         width: 100px;
         height: 50px; } }
-    .skills li:hover {
+    .skills-page .skills li:hover {
       filter: grayscale(0); }
 
 nav {

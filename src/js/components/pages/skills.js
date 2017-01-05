@@ -15,7 +15,7 @@ class Skills extends React.Component {
   render() {
     return (
       <div>     
-        <h2>Technologies and development patterns that I have good experience with... </h2> 
+       
         <SkillsList></SkillsList>
       </div> 
     );
