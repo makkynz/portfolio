@@ -40,7 +40,7 @@
 	}
 
 	// some vars
-	var bodyEl = document.body,
+	var bodyEl = document.getElementById('app'),
 		// window sizes
 		winsize = { width : window.innerWidth, height : window.innerHeight },
 		// support for animations

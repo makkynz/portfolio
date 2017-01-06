@@ -19,3 +19,9 @@ $desktop-width: 1024px;
     @content;
   }
 }
+
+@mixin desktopShort {
+  @media (max-height: 800px) {
+    @content;
+  }
+}
