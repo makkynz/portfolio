@@ -1,5 +1,6 @@
 var path = require('path');
- 
+ var webpack = require('webpack');
+
 var config = {
   context: path.join(__dirname, 'src'),
   entry: [
@@ -34,6 +35,12 @@ var config = {
     hot: true,
     historyApiFallback: true
   },
-  
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': '"production"'
+      }
+    })
+  ]
 };
 module.exports = config;

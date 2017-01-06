@@ -29,3 +29,21 @@ export const fetchSkills = () => {
         payload: skills        
     }
 };
+
+/***********************/
+ export const selectSkill = (skill) => {  
+    return dispatch => {
+       
+        dispatch({type: 'SELECT_SKILL',payload: skill })
+        dispatch(openModal());
+        
+    }    
+
+};
+
+export const deselectSkill = (skill) => {       
+    return {
+        type: 'DESELECT_SKILL',
+        payload: skill        
+    }
+};

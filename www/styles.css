@@ -1222,7 +1222,7 @@ section.page-content {
     transform: translateY(-50%);
     padding-top: 0px; }
   section.page-content h2 {
-    margin: 0 20px 0 0; }
+    margin: 0 0 20px 0; }
 
 /* Headings
 --------------------------------------------------------------*/
@@ -1374,6 +1374,15 @@ p {
         height: 50px; } }
     .skills-page .skills li:hover {
       filter: grayscale(0); }
+
+.skill .hero {
+  background-size: cover;
+  width: 100%;
+  min-height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block; }
 
 nav {
   margin: 20px 0 0 20px;

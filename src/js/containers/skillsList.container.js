@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { fetchSkills } from '../actions/skills.actions';
+import { fetchSkills, selectSkill } from '../actions/skills.actions';
 import { openModal } from '../actions/app.actions';
 import skillsList from '../components/partial/skillsList';
 
@@ -19,6 +19,10 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(fetchSkills());
     },
     
+     selectSkill: (skill)=>{
+     
+      dispatch(selectSkill(skill));
+    },
 
     openModal: () =>{
       dispatch(openModal());

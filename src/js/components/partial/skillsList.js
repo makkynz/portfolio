@@ -1,6 +1,6 @@
 import React from 'react';
 import 'whatwg-fetch';
-
+import Skill from '../../containers/skill.container';
 
 class SkillsList extends React.Component {
  
@@ -15,15 +15,20 @@ class SkillsList extends React.Component {
       };
   } 
 
+   setSelectedSkill(skill){     
+     this.props.selectSkill(skill);    
+  }
+
   renderCoreSkills(){
     return (
       <section>
-          <h2>Core technologies and development patterns that I like working with. </h2> 
+          <h2>Core technologies that I usually working with. </h2> 
           <ul className="skills">
             {this.props.skills.filter(s=>s.tags.indexOf('core-skill') > -1).map(skill =>
                 <li 
                 key={skill.key}  
-                style={this.getStyle(skill)}                 
+                style={this.getStyle(skill)}   
+                 onClick={this.setSelectedSkill.bind(this, skill)}              
                 ></li>
               )}     
         </ul>  
@@ -34,12 +39,13 @@ class SkillsList extends React.Component {
   renderOtherSkills(){
     return (
       <section>
-          <h2>Other skills that I have good experience with. </h2> 
+          <h2>Other technologies that I have good experience with. </h2> 
           <ul className="skills">
             {this.props.skills.filter(s=>s.tags.indexOf('core-skill') == -1).map(skill =>
                 <li 
                 key={skill.key}  
-                style={this.getStyle(skill)}                 
+                style={this.getStyle(skill)}    
+                onClick={this.setSelectedSkill.bind(this, skill)}                          
                 ></li>
               )}     
         </ul>  
@@ -53,7 +59,8 @@ class SkillsList extends React.Component {
       <div>
       {this.renderCoreSkills()}   
       <hr/>
-      {this.renderOtherSkills()}     
+      {this.renderOtherSkills()}   
+       <Skill></Skill>          
       </div>
     );
   }

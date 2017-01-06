@@ -18,7 +18,8 @@
         "height": 192,
         "name": "Asp.Net",
         "fileName": "asp.net.png",
-        "tags": ["core-skill"]
+        "tags": ["core-skill"],
+        "brands":["anz","westpac", "asb", "jti"]
     },
     {
         "width": 300,

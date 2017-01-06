@@ -10,7 +10,7 @@
             "Crystal Reports",
             "HTML/CSS/JS"
         ],        
-        "name": "anz-logo-logotype",
+        "name": "ANZ",
         "fileName": "ANZ-logo-logotype.png",
         "description": "<p>I worked on a number of projects for ANZ while I was employed at Aimia between 2006 to 2011.</p><p>Notable projcts </p>",
         "ref":"anz",
@@ -28,7 +28,7 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "asb-bank-logo",
+        "name": "ASB",
         "fileName": "ASB_Bank_logo.png",
         "description": "Lorem Ipsum",
         "ref":"asb"
@@ -54,9 +54,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "cadbury-logo",
+        "name": "Cadbury",
         "fileName": "Cadbury-logo.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "cadbury"
     },
     {
         "width": 500,
@@ -66,9 +67,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "carlsberg-logo-vector",
+        "name": "Carlsberg",
         "fileName": "Carlsberg-logo-vector.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "carlsberg"
     },
     {
         "width": 209,
@@ -78,9 +80,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "channel4",
+        "name": "Channel 4",
         "fileName": "Channel4.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "channel4"
     },
     {
         "width": 189,
@@ -90,9 +93,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "colourplan",
+        "name": "Colorplan",
         "fileName": "colourplan.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "colorplan"
     },
     {
         "width": 500,
@@ -102,9 +106,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "converse-logo-new-1024x768",
+        "name": "Converse",
         "fileName": "Converse-Logo-New-1024x768.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "converse"
     },
     {
         "width": 500,
@@ -114,9 +119,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "de-beers",
+        "name": "De Beers",
         "fileName": "de-beers.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "debeers"
     },
     {
         "width": 500,
@@ -126,9 +132,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "ebay-logo",
+        "name": "Ebay",
         "fileName": "EBay_logo.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "ebay"
     },
     {
         "width": 233,
@@ -138,9 +145,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "header-gfsmith-logo",
+        "name": "G.F Smith",
         "fileName": "header-gfsmith-logo.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "gfSmith"
     },
     {
         "width": 419,
@@ -150,9 +158,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "investec-logo",
+        "name": "Investec",
         "fileName": "Investec_logo.png",
-        "description": "Yeah boi<h1>test</h2>"
+        "description": "Yeah boi<h1>test</h2>",
+        "ref" : "investec"
     },
     {
         "width": 329,
@@ -162,9 +171,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "jti-vector-logo",
+        "name": "Japanese Tobacco International",
         "fileName": "jti-vector-logo.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "jti"
     },
     {
         "width": 500,
@@ -174,9 +184,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "kinder-logo-1210x447",
+        "name": "Kinder Chocolate",
         "fileName": "kinder-logo-1210x447.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "kinder"
     },
     {
         "width": 500,
@@ -186,9 +197,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "logo-pc",
+        "name": "Prostate Cancer UK",
         "fileName": "logo_pc.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "pcuk"
     },
     {
         "width": 1000,
@@ -198,9 +210,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "pfizer",
+        "name": "Pfizer",
         "fileName": "pfizer.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "pfizer"
     },
     {
         "width": 500,
@@ -210,9 +223,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "sony-logo.svg",
+        "name": "Sony",
         "fileName": "Sony_logo.svg.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref" : "sony"
     },
     {
         "width": 500,
@@ -222,9 +236,10 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "vitaminwater-logo",
+        "name": "Vitamin Water",
         "fileName": "vitaminwater-logo.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref": "vitaminwater"
     },
     {
         "width": 499,
@@ -234,8 +249,9 @@
             "Asp.net",
             "Magento"
         ],
-        "name": "westpac",
+        "name": "Westpac",
         "fileName": "westpac.png",
-        "description": "Lorem Ipsum"
+        "description": "Lorem Ipsum",
+        "ref":"westpac"
     }
 ]
