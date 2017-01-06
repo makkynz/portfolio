@@ -1228,10 +1228,7 @@ section.page-content {
 --------------------------------------------------------------*/
 html,
 body {
-  font-family: 'Gentium Basic', serif;
-  font-family: 'Julius Sans One', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Catamaran', sans-serif; }
+  font-family: sans-serif; }
 
 * {
   font-size: 16px; }
@@ -1262,6 +1259,12 @@ a {
 
 /* Breaks
 --------------------------------------------------------------*/
+hr {
+  background: #E8E8E8;
+  width: 50%;
+  height: 1px;
+  border: none; }
+
 /* Paragraphs
 --------------------------------------------------------------*/
 p {
@@ -1354,7 +1357,7 @@ p {
       margin-bottom: 10px; } }
 
 .skills-page .skills {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto; }
   .skills-page .skills li {
     background-size: cover;

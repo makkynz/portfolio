@@ -4,10 +4,8 @@
 --------------------------------------------------------------*/
 html,
 body {
-	font-family: 'Gentium Basic', serif;
-	font-family: 'Julius Sans One', sans-serif;
-	font-family: 'Open Sans', sans-serif;
-	font-family: 'Catamaran', sans-serif;
+	
+	font-family:  sans-serif;
 }
 
 *{
@@ -53,7 +51,10 @@ a {
 /* Breaks
 --------------------------------------------------------------*/
 hr {
-
+	background: $grey;
+    width: 50%;
+    height: 1px;
+    border: none;
 }
 
 /* Paragraphs
