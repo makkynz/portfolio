@@ -41,3 +41,7 @@ Deploy  (via DeployHq.com)
 Hosted on Azure
 Live IP: 13.70.95.31
 FTP:  user = makkynz
+
+Run following command before deploying
+npm run deploy
+

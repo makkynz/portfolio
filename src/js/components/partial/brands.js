@@ -1,6 +1,7 @@
 import React from 'react';
 import 'whatwg-fetch';
 import Brand from '../../containers/brand.container';
+import { browserHistory } from 'react-router';
 
 class Brands extends React.Component {
   
@@ -20,20 +21,44 @@ class Brands extends React.Component {
       };
   }
 
+  getBrands(){
+    if(this.props.filter !==undefined){
+      return this.props.brands.filter(b=> this.props.filter.indexOf(b.ref) > -1);
+    }else{
+      return this.props.brands;
+    }
+  }
 
+  getBrandComponent(){
+    if(this.props.deepLinkToDetail !== undefined && this.props.deepLinkToDetail){
+      return  null;
+    }else{
+      return <Brand></Brand>    ;
+    }
+  }
 
   setSelectedBrand(brand){
-     
-     this.props.selectBrand(brand);
+     if(this.props.deepLinkToDetail){
+       this.gotoBrand(brand);  
+     }else{
+       this.props.selectBrand(brand);
+     }   
     
+  }
+  gotoBrand(brand){
+    this.props.onClose();
+     window.reveal('cornertopleft', function(){
+          browserHistory.push('/projects/'+brand.ref);
+    });
   }
 
   render() {   
     if(this.props.brands === null) return null;
+    let brands = this.getBrands();
     return (
       <div>
         <ul className="brands">
-            {this.props.brands.map(brand =>
+            {brands.map(brand =>
                 <li 
                 key={brand.key}  
                 style={this.getStyle(brand)} 
@@ -41,7 +66,7 @@ class Brands extends React.Component {
                 ></li>
               )}     
         </ul>
-         <Brand></Brand>        
+           {this.getBrandComponent()} 
       </div>
     );
   }

@@ -1259,6 +1259,11 @@ h3 {
   font-size: 16px;
   font-weight: bold; }
 
+h4 {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center; }
+
 a {
   color: #444444; }
   a:hover {
@@ -1385,6 +1390,10 @@ p {
     .skills-page .skills li:hover {
       filter: grayscale(0); }
 
+.skill hr {
+  margin: 0 auto;
+  margin-top: 20px; }
+
 .skill .hero {
   background-size: cover;
   width: 100%;
@@ -1393,6 +1402,12 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   display: inline-block; }
+
+.skill .brands {
+  margin: 0 auto; }
+  .skill .brands li {
+    width: 100px;
+    height: 50px; }
 
 nav {
   margin: 20px 0 0 20px;

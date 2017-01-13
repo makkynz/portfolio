@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from '../../containers/modal.container';
+import Brands from '../../containers/brands.container';
 import Carousel from '../shared/carousel';
 import { browserHistory } from 'react-router';
 
@@ -27,14 +28,10 @@ class Skill extends React.Component {
   renderBrands(){
     if(this.props.skill.brands === undefined) return;
     return (
-      <section className="tags">       
-        <h3>Projects using {this.props.skill.name}:</h3>
-        <ul className="tags">
-            {this.props.skill.brands.map((item, i) =>
-                <li key={i}
-                 onClick={this.gotoBrand.bind(this, item)} >{item}</li>
-            )}   
-        </ul> 
+      <section className="tags">   
+          
+        <h4>Projects where I've' used {this.props.skill.name}. <br/> Click to view details.</h4>
+        <Brands filter={this.props.skill.brands} deepLinkToDetail={true} onClose={this.onClose.bind(this)}></Brands>         
       </section>
     )
   }
@@ -52,6 +49,7 @@ class Skill extends React.Component {
     return (
       <div className="skill">   
         {this.renderHero()}   
+        <hr/>  
         {this.renderBrands()}
       </div>
     );
