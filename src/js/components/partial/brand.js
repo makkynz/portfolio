@@ -10,8 +10,9 @@ class Brand extends React.Component {
   }
 
   renderCarousel(){    
-    if(!this.props.brand.carousel) return;
-    return <section><Carousel items={this.props.brand.carousel} refs={this.props.brand.ref} /></section>
+   
+    let defaultImage = '/imgs/brands/'+ this.props.brand.fileName
+    return <section><Carousel items={this.props.brand.carousel} defaultImage={defaultImage} refs={this.props.brand.ref} /></section>
   }
 
   renderTags(){

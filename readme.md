@@ -44,4 +44,5 @@ FTP:  user = makkynz
 
 Run following command before deploying
 npm run deploy
+then git commit and push to master branch.
 

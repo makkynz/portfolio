@@ -1231,6 +1231,25 @@ section.page-content {
   section.page-content h2 {
     margin: 0 0 20px 0; }
 
+.profileTopRight {
+  background-image: url(/imgs/me.png);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  position: fixed;
+  right: 40px;
+  top: 20px;
+  filter: grayscale(70%);
+  transition: all 0.5s;
+  z-index: 999; }
+  @media (max-width: 767px) {
+    .profileTopRight {
+      display: none; } }
+  .profileTopRight:hover {
+    filter: grayscale(0%); }
+
 /* Headings
 --------------------------------------------------------------*/
 html,
@@ -1297,6 +1316,9 @@ p {
 .home-page section.content {
   display: block;
   margin: 0 auto; }
+
+.home-page .profileTopRight {
+  display: none; }
 
 .photo {
   background-image: url(/imgs/me.png);
@@ -1410,14 +1432,14 @@ p {
     height: 50px; }
 
 nav {
-  margin: 20px 0 0 20px;
+  margin: 20px 0 0 40px;
   position: fixed;
   z-index: 2; }
   nav ul {
     white-space: nowrap; }
     nav ul li {
       display: inline;
-      margin: 20px;
+      margin-right: 20px;
       cursor: pointer; }
       nav ul li.active {
         font-weight: bold; }
@@ -1474,6 +1496,11 @@ nav {
     background-position: center center;
     display: inline-block;
     transition: all 0.5s; }
+    .carousel ul.images li.defaultImage {
+      width: 50%;
+      min-height: 150px;
+      display: block;
+      margin: 0 auto; }
 
 .carousel ul.pagination {
   text-align: center;

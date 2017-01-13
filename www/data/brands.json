@@ -26,12 +26,18 @@
         "year": 2016,
         "tags": [
             "Asp.net",
-            "Magento"
-        ],
+            "Sql Server",
+            "SSIS",
+            "Crystal Reports",
+            "HTML/CSS/JS"
+        ],    
         "name": "ASB",
         "fileName": "ASB_Bank_logo.png",
         "description": "Lorem Ipsum",
-        "ref":"asb"
+        "ref":"asb",
+         "carousel":[
+            {"image":"true-rewards-1.png", "caption":"ASB True Rewards site"}           
+        ]
     },
     {
         "width": 500,
@@ -39,8 +45,10 @@
         "year": 2016,
         "tags": [
             "Asp.net",
-            "Magento"
-        ],
+            "Sql Server",
+            "SSIS",           
+            "HTML/CSS/JS"
+        ],    
         "name": "avis-logo",
         "fileName": "avis-logo.png",
         "description": "Lorem Ipsum",

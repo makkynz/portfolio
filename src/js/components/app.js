@@ -21,7 +21,8 @@ class App extends React.Component {
      
     return (
       <div >
-        <Nav />    
+        <Nav />   
+        <div className="profileTopRight"></div>
         <section className="page-content">    
           {this.props.children}
         </section>

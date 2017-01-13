@@ -14,18 +14,30 @@ class Carousel extends React.Component {
   } 
   
   getStyle(item, index){   
-    
       let file = '/imgs/brands/'+this.props.refs+'/'+ item.image
+      return  {                       
+          backgroundImage: "url(" + file + ")"   ,
+          marginLeft:  this.getLeftPosition(index) +"px"      
+      };
+  }
+
+  getDefaultStyle(){   
+    
+      let file = this.props.defaultImage;
+      console.log(file);
+      return  {                       
+          backgroundImage: "url(" + file + ")"   
+            
+      };
+  }
+
+  getLeftPosition(index){
       let padding = 20; //should read css for this
       let width = document.querySelector('div.md-modal').clientWidth - (padding * 2);
       let left = index == 0 ? (width * index) - (width * this.state.currentPage) : 0;
 
-      return  {                       
-          backgroundImage: "url(" + file + ")"   ,
-          marginLeft:  left +"px"      
-      };
+      return left;
   }
-
   
   next(){
     let nextPage = this.props.items.length === this.state.currentPage + 1 ? 0 : this.state.currentPage + 1;   
@@ -44,7 +56,7 @@ class Carousel extends React.Component {
           this.setState({currentPage: this.state.currentPage + 1});   
       }
     
-      console.log('Swipgin left');
+     
     }
   }
  
@@ -54,35 +66,18 @@ class Carousel extends React.Component {
       if( this.state.currentPage > 0 ){
           this.setState({currentPage: this.state.currentPage - 1});   
       }
-      console.log('Swipgin right');
+      
      }
   }
 
   onSwipingEnd(){
-    console.log('End swiping');
+   
     this.isSwiping = false;
   }
 
-  renderItems(){
-    if(!this.props.items) return;
-    return (  
-      <div>    
-      <Swipeable 
-        onSwipingLeft={this.onSwipeLeft.bind(this)}
-        onSwipingRight={this.onSwipeRight.bind(this)}       
-        onSwiped={this.onSwipingEnd.bind(this)}
-        >   
-          <ul className="images">
-              {this.props.items.map((item, i) =>
-                  <li 
-                    key={i}                   
-                    style={this.getStyle(item, i)} 
-                    onClick={this.next.bind(this)}
-                  ></li>
-                )}     
-          </ul> 
-        </Swipeable >
-        <ul className="pagination">
+  renderPagination(){
+     if(this.props.items.length <=1) return;
+     return <ul className="pagination">
             {this.props.items.map((item, i) =>
                 <li 
                   key={i}                   
@@ -91,8 +86,42 @@ class Carousel extends React.Component {
                 ></li>
               )}   
         </ul> 
-      </div>
-      );
+  }
+
+  renderItems(){
+    if(this.props.items) {  
+    
+      return (  
+        <div>    
+        <Swipeable 
+          onSwipingLeft={this.onSwipeLeft.bind(this)}
+          onSwipingRight={this.onSwipeRight.bind(this)}       
+          onSwiped={this.onSwipingEnd.bind(this)}
+          >   
+            <ul className="images">
+                {this.props.items.map((item, i) =>
+                    <li 
+                      key={i}                   
+                      style={this.getStyle(item, i)} 
+                      onClick={this.next.bind(this)}
+                    ></li>
+                  )}     
+            </ul> 
+          </Swipeable >
+          {this.renderPagination()}
+        </div>
+        );
+
+    }else{
+      
+      return (
+        <div>
+          <ul className="images">
+            <li  className="defaultImage" style={this.getDefaultStyle()} ></li>
+          </ul> 
+        </div>
+      )
+    }
   }
 
 
