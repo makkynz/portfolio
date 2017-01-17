@@ -1307,9 +1307,6 @@ p {
 .ltrspc {
   letter-spacing: 1px; }
 
-.home-page::before {
-  background-image: url(/imgs/bg-1.jpg); }
-
 .home-page h1, .home-page h2 {
   margin: 0 10px 0 0; }
 

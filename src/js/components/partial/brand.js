@@ -28,14 +28,18 @@ class Brand extends React.Component {
     )
   }
 
+  renderHtmlContent(){
+    if(this.props.brand.html === undefined) return;
+    return <section dangerouslySetInnerHTML={{__html: this.props.brand.html}}></section>
+  }
+
   renderContent(){
-    var b= this.props.brand;
-   
+    
     return (
       <div className="brand">       
         {this.renderCarousel()}
         {this.renderTags()}
-        <section dangerouslySetInnerHTML={{__html: b.html}}></section>
+        {this.renderHtmlContent()}
       </div>
     );
   }
