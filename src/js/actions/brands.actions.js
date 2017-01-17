@@ -60,9 +60,11 @@ export const fetchBrandHTML = (brand) => {
        return  fetch('/data/brand-html/'+brand.ref+'.html')
            
             .then(response => {   
-                return response.ok ? response.text() : null;
+               
+                return response.text();
             })
-            .then(html=> {             
+            .then(html=> {    
+               html = html.indexOf('<html') ===-1 ? html : null;      
                return dispatch(receiveBrandHTML(brand, html))
             }
             
