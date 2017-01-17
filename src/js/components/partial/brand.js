@@ -39,7 +39,7 @@ class Brand extends React.Component {
       <div className="brand">       
         {this.renderCarousel()}
         {this.renderTags()}
-        {this.renderHtmlContent()}
+       
       </div>
     );
   }
