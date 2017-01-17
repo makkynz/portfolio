@@ -58,12 +58,14 @@ export const fetchBrandHTML = (brand) => {
             type: 'FETCH_BRAND_HTML'            
         })
        return  fetch('/data/brand-html/'+brand.ref+'.html')
-            .then(response => {               
-                return response.text()
+           
+            .then(response => {   
+                return response.ok ? response.text() : "";
             })
             .then(html=> {             
                return dispatch(receiveBrandHTML(brand, html))
             }
+            
         )
   }  
 };

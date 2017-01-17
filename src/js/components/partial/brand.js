@@ -28,7 +28,7 @@ class Brand extends React.Component {
     )
   }
 
-  renderHtmlContent(){
+  renderHtmlContent(){   
     if(this.props.brand.html === undefined) return;
     return <section dangerouslySetInnerHTML={{__html: this.props.brand.html}}></section>
   }
