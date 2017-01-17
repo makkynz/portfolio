@@ -1492,12 +1492,22 @@ nav {
     background-repeat: no-repeat;
     background-position: center center;
     display: inline-block;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    position: relative; }
     .carousel ul.images li.defaultImage {
       width: 50%;
       min-height: 150px;
       display: block;
       margin: 0 auto; }
+    .carousel ul.images li .view {
+      position: absolute;
+      right: 0px;
+      bottom: 10px;
+      font-size: 30px;
+      opacity: 0.5;
+      cursor: pointer; }
+      .carousel ul.images li .view:hover {
+        opacity: 1; }
 
 .carousel ul.pagination {
   text-align: center;

@@ -104,7 +104,7 @@ class Carousel extends React.Component {
                       key={i}                   
                       style={this.getStyle(item, i)} 
                       onClick={this.next.bind(this)}
-                    ></li>
+                    ><a className='view ion-eye' href={'/imgs/brands/'+this.props.refs+'/'+ item.image} target="_blank"></a></li>
                   )}     
             </ul> 
           </Swipeable >
