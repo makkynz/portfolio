@@ -60,7 +60,7 @@ export const fetchBrandHTML = (brand) => {
        return  fetch('/data/brand-html/'+brand.ref+'.html')
            
             .then(response => {   
-                return response.ok ? response.text() : "";
+                return response.ok ? response.text() : null;
             })
             .then(html=> {             
                return dispatch(receiveBrandHTML(brand, html))

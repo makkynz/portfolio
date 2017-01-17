@@ -29,7 +29,8 @@ class Brand extends React.Component {
   }
 
   renderHtmlContent(){   
-    if(this.props.brand.html === undefined) return;
+    if(this.props.brand.html === null ) return;
+   
     return <section dangerouslySetInnerHTML={{__html: this.props.brand.html}}></section>
   }
 
@@ -39,7 +40,7 @@ class Brand extends React.Component {
       <div className="brand">       
         {this.renderCarousel()}
         {this.renderTags()}
-       
+        {this.renderHtmlContent()}
       </div>
     );
   }
