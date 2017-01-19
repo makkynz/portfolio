@@ -20,7 +20,7 @@ class Projects extends React.Component {
   render() {
     return (
       <div>     
-        <h2>Brands that I have done work for...</h2>       
+        <h2>Brands that I have done work&nbsp;for...</h2>       
         <Brands params={this.props.params}></Brands>        
       </div> 
     );

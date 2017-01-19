@@ -1,0 +1,45 @@
+
+.profileTopRight{
+
+    position: fixed;
+    right: $spacingDouble;
+    top: $spacingMin;
+    filter: grayscale(70%);
+    transition: all 0.75s;
+    z-index: 999;
+    width: 300px;
+    display: table;
+     &:hover{
+        filter: grayscale(0%);
+    }
+
+    @include mobile {
+        display: none; 
+    }
+
+    .photo{
+        background-image: url(/imgs/me.png);
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: middle;      
+
+        
+
+       
+    }
+
+    .detail{
+        padding-left: 20px;
+        display: table-cell;
+        vertical-align: middle;
+
+        h1{
+            font-size: 20px;
+            margin: 0 0 10px 0;
+            letter-spacing: 1.8px;
+        }
+    }
+
+}

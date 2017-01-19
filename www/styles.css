@@ -1222,7 +1222,7 @@ section {
 
 section.page-content {
   position: relative;
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center; }
   body.home-page section.page-content {
     top: 50%;
@@ -1230,25 +1230,6 @@ section.page-content {
     padding-top: 0px; }
   section.page-content h2 {
     margin: 0 0 20px 0; }
-
-.profileTopRight {
-  background-image: url(/imgs/me.png);
-  background-size: cover;
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-  vertical-align: middle;
-  position: fixed;
-  right: 40px;
-  top: 20px;
-  filter: grayscale(70%);
-  transition: all 0.5s;
-  z-index: 999; }
-  @media (max-width: 767px) {
-    .profileTopRight {
-      display: none; } }
-  .profileTopRight:hover {
-    filter: grayscale(0%); }
 
 /* Headings
 --------------------------------------------------------------*/
@@ -1358,6 +1339,27 @@ p {
 
 .about-page::before {
   background-color: #F5F3EE; }
+
+.about-page .content {
+  max-width: 500px;
+  position: relative;
+  margin: 0 auto; }
+  .about-page .content .photo {
+    background-image: url(/imgs/me.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: -140px;
+    top: 10px;
+    display: none; }
+  .about-page .content .text {
+    display: inline-block;
+    display: inline-block;
+    width: 100%;
+    text-align: left; }
 
 .resume-page {
   background: #FF9800; }
@@ -1548,3 +1550,33 @@ ul.tags {
     display: inline-block;
     padding: 3px 6px;
     margin: 5px 5px 0 0; }
+
+.profileTopRight {
+  position: fixed;
+  right: 40px;
+  top: 20px;
+  filter: grayscale(70%);
+  transition: all 0.75s;
+  z-index: 999;
+  width: 300px;
+  display: table; }
+  .profileTopRight:hover {
+    filter: grayscale(0%); }
+  @media (max-width: 767px) {
+    .profileTopRight {
+      display: none; } }
+  .profileTopRight .photo {
+    background-image: url(/imgs/me.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle; }
+  .profileTopRight .detail {
+    padding-left: 20px;
+    display: table-cell;
+    vertical-align: middle; }
+    .profileTopRight .detail h1 {
+      font-size: 20px;
+      margin: 0 0 10px 0;
+      letter-spacing: 1.8px; }

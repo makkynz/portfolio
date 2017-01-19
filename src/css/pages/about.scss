@@ -3,4 +3,33 @@
     &::before {       
         background-color: $offWhite;       
     }  
+
+    
+
+    .content{
+        max-width: 500px;
+        position: relative;
+        margin: 0 auto;
+
+        .photo{
+            background-image: url(/imgs/me.png);
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            left: -140px;
+            top: 10px;
+            display: none;
+        }
+
+        .text{
+            display: inline-block;
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
+    }
+    
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from './shared/nav';
+import ProfileThumb from './shared/profileThumb';
 import Promise from 'promise-polyfill'; 
 
 class App extends React.Component {
@@ -22,7 +23,7 @@ class App extends React.Component {
     return (
       <div >
         <Nav />   
-        <div className="profileTopRight"></div>
+        <ProfileThumb/>
         <section className="page-content">    
           {this.props.children}
         </section>

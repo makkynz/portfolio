@@ -57,7 +57,7 @@ section{
 
 section.page-content{
     position: relative;
-    padding: 80px 20px;
+    padding: 100px 20px;
     text-align: center;
 
     body.home-page &{
@@ -74,25 +74,4 @@ section.page-content{
    
 }
 
-.profileTopRight{
-    background-image: url(/imgs/me.png);
-    background-size: cover;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    vertical-align: middle;
-    position: fixed;
-    right: $spacingDouble;
-    top: $spacingMin;
-    filter: grayscale(70%);
-    transition: all 0.5s;
-    z-index: 999;
-
-     @include mobile {
-        display: none; 
-    }
-    &:hover{
-        filter: grayscale(0%);
-    }
-}
 
