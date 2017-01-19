@@ -4,7 +4,8 @@
         "height": 112,
         "name": "Amazon AWS",
         "fileName": "amazon.png",
-        "tags": []
+        "tags": [],
+        "ref":"aws"
     },
     {
         "width": 300,
@@ -12,7 +13,8 @@
         "name": "Angular 1 and 2",
         "fileName": "angular.png",
         "tags": ["core-skill"],
-        "brands":["kinder","hatton"]
+        "brands":["kinder","hatton"],
+        "ref":"angular"
     },
     {
         "width": 300,
@@ -20,7 +22,8 @@
         "name": "Asp.Net",
         "fileName": "asp.net.png",
         "tags": ["core-skill"],
-        "brands":["anz","westpac", "asb", "jti"]
+        "brands":["anz","westpac", "asb", "jti"],
+        "ref":"aspnet"
     },
     {
         "width": 300,
@@ -28,7 +31,8 @@
         "name": "C#",
         "fileName": "csharp.png",
         "tags": ["core-skill"],
-        "brands":["anz","westpac", "asb", "jti"]
+        "brands":["anz","westpac", "asb", "jti"],
+        "ref":"csharp"
     },
     {
         "width": 300,
@@ -36,7 +40,8 @@
         "name": "Episerver CMS 6",
         "fileName": "episerver-logo.png",
         "tags":[],
-        "brands":["debeers"]
+        "brands":["debeers"],
+        "ref":"episerver"
     },
     {
         "width": 300,
@@ -44,7 +49,8 @@
         "name": "GIT",
         "fileName": "git.png",
         "tags": ["core-skill"],
-        "brands":["debeers","kinder","carlsberg","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"]
+        "brands":["debeers","kinder","carlsberg","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"],
+        "ref":"git"
         
     },
     {
@@ -52,7 +58,8 @@
         "height": 506,
         "name": "Gulp",
         "fileName": "gulp.png",
-        "tags":["ebay","converse","gfsmith","pcuk","colorplan"]
+        "tags":["ebay","converse","gfsmith","pcuk","colorplan"],
+        "ref":"gulp"
     },
     {
         "width": 300,
@@ -60,7 +67,8 @@
         "name": "Html/JS/CSS",
         "fileName": "html-js-css.png",
         "tags": ["core-skill"],
-        "brands":["debeers","kinder","carlsberg","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"]
+        "brands":["debeers","kinder","carlsberg","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"],
+        "ref":"html-js-css"
         
     },
     {
@@ -69,7 +77,8 @@
         "name": "Laravel",
         "fileName": "laravel.png",
         "tags":[],
-        "brands":["kinder","ebay"]
+        "brands":["kinder","ebay"],
+        "ref":"laravel"
     },
     {
         "width": 299,
@@ -77,7 +86,8 @@
         "name": "Redux",
         "fileName": "logo-redux.png",
         "tags": [],
-        "brands":["hatton","anthonymarshall.io"]
+        "brands":["hatton","anthonymarshall.io"],
+        "ref":"redux"
         
     },
     {
@@ -86,7 +96,8 @@
         "name": "Magento",
         "fileName": "magento.png",
         "tags":[],
-        "brands":["gfsmith"]
+        "brands":["gfsmith"],
+        "ref":"magento"
     },
     {
         "width": 300,
@@ -94,7 +105,8 @@
         "name": "MySql",
         "fileName": "mysql.png",
         "tags":[],
-        "brands":["kinder","carlsberg","channel4","colorplan","ebay","gfsmith","investec"]
+        "brands":["kinder","carlsberg","channel4","colorplan","ebay","gfsmith","investec"],
+        "ref":"mysql"
     },
     {
         "width": 300,
@@ -102,7 +114,8 @@
         "name": "Nginx",
         "fileName": "nginx.png",
         "tags":[],
-        "brands":["gfsmith"]
+        "brands":["gfsmith"],
+        "ref":"nginx"
     },
     {
         "width": 300,
@@ -110,7 +123,8 @@
         "name": "PHP",
         "fileName": "php.png",
         "tags":[],
-        "brands":["kinder","channel4","colorplan","ebay","gfsmith","investec"]
+        "brands":["kinder","channel4","colorplan","ebay","gfsmith","investec"],
+        "ref":"php"
     },
     {
         "width": 300,
@@ -118,7 +132,8 @@
         "name": "React",
         "fileName": "react.png",
         "tags":[],
-        "brands":["kinder","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"]
+        "brands":["kinder","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"],
+        "ref":"react"
     
     },
     {
@@ -127,21 +142,24 @@
         "name": "Sass",
         "fileName": "sass.png",
         "tags":["core-skill"],
-        "brands":["kinder","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"]
+        "brands":["kinder","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"],
+        "ref":"sass"
     },
     {
         "width": 300,
         "height": 75,
         "name": "Sql Server",
         "fileName": "sql-server.png",
-        "tags": ["core-skill"]
+        "tags": ["core-skill"],
+        "ref":"sqlserver"
     },
     {
         "width": 300,
         "height": 65,
         "name": "Team City",
         "fileName": "teamcity.png",
-        "tags":[]
+        "tags":[],
+        "ref":"teamcity"
     },
     {
         "width": 300,
@@ -149,21 +167,24 @@
         "name": "Ubuntu",
         "fileName": "ubuntu.png",
         "tags":[],
-        "brands":["kinder","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"]
+        "brands":["kinder","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"],
+        "ref":"ubuntu"
     },
     {
         "width": 300,
         "height": 74,
         "name": "Varnish",
         "fileName": "varnish.png",
-        "tags":[]
+        "tags":[],
+        "ref":"varnish"
     },
     {
         "width": 300,
         "height": 84,
         "name": "Visual Studio",
         "fileName": "visualstudio.png",
-        "tags":[]
+        "tags":[],
+        "ref":"visualstudio"
     },
     {
         "width": 300,
@@ -171,7 +192,8 @@
         "name": "WPF.Net",
         "fileName": "wpf_logo_2.png",
         "tags":[],
-        "brands":["converse"]
+        "brands":["converse"],
+        "ref":"wpf"
     }
    
 ]

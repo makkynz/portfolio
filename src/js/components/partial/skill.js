@@ -9,6 +9,7 @@ class Skill extends React.Component {
   onClose(){
     this.props.deselectSkill(this.props.skill);
     this.props.closeModal();
+     //browserHistory.push('/skills/');
   }
 
   getHeroStyle(){      
@@ -19,7 +20,7 @@ class Skill extends React.Component {
   }
 
   gotoBrand(brand){
-    this.onClose();
+    
      window.reveal('cornertopleft', function(){
           browserHistory.push('/projects/'+brand);
     });

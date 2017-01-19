@@ -2,7 +2,7 @@ import React from 'react';
 import {batchActions, enableBatching} from 'redux-batched-actions';
 import { openModal } from './app.actions';
 
-export const fetchSkills = () => {
+export const fetchSkills = (selectedSkill) => {
 
     return dispatch => {
         dispatch({
@@ -12,8 +12,12 @@ export const fetchSkills = () => {
 
         fetch('/data/skills.json')
             .then(response => response.json())
-            .then(json=>   
-                dispatch(receiveSkills(json))
+            .then(json=>   {
+                    dispatch(receiveSkills(json));
+                    if(selectedSkill){
+                        dispatch(selectSkill(json.filter(s=>s.ref === selectedSkill)[0]));
+                    }
+                }
             )
   }  
 };

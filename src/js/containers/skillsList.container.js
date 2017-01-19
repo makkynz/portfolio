@@ -14,9 +14,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {  
   return {
     
-    fetchSkills: () => {
+    fetchSkills: (deepLinkSkill) => {
       
-      dispatch(fetchSkills());
+      dispatch(fetchSkills(deepLinkSkill));
     },
     
      selectSkill: (skill)=>{

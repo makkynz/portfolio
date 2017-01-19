@@ -41,6 +41,7 @@ class Brands extends React.Component {
      if(this.props.deepLinkToDetail){
        this.gotoBrand(brand);  
      }else{
+       browserHistory.push('/projects/'+brand.ref);
        this.props.selectBrand(brand);
      }   
     

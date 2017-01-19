@@ -3,6 +3,7 @@ import {findDOMNode} from 'react-dom'
 import 'whatwg-fetch';
 import classNames from 'classnames';
 import Portal from 'react-portal';
+import { browserHistory } from 'react-router';
 
 class Modal extends React.Component {
   constructor(props) {
@@ -28,7 +29,9 @@ class Modal extends React.Component {
 
   close(){
    
-     this.props.onClose();      
+     this.props.onClose();
+
+      
   }
 
   render() {  
@@ -44,9 +47,9 @@ class Modal extends React.Component {
       
             <div>
             <div className={modalClasses}>
-                <div className="md-content">
-                <a className="close ion-android-close" onClick={this.close.bind(this)}></a>        
-                    {this.props.children}        
+                <div className="md-content">                    
+                    {this.props.children}   
+                    <a className="close ion-android-close" onClick={this.close.bind(this)}></a>        
                 </div>
             </div>        
             <div className="md-overlay"></div>

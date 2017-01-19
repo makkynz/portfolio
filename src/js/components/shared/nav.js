@@ -22,16 +22,16 @@ class Nav extends React.Component {
         </li>
         <li 
           onClick={this.changeRoute.bind(this, '/about','cornertopleft')}
-          className={(currPath == '/about' ? 'active' : '')}>
+          className={(currPath.indexOf('/about') > -1 ? 'active' : '')}>
           About
         </li>
         <li 
           onClick={this.changeRoute.bind(this, '/skills','cornertopleft')}
-          className={(currPath == '/skills' ? 'active' : '')}>
+          className={(currPath.indexOf('/skills') > -1 ? 'active' : '')}>
           Skills
         </li>
         <li onClick={this.changeRoute.bind(this, '/projects','cornertopleft')}
-        className={(currPath == '/projects' ? 'active' : '')}>
+        className={(currPath.indexOf('/projects') > -1 ? 'active' : '')}>
           Projects
         </li>
         </ul>

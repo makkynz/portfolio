@@ -16,7 +16,7 @@ class Skills extends React.Component {
     return (
       <div>     
        
-        <SkillsList></SkillsList>
+        <SkillsList params={this.props.params}></SkillsList>
       </div> 
     );
   }

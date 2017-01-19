@@ -10,8 +10,6 @@ class Projects extends React.Component {
   componentWillMount(){
     document.body.classList.add('projects-page'); 
 
-
-    console.log(this.props.params.anz); 
   }
 
   
