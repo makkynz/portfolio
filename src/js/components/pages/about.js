@@ -17,9 +17,10 @@ class About extends React.Component {
         <div className="photo"></div>
         <div className="text">
           <h1>Hi,</h1>      
-          <p>I'm a software developer from Auckland, New Zealand. Since 2002 I have built many succesful web and desktop based applications for a wide variety of companies and industries.</p>
-          <p>I have Key technological experiences working with the Microsoft stack of technologies.  i.e Asp.net, Sql Server </p>
-          <p>After having graduated from Auckland University of Technology with a degree in Applied Science, I have been working fulltime as dveloper since 2002 </p>
+          <p>I'm a software developer based in Auckland, New Zealand. I have 14 years commerical experience building many successful web and desktop based applications for a wide variety of companies and industries. </p>
+          <p>In 2003 I graduated from Auckland University of Technology with a bachelor's degree in Applied Science. </p>
+          <p>My key technical experiences revolve around both back and front end web development using the Microsoft stack of technologies.  i.e C#, Asp.net, Sql Server, Html, CSS, JS (Angular) </p>
+          
         </div>
       </div>
     );
