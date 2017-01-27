@@ -64,7 +64,8 @@ export const fetchBrandHTML = (brand) => {
                 return response.text();
             })
             .then(html=> {    
-               html = html.indexOf('<html') ===-1 ? html : null;      
+               
+               html = html.indexOf('<html') ===-1 && html.indexOf('Cannot GET') === -1 ? html : null;      
                return dispatch(receiveBrandHTML(brand, html))
             }
             

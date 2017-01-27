@@ -31,7 +31,7 @@ class Skill extends React.Component {
     return (
       <section className="tags">   
           
-        <h4>Projects where I've' used {this.props.skill.name}. <br/> Click to view details.</h4>
+        <h4>Projects where I've  used {this.props.skill.name}.<div className="tip">Click to view details.</div></h4>
         <Brands filter={this.props.skill.brands} deepLinkToDetail={true} onClose={this.onClose.bind(this)}></Brands>         
       </section>
     )

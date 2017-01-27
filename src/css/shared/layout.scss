@@ -57,8 +57,13 @@ section{
 
 section.page-content{
     position: relative;
-    padding: 100px 20px;
+    padding: 100px $spacingMin;
     text-align: center;
+
+    @include mobile {  
+        padding: $spacingMin $spacingMin;
+        
+    }
 
     body.home-page &{
         top: 50%;

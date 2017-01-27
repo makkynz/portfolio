@@ -56,17 +56,19 @@
             letter-spacing: 1.85px;  
              @include mobile { 
                 letter-spacing: 0; 
+                
             }       
         }
 
         @include mobile {        
-        h1,h2,a{
-                text-align: center;
-                margin-bottom: 10px;
-        }  
-        a{
-            font-size: 25px;
-        } 
+            h1,h2,a{
+                    text-align: center;
+                    margin-bottom: 10px;
+                    
+            }  
+            h2,a{
+                font-size: 20px;
+            } 
 
                 
         }

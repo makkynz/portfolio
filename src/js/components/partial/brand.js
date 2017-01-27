@@ -29,7 +29,7 @@ class Brand extends React.Component {
   }
 
   renderHtmlContent(){   
-    if(this.props.brand.html === null ) return;
+    if(this.props.brand.html === null ) return <section><div className="tip">Details coming soon.</div></section>
  
     return <section dangerouslySetInnerHTML={{__html: this.props.brand.html}}></section>
   }
