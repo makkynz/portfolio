@@ -15,9 +15,10 @@
         "description": "<p>I worked on a number of projects for ANZ while I was employed at Aimia between 2006 to 2011.</p><p>Notable projcts </p>",
         "ref":"anz",
         "carousel":[
-            {"image":"airpoints.jpg", "caption":"ANZ AirNZ Airpoints"},
+            
             {"image":"anz-world-visa-1.png", "caption":"ANZ World Visa site"},
-            {"image":"anz-world-visa-2.png", "caption":"ANZ World Visa site"}
+            {"image":"anz-world-visa-2.png", "caption":"ANZ World Visa site"},
+            {"image":"airpoints.jpg", "caption":"ANZ AirNZ Airpoints"}
         ]
     },
     {

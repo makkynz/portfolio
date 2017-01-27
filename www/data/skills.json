@@ -22,7 +22,7 @@
         "name": "Asp.Net",
         "fileName": "asp.net.png",
         "tags": ["core-skill"],
-        "brands":["anz","westpac", "asb", "jti"],
+        "brands":["anz","westpac", "asb", "jti", "cadbury"],
         "ref":"aspnet"
     },
     {
@@ -31,7 +31,7 @@
         "name": "C#",
         "fileName": "csharp.png",
         "tags": ["core-skill"],
-        "brands":["anz","westpac", "asb", "jti"],
+        "brands":["anz","westpac", "asb", "jti", "cadbury"],
         "ref":"csharp"
     },
     {
@@ -67,7 +67,7 @@
         "name": "Html/JS/CSS",
         "fileName": "html-js-css.png",
         "tags": ["core-skill"],
-        "brands":["debeers","kinder","carlsberg","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"],
+        "brands":["debeers","kinder","carlsberg","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay", "cadbury"],
         "ref":"html-js-css"
         
     },
@@ -151,6 +151,7 @@
         "name": "Sql Server",
         "fileName": "sql-server.png",
         "tags": ["core-skill"],
+        "brands": ["cadbury"],
         "ref":"sqlserver"
     },
     {
@@ -183,7 +184,7 @@
         "height": 84,
         "name": "Visual Studio",
         "fileName": "visualstudio.png",
-        "tags":[],
+        "tags":["cadbury"],
         "ref":"visualstudio"
     },
     {
