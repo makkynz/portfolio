@@ -1571,7 +1571,8 @@ ul.tags {
       margin: 0 auto;
       margin-top: 20px;
       right: 0;
-      top: 0; } }
+      top: 0;
+      display: none; } }
   .profileTopRight .photo {
     background-image: url(/imgs/me.png);
     background-size: cover;
