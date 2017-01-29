@@ -1342,6 +1342,10 @@ p {
     .home-page .detail h2, .home-page .detail a {
       font-size: 20px; } }
 
+.home-page .note {
+  margin: 20px 0 0 0;
+  color: #8d8a8a; }
+
 .about-page::before {
   background-color: #F5F3EE; }
 
