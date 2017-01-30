@@ -25,7 +25,7 @@ class Home extends React.Component {
           <a href="mailto:hello@anthonymarshall.io" >hello@anthonymarshall.io</a>
           
         </div>
-        <div className="note">Note: This site is under development </div>
+        <div className="note">This site is still under development. Some content is yet to be added.  </div>
       </section>
     );
   }
