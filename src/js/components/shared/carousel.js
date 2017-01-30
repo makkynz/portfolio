@@ -14,6 +14,7 @@ class Carousel extends React.Component {
   } 
   
   getStyle(item, index){   
+    
       let file = '/imgs/brands/'+this.props.refs+'/'+ item.image
       return  {                       
           backgroundImage: "url(" + file + ")"   ,

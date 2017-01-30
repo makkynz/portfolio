@@ -9,16 +9,24 @@
             "SSIS",
             "Crystal Reports",
             "HTML/CSS/JS"
-        ],        
+        ],
         "name": "ANZ",
         "fileName": "ANZ-logo-logotype.png",
         "description": "<p>I worked on a number of projects for ANZ while I was employed at Aimia between 2006 to 2011.</p><p>Notable projcts </p>",
-        "ref":"anz",
-        "carousel":[
-            
-            {"image":"anz-world-visa-1.png", "caption":"ANZ World Visa site"},
-            {"image":"anz-world-visa-2.png", "caption":"ANZ World Visa site"},
-            {"image":"airpoints.jpg", "caption":"ANZ AirNZ Airpoints"}
+        "ref": "anz",
+        "carousel": [
+            {
+                "image": "anz-world-visa-1.png",
+                "caption": "ANZ World Visa site"
+            },
+            {
+                "image": "anz-world-visa-2.png",
+                "caption": "ANZ World Visa site"
+            },
+            {
+                "image": "airpoints.jpg",
+                "caption": "ANZ AirNZ Airpoints"
+            }
         ]
     },
     {
@@ -31,13 +39,16 @@
             "SSIS",
             "Crystal Reports",
             "HTML/CSS/JS"
-        ],    
+        ],
         "name": "ASB",
         "fileName": "ASB_Bank_logo.png",
         "description": "Lorem Ipsum",
-        "ref":"asb",
-         "carousel":[
-            {"image":"true-rewards-1.png", "caption":"ASB True Rewards site"}           
+        "ref": "asb",
+        "carousel": [
+            {
+                "image": "true-rewards-1.png",
+                "caption": "ASB True Rewards site"
+            }
         ]
     },
     {
@@ -46,79 +57,109 @@
         "year": 2016,
         "tags": [
             "Asp.net",
-            "Sql Server",
-            "SSIS",           
+            "Sql Server",            
             "HTML/CSS/JS"
-        ],    
+        ],
         "name": "avis-logo",
         "fileName": "avis-logo.png",
         "description": "Lorem Ipsum",
-        "ref":"avis"
+        "ref": "avis"
     },
     {
         "width": 499,
         "height": 194,
         "year": 2016,
-        "tags": [
+       "tags": [
             "Asp.net",
-            "Magento"
+            "Sql Server",           
+            "HTML/CSS/JS",                      
+            "sass",
+            "git"
         ],
         "name": "Cadbury",
         "fileName": "Cadbury-logo.png",
         "description": "Lorem Ipsum",
-        "ref" : "cadbury"
+        "ref": "cadbury",
+        "carousel": [
+            {
+                "image": "sprite.png",
+                "caption": ""
+            }
+        ]
     },
     {
         "width": 500,
         "height": 195,
         "year": 2016,
-        "tags": [
+       "tags": [
             "Asp.net",
-            "Magento"
+            "Sql Server",           
+            "HTML/CSS/JS",
+            "Episerver",            
+            "sass",
+            "git"
         ],
         "name": "Carlsberg",
         "fileName": "Carlsberg-logo-vector.png",
         "description": "Lorem Ipsum",
-        "ref" : "carlsberg"
+        "ref": "carlsberg"
     },
     {
         "width": 209,
         "height": 209,
         "year": 2016,
         "tags": [
-            "Asp.net",
-            "Magento"
+            "php",
+            "mysql",
+            "laravel",
+            "ubuntu",
+           
+            "HTML/CSS/JS" 
         ],
         "name": "Channel 4",
         "fileName": "Channel4.png",
         "description": "Lorem Ipsum",
-        "ref" : "channel4"
+        "ref": "channel4"
     },
     {
         "width": 189,
         "height": 144,
         "year": 2016,
-        "tags": [
-            "Asp.net",
-            "Magento"
+         "tags": [
+            "php",
+            "mysql",
+           
+            "ubuntu",
+           
+            "HTML/CSS/JS" 
         ],
         "name": "Colorplan",
         "fileName": "colourplan.png",
         "description": "Lorem Ipsum",
-        "ref" : "colorplan"
+        "ref": "colorplan",
+        "carousel": [
+            {
+                "image": "colorplan_responsive.jpg",
+                "caption": ""
+            },
+            {
+                "image": "colorplan_swatches.jpg",
+                "caption": ""
+            }
+        ]
     },
     {
         "width": 500,
         "height": 70,
         "year": 2016,
-        "tags": [
-            "Asp.net",
-            "Magento"
+        "tags": [           
+            "WPF.net",
+            "Sql Server"
         ],
         "name": "Converse",
         "fileName": "Converse-Logo-New-1024x768.png",
         "description": "Lorem Ipsum",
-        "ref" : "converse"
+        "ref": "converse"
     },
     {
         "width": 500,
@@ -126,90 +167,144 @@
         "year": 2016,
         "tags": [
             "Asp.net",
-            "Magento"
+            "Sql Server",           
+            "HTML/CSS/JS",
+            "Episerver",            
+            "sass",
+            "git"
         ],
         "name": "De Beers",
         "fileName": "de-beers.png",
         "description": "Lorem Ipsum",
-        "ref" : "debeers"
+        "ref": "debeers"
     },
     {
         "width": 500,
         "height": 190,
         "year": 2016,
-        "tags": [
-            "Asp.net",
-            "Magento"
+         "tags": [
+            "php",
+            "mysql",
+            "laravel",
+            "ubuntu",
+           
+            "HTML/CSS/JS" 
         ],
         "name": "Ebay",
         "fileName": "EBay_logo.png",
         "description": "Lorem Ipsum",
-        "ref" : "ebay"
+        "ref": "ebay",
+        "carousel": [
+            {
+                "image": "mobileGameScreens.jpg",
+                "caption": ""
+            },
+            {
+                "image": "profile.jpg",
+                "caption": ""
+            }
+        ]
     },
     {
         "width": 233,
         "height": 157,
         "year": 2016,
         "tags": [
-            "Asp.net",
-            "Magento"
+            "php",
+            "mysql",
+            "magento",
+            "ubuntu",
+            "varnish",
+            "HTML/CSS/JS" 
         ],
         "name": "G.F Smith",
         "fileName": "header-gfsmith-logo.png",
         "description": "Lorem Ipsum",
-        "ref" : "gfSmith"
+        "ref": "gfSmith"
     },
     {
         "width": 419,
         "height": 140,
         "year": 2016,
         "tags": [
-            "Asp.net",
-            "Magento"
+            "php",
+            "mysql",
+            "wordpress",
+            "HTML/CSS/JS" 
         ],
         "name": "Investec",
         "fileName": "Investec_logo.png",
         "description": "Yeah boi<h1>test</h2>",
-        "ref" : "investec"
+        "ref": "investec"
     },
     {
         "width": 329,
         "height": 245,
         "year": 2016,
-        "tags": [
+       "tags": [
             "Asp.net",
-            "Magento"
+            "Sql Server",           
+            "HTML/CSS/JS",            
+            "tfs",
+            "sass",
+            "git"
         ],
         "name": "Japanese Tobacco International",
         "fileName": "jti-vector-logo.png",
         "description": "Lorem Ipsum",
-        "ref" : "jti"
+        "ref": "jti"
     },
     {
         "width": 500,
         "height": 146,
         "year": 2016,
         "tags": [
-            "Asp.net",
-            "Magento"
+            "php",
+            "mysql",
+            "laravel",                      
+            "HTML/CSS/JS",   
+            "angular",         
+            "sass",
+            "git"        
         ],
         "name": "Kinder Chocolate",
         "fileName": "kinder-logo-1210x447.png",
         "description": "Lorem Ipsum",
-        "ref" : "kinder"
+        "ref": "kinder",
+        "carousel": [
+             {
+                "image": "hero_ipad01.jpg",
+                "caption": "Kinder Storymaker web app"
+            },
+            {
+                "image": "Book_MockUp.jpg",
+                 "caption": "Kinder Storymaker web app"
+            },
+            {
+                "image": "choose.jpg",
+                 "caption": "Kinder Storymaker web app"
+            }
+           
+        ]
     },
     {
         "width": 500,
         "height": 260,
         "year": 2016,
-        "tags": [
+         "tags": [
             "Asp.net",
-            "Magento"
+            "Sql Server",           
+            "HTML/CSS/JS",
+            "angular",
+            "Umbraco",
+            "aws",
+            "sass",
+            "git"
         ],
         "name": "Prostate Cancer UK",
         "fileName": "logo_pc.png",
         "description": "Lorem Ipsum",
-        "ref" : "pcuk"
+        "ref": "pcuk"
     },
     {
         "width": 1000,
@@ -217,33 +312,37 @@
         "year": 2016,
         "tags": [
             "Asp.net",
-            "Magento"
+            "Sql Server",           
+            "HTML/CSS/JS"
         ],
         "name": "Pfizer",
         "fileName": "pfizer.png",
         "description": "Lorem Ipsum",
-        "ref" : "pfizer"
+        "ref": "pfizer"
     },
     {
         "width": 500,
         "height": 87,
         "year": 2016,
-        "tags": [
+         "tags": [
             "Asp.net",
-            "Magento"
+            "Sql Server",           
+            "HTML/CSS/JS"
         ],
         "name": "Sony",
         "fileName": "Sony_logo.svg.png",
         "description": "Lorem Ipsum",
-        "ref" : "sony"
+        "ref": "sony"
     },
     {
         "width": 500,
         "height": 90,
         "year": 2016,
-        "tags": [
+         "tags": [
             "Asp.net",
-            "Magento"
+            "Sql Server",
+            
+            "HTML/CSS/JS"
         ],
         "name": "Vitamin Water",
         "fileName": "vitaminwater-logo.png",
@@ -254,13 +353,26 @@
         "width": 499,
         "height": 94,
         "year": 2016,
-        "tags": [
+         "tags": [
             "Asp.net",
-            "Magento"
+            "Sql Server",
+            "SSIS",
+            "HTML/CSS/JS"
         ],
         "name": "Westpac",
         "fileName": "westpac.png",
         "description": "Lorem Ipsum",
-        "ref":"westpac"
+        "ref": "westpac",
+        "carousel": [
+            
+            {
+                "image": "2017-01-29-05_14_52-Westpac-hotpoints.png",
+                "caption": ""
+            },
+            {
+                "image": "2017-01-29-05_15_57-Westpac-hotpoints.png",
+                "caption": ""
+            }
+        ]
     }
 ]
