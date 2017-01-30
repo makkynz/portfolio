@@ -25,7 +25,7 @@ class Carousel extends React.Component {
   getDefaultStyle(){   
     
       let file = this.props.defaultImage;
-      console.log(file);
+     
       return  {                       
           backgroundImage: "url(" + file + ")"   
             

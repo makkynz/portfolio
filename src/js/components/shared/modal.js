@@ -34,6 +34,15 @@ class Modal extends React.Component {
       
   }
 
+   getStyle(){   
+    
+     var top  = window.pageYOffset || document.documentElement.scrollTop;
+   
+      return  {                      
+          top:  (top + 20) +"px"      
+      };
+  }
+
   render() {  
 
    
@@ -46,8 +55,8 @@ class Modal extends React.Component {
     return (
       
             <div>
-            <div className={modalClasses}>
-                <div className="md-content">                    
+            <div className={modalClasses}  style={this.getStyle()} >
+                <div className="md-content" >                    
                     {this.props.children}   
                     <a className="close ion-android-close" onClick={this.close.bind(this)}></a>        
                 </div>
