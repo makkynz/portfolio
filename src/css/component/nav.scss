@@ -2,7 +2,7 @@ nav{
     margin: $spacingMin 0 0 $spacingDouble;
     position: fixed;
     z-index: 2;
-    
+    background: rgba(255, 255, 255, 0.5);
     ul{        
         white-space: nowrap;
         li{

@@ -22,10 +22,6 @@
             {
                 "image": "anz-world-visa-2.png",
                 "caption": "ANZ World Visa site"
-            },
-            {
-                "image": "airpoints.jpg",
-                "caption": "ANZ AirNZ Airpoints"
             }
         ]
     },
@@ -57,7 +53,7 @@
         "year": 2016,
         "tags": [
             "Asp.net",
-            "Sql Server",            
+            "Sql Server",
             "HTML/CSS/JS"
         ],
         "name": "avis-logo",
@@ -69,10 +65,10 @@
         "width": 499,
         "height": 194,
         "year": 2016,
-       "tags": [
+        "tags": [
             "Asp.net",
-            "Sql Server",           
-            "HTML/CSS/JS",                      
+            "Sql Server",
+            "HTML/CSS/JS",
             "sass",
             "git"
         ],
@@ -91,11 +87,11 @@
         "width": 500,
         "height": 195,
         "year": 2016,
-       "tags": [
+        "tags": [
             "Asp.net",
-            "Sql Server",           
+            "Sql Server",
             "HTML/CSS/JS",
-            "Episerver",            
+            "Episerver",
             "sass",
             "git"
         ],
@@ -113,8 +109,7 @@
             "mysql",
             "laravel",
             "ubuntu",
-           
-            "HTML/CSS/JS" 
+            "HTML/CSS/JS"
         ],
         "name": "Channel 4",
         "fileName": "Channel4.png",
@@ -125,13 +120,11 @@
         "width": 189,
         "height": 144,
         "year": 2016,
-         "tags": [
+        "tags": [
             "php",
             "mysql",
-           
             "ubuntu",
-           
-            "HTML/CSS/JS" 
+            "HTML/CSS/JS"
         ],
         "name": "Colorplan",
         "fileName": "colourplan.png",
@@ -152,7 +145,7 @@
         "width": 500,
         "height": 70,
         "year": 2016,
-        "tags": [           
+        "tags": [
             "WPF.net",
             "Sql Server"
         ],
@@ -167,9 +160,9 @@
         "year": 2016,
         "tags": [
             "Asp.net",
-            "Sql Server",           
+            "Sql Server",
             "HTML/CSS/JS",
-            "Episerver",            
+            "Episerver",
             "sass",
             "git"
         ],
@@ -182,13 +175,12 @@
         "width": 500,
         "height": 190,
         "year": 2016,
-         "tags": [
+        "tags": [
             "php",
             "mysql",
             "laravel",
             "ubuntu",
-           
-            "HTML/CSS/JS" 
+            "HTML/CSS/JS"
         ],
         "name": "Ebay",
         "fileName": "EBay_logo.png",
@@ -196,11 +188,19 @@
         "ref": "ebay",
         "carousel": [
             {
+                "image": "ebay_nightAndDay.gif",
+                "caption": ""
+            },
+            {
                 "image": "mobileGameScreens.jpg",
                 "caption": ""
             },
             {
                 "image": "profile.jpg",
+                "caption": ""
+            },
+            {
+                "image": "questionsOnMobile.gif",
                 "caption": ""
             }
         ]
@@ -215,7 +215,7 @@
             "magento",
             "ubuntu",
             "varnish",
-            "HTML/CSS/JS" 
+            "HTML/CSS/JS"
         ],
         "name": "G.F Smith",
         "fileName": "header-gfsmith-logo.png",
@@ -230,7 +230,7 @@
             "php",
             "mysql",
             "wordpress",
-            "HTML/CSS/JS" 
+            "HTML/CSS/JS"
         ],
         "name": "Investec",
         "fileName": "Investec_logo.png",
@@ -241,10 +241,10 @@
         "width": 329,
         "height": 245,
         "year": 2016,
-       "tags": [
+        "tags": [
             "Asp.net",
-            "Sql Server",           
-            "HTML/CSS/JS",            
+            "Sql Server",
+            "HTML/CSS/JS",
             "tfs",
             "sass",
             "git"
@@ -261,11 +261,11 @@
         "tags": [
             "php",
             "mysql",
-            "laravel",                      
-            "HTML/CSS/JS",   
-            "angular",         
+            "laravel",
+            "HTML/CSS/JS",
+            "angular",
             "sass",
-            "git"        
+            "git"
         ],
         "name": "Kinder Chocolate",
         "fileName": "kinder-logo-1210x447.png",
@@ -274,15 +274,15 @@
         "carousel": [
              {
                 "image": "hero_ipad01.jpg",
-                "caption": "Kinder Storymaker web app"
+                "caption": ""
             },
             {
                 "image": "Book_MockUp.jpg",
-                 "caption": "Kinder Storymaker web app"
+                "caption": ""
             },
             {
                 "image": "choose.jpg",
-                 "caption": "Kinder Storymaker web app"
+                "caption": ""
             }
            
         ]
@@ -291,9 +291,9 @@
         "width": 500,
         "height": 260,
         "year": 2016,
-         "tags": [
+        "tags": [
             "Asp.net",
-            "Sql Server",           
+            "Sql Server",
             "HTML/CSS/JS",
             "angular",
             "Umbraco",
@@ -312,7 +312,7 @@
         "year": 2016,
         "tags": [
             "Asp.net",
-            "Sql Server",           
+            "Sql Server",
             "HTML/CSS/JS"
         ],
         "name": "Pfizer",
@@ -324,9 +324,9 @@
         "width": 500,
         "height": 87,
         "year": 2016,
-         "tags": [
+        "tags": [
             "Asp.net",
-            "Sql Server",           
+            "Sql Server",
             "HTML/CSS/JS"
         ],
         "name": "Sony",
@@ -338,10 +338,9 @@
         "width": 500,
         "height": 90,
         "year": 2016,
-         "tags": [
+        "tags": [
             "Asp.net",
             "Sql Server",
-            
             "HTML/CSS/JS"
         ],
         "name": "Vitamin Water",
@@ -353,7 +352,7 @@
         "width": 499,
         "height": 94,
         "year": 2016,
-         "tags": [
+        "tags": [
             "Asp.net",
             "Sql Server",
             "SSIS",
@@ -364,7 +363,6 @@
         "description": "Lorem Ipsum",
         "ref": "westpac",
         "carousel": [
-            
             {
                 "image": "2017-01-29-05_14_52-Westpac-hotpoints.png",
                 "caption": ""
