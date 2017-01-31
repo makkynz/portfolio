@@ -3,7 +3,7 @@
 
     hr{
        margin-top: 50px;
-       margin-bottom: 70px;
+       margin-bottom: 10px;
         @include mobile {
             margin-top: 10px;
             margin-bottom: 10px;
@@ -40,6 +40,25 @@
         } 
    
     }
+    .softSkillWrapper{
+        margin: 0 auto;
+        max-width: 500px;
+
+        @include mobile {
+            max-width: 250px;
+        }
+
+        .softSkills{
+            text-align: left;
+            margin: 0 auto;
+            display: block;    
+            list-style-type: circle;
+            li{
+                line-height:25px;
+            }
+        }
+    }
+   
 }
 
 .skill{
@@ -51,11 +70,13 @@
     .hero{
          background-size: cover; 
             width: 100%;
-            min-height: 150px;
+            min-height: 100px;
+            max-width: 300px;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center center;
-            display: inline-block;  
+            display: block;  
+            margin:0 auto;
     }
 
     .brands {

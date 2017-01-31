@@ -22,8 +22,10 @@ class App extends React.Component {
      
     return (
       <div >
-        <ProfileThumb/>
-        <Nav />        
+        <header>
+          <ProfileThumb/>
+          <Nav />  
+        </header>      
         <section className="page-content">    
           {this.props.children}
         </section>

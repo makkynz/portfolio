@@ -58,14 +58,36 @@ class SkillsList extends React.Component {
     )
   }
 
+  renderSoftSkills(){
+    return (
+      <section>
+        <h2>Soft skills that I have acquired.</h2>
+        <div className="softSkillWrapper">
+        <ul className="softSkills">
+          <li> Exceptional verbal and written communication skills.</li>
+          <li> Excellent time management skills and practices.</li>
+          <li> Extensive client liaison and user training experience.</li>
+          <li> Ability to quickly learn and adapt new technologies.</li>
+          <li> Extensive experience managing and mentoring developers.</li>
+          <li> Experience writing client facing technical documentation.</li>
+          <li> Ability and experience in successfully architecting simple technical solutions for complex
+          problems</li>
+        </ul>
+        </div>
+      </section>
+    )
+  }
+
   render() {   
     if(this.props.skills === null) return null;
     return (
       <div>
-      {this.renderCoreSkills()}   
-      <hr/>
-      {this.renderOtherSkills()}   
-       <Skill></Skill>          
+        {this.renderCoreSkills()}   
+        <hr/>
+        {this.renderOtherSkills()}   
+        <hr/>
+        {this.renderSoftSkills()}
+        <Skill></Skill>          
       </div>
     );
   }
