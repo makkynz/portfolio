@@ -98,7 +98,7 @@
         "name": "Magento",
         "fileName": "magento.png",
         "tags":[],
-        "brands":["gfsmith","johnlobb"],
+        "brands":["gfsmith","johnlobb","hatton"],
         "ref":"magento"
     },
     {
@@ -171,7 +171,7 @@
         "name": "Ubuntu",
         "fileName": "ubuntu.png",
         "tags":[],
-        "brands":["kinder","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay"],
+         "brands":["kinder","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay","hatton","johnlobb"],
         "ref":"ubuntu"
     },
     {

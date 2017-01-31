@@ -25,7 +25,7 @@ class Brands extends React.Component {
     if(this.props.filter !==undefined){
       return this.props.brands.filter(b=> this.props.filter.indexOf(b.ref) > -1);
     }else{
-      return this.props.brands;
+      return this.props.brands.filter(b=> b.ref !== 'anthonymarshall.io' );
     }
   }
 
