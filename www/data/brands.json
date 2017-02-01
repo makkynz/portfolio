@@ -107,23 +107,7 @@
             }
         ]
     },
-    {
-        "width": 500,
-        "height": 195,
-        "year": 2016,
-        "tags": [
-            "Asp.net",
-            "Sql Server",
-            "HTML/CSS/JS",
-            "Episerver",
-            "sass",
-            "git"
-        ],
-        "name": "Carlsberg",
-        "fileName": "Carlsberg-logo-vector.png",
-        "description": "Lorem Ipsum",
-        "ref": "carlsberg"
-    },
+    
     {
         "width": 209,
         "height": 209,
@@ -142,7 +126,7 @@
         "carousel": [
             {
                 "image": "topboy_videoEdit.jpg",
-                "caption": ""
+                "caption": "Top Boy Promo site"
             },
             {
                 "image": "topboy_yourcut.jpg",
@@ -162,7 +146,8 @@
             "php",
             "mysql",
             "ubuntu",
-            "HTML/CSS/JS"
+            "HTML/CSS/JS",
+            "yii framework"
         ],
         "name": "Colorplan",
         "fileName": "colourplan.png",
@@ -171,11 +156,11 @@
         "carousel": [
             {
                 "image": "colorplan_responsive.jpg",
-                "caption": ""
+                "caption": "Colorplan site"
             },
             {
                 "image": "colorplan_swatches.jpg",
-                "caption": ""
+                "caption": "Colorplan site"
             }
         ]
     },
@@ -185,69 +170,55 @@
         "year": 2016,
         "tags": [
             "WPF.net",
-            "Sql Server"
+            "Sql Lite"
         ],
         "name": "Converse",
         "fileName": "Converse-Logo-New-1024x768.png",
         "description": "Lorem Ipsum",
         "ref": "converse",
         "carousel": [
-            {
-                "image": "back_half.jpg",
-                "caption": ""
-            },
-            {
-                "image": "front_half.jpg",
-                "caption": ""
-            },
-            {
-                "image": "half_side.jpg",
-                "caption": ""
-            },
-            {
-                "image": "install_test.jpg",
-                "caption": ""
-            },
-            {
+             {
                 "image": "made1.jpg",
-                "caption": ""
+                "caption": "Converse Made by you"
             },
             {
                 "image": "made2.jpg",
-                "caption": ""
+                "caption":  "Converse Made by you"
             },
             {
                 "image": "made3.jpg",
-                "caption": ""
+                "caption":  "Converse Made by you"
             },
             {
                 "image": "made4.jpg",
-                "caption": ""
+                "caption": "Converse Made by you"
             },
             {
                 "image": "made5.jpg",
-                "caption": ""
+                "caption": "Converse Made by you"
             },
             {
                 "image": "made6.jpg",
-                "caption": ""
+                "caption": "Converse Made by you"
             },
             {
                 "image": "made7.jpg",
-                "caption": ""
+                "caption": "Converse Made by you"
             },
             {
-                "image": "ss_cover.jpg",
-                "caption": ""
+                "image": "back_half.jpg",
+                "caption": "Converse Sneaker Snap"
             },
             {
-                "image": "ss_cover2.jpg",
-                "caption": ""
+                "image": "front_half.jpg",
+                "caption": "Converse Sneaker Snap"
             },
             {
-                "image": "threequarter_half.jpg",
-                "caption": ""
+                "image": "half_side.jpg",
+                "caption": "Converse Sneaker Snap"
             }
+           
+           
         ]
     },
     {
@@ -401,8 +372,8 @@
         "description": "Lorem Ipsum",
         "ref": "pcuk",
         "carousel": [
-            {
-                "image": "2017-01-31-07_18_15-Men-United---Prostate-Cancer-UK.png",
+           {
+                "image": "main1.png",
                 "caption": ""
             },
             {
@@ -416,11 +387,8 @@
             {
                 "image": "2017-01-31-07_19_34-Men-United---Prostate-Cancer-UK.png",
                 "caption": ""
-            },
-            {
-                "image": "main1.png",
-                "caption": ""
             }
+            
         ]
     },
     {
