@@ -4,9 +4,10 @@ import {  deselectSkill } from '../actions/skills.actions';
 import { closeModal } from '../actions/app.actions';
 
 const mapStateToProps = (state) => { 
- 
+ let selectedSkill= state.skills.find(s => s.isSelected);
   return { 
-    skill: state.skills.find(s => s.isSelected)
+    skill: selectedSkill
+   
   };
 }
 

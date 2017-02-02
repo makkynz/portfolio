@@ -4,7 +4,7 @@ import { openModal } from './app.actions';
 
 export const fetchSkills = (selectedSkill) => {
 
-    return dispatch => {
+    return dispatch =>  new Promise((resolve, reject) => {
         dispatch({
             type: 'FETCH_SKILLS'
             
@@ -17,9 +17,10 @@ export const fetchSkills = (selectedSkill) => {
                     if(selectedSkill){
                         dispatch(selectSkill(json.filter(s=>s.ref === selectedSkill)[0]));
                     }
+                    resolve();
                 }
             )
-  }  
+  });  
 };
 
  const receiveSkills = (skills) => {

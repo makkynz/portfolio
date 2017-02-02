@@ -9,6 +9,7 @@ class Brands extends React.Component {
 
   componentWillMount() {
     let deepLinkBrand =  (this.props.params !== undefined && this.props.params.brand !== undefined) ? this.props.params.brand  : null;
+    
     if(deepLinkBrand){
        this.props.fetchBrandsAndSkills(deepLinkBrand);
     }else{
@@ -25,8 +26,8 @@ class Brands extends React.Component {
   }
 
   getBrands(){
-    if(this.props.filter !==undefined){
-      return this.props.brands.filter(b=> this.props.filter.indexOf(b.ref) > -1);
+    if(this.props.filterWithSkill !==undefined){
+      return this.props.brands.filter(b=>  b.tags.indexOf(this.props.filterWithSkill) > -1 );
     }else{
       return this.props.brands.filter(b=> b.ref !== 'anthonymarshall.io' );
     }

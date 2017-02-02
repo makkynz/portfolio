@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import { fetchSkills, selectSkill } from '../actions/skills.actions';
+import { fetchBrands } from '../actions/brands.actions';
 import { openModal } from '../actions/app.actions';
 import skillsList from '../components/partial/skillsList';
 

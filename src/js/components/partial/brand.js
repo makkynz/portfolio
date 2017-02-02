@@ -11,13 +11,15 @@ class Brand extends React.Component {
   }
 
   gotoSkill(item, i){;
-    //debugger;
-    let skill = this.props.skills.filter(f=>f.name.toLowerCase() == item.toLowerCase())[0];
+   
+    let skill = this.props.skills.filter(f=>f.name.toLowerCase() == item.toLowerCase() || f.ref.toLowerCase() == item.toLowerCase())[0];
+   
     this.props.closeModal();
      window.reveal('cornertopleft', function(){
           browserHistory.push('/skills/'+skill.ref);
     });
   }
+
 
   
 

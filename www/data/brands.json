@@ -284,7 +284,8 @@
             "mysql",
             "laravel",
             "ubuntu",
-            "HTML/CSS/JS"
+            "HTML/CSS/JS",
+            "angular"
         ],
         "name": "Ebay",
         "fileName": "EBay_logo.png",

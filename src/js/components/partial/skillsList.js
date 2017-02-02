@@ -8,7 +8,7 @@ class SkillsList extends React.Component {
   componentWillMount() {   
 
      let deepLinkSkill =  (this.props.params !== undefined && this.props.params.skill !== undefined) ? this.props.params.skill  : null;
-   
+  
      this.props.fetchSkills(deepLinkSkill);
   }
 
