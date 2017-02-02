@@ -4,7 +4,7 @@ import { openModal } from './app.actions';
 
 export const fetchBrands = (selectedBrand) => {
   
-    return dispatch => {
+    return dispatch => new Promise((resolve, reject) => {
         dispatch({
             type: 'FETCH_BRANDS'
             
@@ -13,13 +13,15 @@ export const fetchBrands = (selectedBrand) => {
         fetch('/data/brands.json')
             .then(response => response.json())
             .then(json=> {  
-                dispatch(receiveBrands(json));
+                    dispatch(receiveBrands(json));
                     if(selectedBrand){
                         dispatch(selectBrand(json.filter(b=>b.ref === selectedBrand)[0]));
                     }
+                    console.log('a');
+                    resolve();
                 }
             )
-  }  
+  })  
 };
 
  const receiveBrands = (brands) => {

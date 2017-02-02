@@ -17,9 +17,15 @@ class Carousel extends React.Component {
     
       let file = '/imgs/brands/'+this.props.refs+'/'+ item.image
       return  {                       
-          backgroundImage: "url(" + file + ")"   ,
+         
           marginLeft:  this.getLeftPosition(index) +"px"      
       };
+  }
+
+  getImage(item, index){   
+    
+      let file = '/imgs/brands/'+this.props.refs+'/'+ item.image
+      return  file;
   }
 
   getDefaultStyle(){   
@@ -105,7 +111,7 @@ class Carousel extends React.Component {
                       key={i}                   
                       style={this.getStyle(item, i)} 
                       onClick={this.next.bind(this)}
-                    ><a className='view ion-eye' href={'/imgs/brands/'+this.props.refs+'/'+ item.image} target="_blank"></a></li>
+                    ><img src={this.getImage(item, i)} /><a className='view ion-eye' href={'/imgs/brands/'+this.props.refs+'/'+ item.image} target="_blank"></a></li>
                   )}     
             </ul> 
           </Swipeable >

@@ -9,8 +9,11 @@ class Brands extends React.Component {
 
   componentWillMount() {
     let deepLinkBrand =  (this.props.params !== undefined && this.props.params.brand !== undefined) ? this.props.params.brand  : null;
-    this.props.fetchBrands(deepLinkBrand);
-
+    if(deepLinkBrand){
+       this.props.fetchBrandsAndSkills(deepLinkBrand);
+    }else{
+       this.props.fetchBrands();
+    }  
       
   }
  

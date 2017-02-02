@@ -9,10 +9,11 @@ class Skill extends React.Component {
   onClose(){
     this.props.deselectSkill(this.props.skill);
     this.props.closeModal();
-     //browserHistory.push('/skills/');
+    
   }
 
-  getHeroStyle(){      
+  getHeroStyle(){     
+    
     let file = '/imgs/skills/'+ this.props.skill.fileName
     return  {                       
         backgroundImage: "url("+file+")"           

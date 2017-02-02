@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from '../../containers/modal.container';
 import Carousel from '../shared/carousel';
+import { browserHistory } from 'react-router';
 
 class Brand extends React.Component {
   
@@ -8,6 +9,17 @@ class Brand extends React.Component {
     this.props.deselectBrand(brand);
     this.props.closeModal();
   }
+
+  gotoSkill(item, i){;
+    //debugger;
+    let skill = this.props.skills.filter(f=>f.name.toLowerCase() == item.toLowerCase())[0];
+    this.props.closeModal();
+     window.reveal('cornertopleft', function(){
+          browserHistory.push('/skills/'+skill.ref);
+    });
+  }
+
+  
 
   renderCarousel(){    
    
@@ -21,7 +33,7 @@ class Brand extends React.Component {
         <h3>Tech stack:</h3>
         <ul className="tags">
             {this.props.brand.tags.map((item, i) =>
-                <li key={i}>{item}</li>
+                <li key={i}  onClick={this.gotoSkill.bind(this, item, i)}>{item}</li>
             )}   
         </ul> 
       </section>

@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import { fetchBrands, selectBrand } from '../actions/brands.actions';
+import { fetchSkills } from '../actions/skills.actions';
 import { openModal } from '../actions/app.actions';
 import Brands from '../components/partial/brands';
 
@@ -13,10 +14,19 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {  
   return {
     
-    fetchBrands: (deepLinkBrand) => {
-      dispatch(fetchBrands(deepLinkBrand));
+    fetchBrands: () => {
+      dispatch(fetchBrands());
+     
     },
 
+    fetchBrandsAndSkills: (deepLinkBrand) => {
+      dispatch(fetchBrands(deepLinkBrand)).then(() => {        
+        dispatch(fetchSkills());
+      });
+     
+    },
+
+    
     selectBrand: (brand)=>{
      
       dispatch(selectBrand(brand));

@@ -10,7 +10,8 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "dev": "SET NODE_ENV=development&&webpack-dev-server --hot --inline --history-api-fallback",
     "deploy": "SET NODE_ENV=production&&webpack -p",
-    "deploy-mac": "webpack -p"
+    "deploy-mac": "webpack -p",
+    "local" : "webpack-dev-server --hot --inline --history-api-fallback"
   },
   "repository": {
     "type": "git",

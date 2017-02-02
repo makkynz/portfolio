@@ -6,7 +6,8 @@ import { closeModal } from '../actions/app.actions';
 const mapStateToProps = (state) => { 
  
   return { 
-    brand: state.brands.find(b => b.isSelected)
+    brand: state.brands.find(b => b.isSelected),
+    skills: state.skills
   };
 }
 
