@@ -26,8 +26,11 @@
             {
                 "image": "2017-01-31-07_28_30-ANZ-World-Visa.png",
                 "caption": ""
+            },
+            {
+                "image": "airpoints.jpg",
+                "caption": ""
             }
-            
         ]
     },
     {
@@ -72,7 +75,17 @@
         "name": "avis-logo",
         "fileName": "avis-logo.png",
         "description": "Lorem Ipsum",
-        "ref": "avis"
+        "ref": "avis",
+        "carousel": [
+            {
+                "image": "2017-02-01-21_37_01-Int-Agent.png",
+                "caption": ""
+            },
+            {
+                "image": "2017-02-01-21_37_44-Int-Agent.png",
+                "caption": ""
+            }
+        ]
     },
     {
         "width": 499,
@@ -104,7 +117,6 @@
             }
         ]
     },
-    
     {
         "width": 209,
         "height": 209,
@@ -174,17 +186,17 @@
         "description": "Lorem Ipsum",
         "ref": "converse",
         "carousel": [
-             {
+            {
                 "image": "made1.jpg",
                 "caption": "Converse Made by you"
             },
             {
                 "image": "made2.jpg",
-                "caption":  "Converse Made by you"
+                "caption": "Converse Made by you"
             },
             {
                 "image": "made3.jpg",
-                "caption":  "Converse Made by you"
+                "caption": "Converse Made by you"
             },
             {
                 "image": "made4.jpg",
@@ -213,9 +225,23 @@
             {
                 "image": "half_side.jpg",
                 "caption": "Converse Sneaker Snap"
+            },
+            {
+                "image": "install_test.jpg",
+                "caption": ""
+            },
+            {
+                "image": "ss_cover.jpg",
+                "caption": ""
+            },
+            {
+                "image": "ss_cover2.jpg",
+                "caption": ""
+            },
+            {
+                "image": "threequarter_half.jpg",
+                "caption": ""
             }
-           
-           
         ]
     },
     {
@@ -233,7 +259,21 @@
         "name": "De Beers",
         "fileName": "de-beers.png",
         "description": "Lorem Ipsum",
-        "ref": "debeers"
+        "ref": "debeers",
+        "carousel": [
+            {
+                "image": "2.png",
+                "caption": ""
+            },{
+                "image": "1.png",
+                "caption": ""
+            },
+            
+            {
+                "image": "3.png",
+                "caption": ""
+            }
+        ]
     },
     {
         "width": 500,
@@ -369,7 +409,7 @@
         "description": "Lorem Ipsum",
         "ref": "pcuk",
         "carousel": [
-           {
+            {
                 "image": "main1.png",
                 "caption": ""
             },
@@ -384,8 +424,11 @@
             {
                 "image": "2017-01-31-07_19_34-Men-United---Prostate-Cancer-UK.png",
                 "caption": ""
+            },
+            {
+                "image": "2017-01-31-07_18_15-Men-United---Prostate-Cancer-UK.png",
+                "caption": ""
             }
-            
         ]
     },
     {
@@ -614,6 +657,5 @@
         "fileName": "anthonymarshall.io.png",
         "description": "Lorem Ipsum",
         "ref": "anthonymarshall.io"
-       
     }
 ]
