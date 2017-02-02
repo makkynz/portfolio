@@ -1548,6 +1548,9 @@ nav {
     transition: all 0.5s;
     position: relative;
     padding: 10px; }
+    @media (max-width: 767px) {
+      .carousel ul.images li {
+        min-height: 200px; } }
     .carousel ul.images li.defaultImage {
       width: 50%;
       min-height: 150px;
@@ -1568,6 +1571,10 @@ nav {
       display: block;
       margin: 0 auto;
       box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75); }
+      @media (max-width: 767px) {
+        .carousel ul.images li img {
+          max-width: 300px;
+          max-height: 200px; } }
 
 .carousel ul.pagination {
   text-align: center;
