@@ -5,7 +5,6 @@
         "name": "Amazon AWS",
         "fileName": "amazon.png",
         "tags": [],
-        "brands":["pcuk", "kinder"],
         "ref":"aws"
     },
     {
@@ -14,8 +13,7 @@
         "name": "Angular 1 and 2",
         "fileName": "angular.png",
         "tags": ["core-skill"],
-        "brands":["kinder","hatton","ebay","pcuk","gfsmith"],
-        "ref":"angular"
+         "ref":"angular"
     },
     {
         "width": 300,
@@ -23,8 +21,7 @@
         "name": "Asp.Net",
         "fileName": "asp.net.png",
         "tags": ["core-skill"],
-        "brands":["anz","westpac", "asb", "jti", "cadbury","vitaminwater","pcuk","sony","pfizer","debeers","avis","carlsberg", "morrisons"],
-        "ref":"aspnet"
+         "ref":"aspnet"
     },
     {
         "width": 300,
@@ -32,7 +29,6 @@
         "name": "C#",
         "fileName": "csharp.png",
         "tags": ["core-skill"],
-        "brands":["anz","westpac", "asb", "jti", "cadbury","vitaminwater","pcuk","sony","pfizer","debeers","avis","carlsberg","converse", "morrisons"],
         "ref":"csharp"
     },
     {
@@ -41,7 +37,6 @@
         "name": "Episerver CMS 6",
         "fileName": "episerver-logo.png",
         "tags":[],
-        "brands":["debeers","morrisons"],
         "ref":"episerver"
     },
     {
@@ -50,8 +45,7 @@
         "name": "GIT",
         "fileName": "git.png",
         "tags": ["core-skill"],
-        "brands":["debeers","kinder","carlsberg","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay","converse","hatton"],
-        "ref":"git"
+         "ref":"git"
         
     },
     {
@@ -60,8 +54,7 @@
         "name": "Gulp",
         "fileName": "gulp.png",
         "tags":[],
-        "brands":["ebay","converse","gfsmith","pcuk","colorplan","debeers","hatton"],
-        "ref":"gulp"
+         "ref":"gulp"
     },
     {
         "width": 300,
@@ -69,7 +62,6 @@
         "name": "Html/JS/CSS",
         "fileName": "html-js-css.png",
         "tags": ["core-skill"],
-        "brands":["debeers","kinder","carlsberg","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay", "cadbury","hatton"],
         "ref":"html-js-css"
         
     },
@@ -79,8 +71,7 @@
         "name": "Laravel",
         "fileName": "laravel.png",
         "tags":[],
-        "brands":["kinder","ebay"],
-        "ref":"laravel"
+         "ref":"laravel"
     },
     {
         "width": 299,
@@ -88,8 +79,7 @@
         "name": "Redux",
         "fileName": "logo-redux.png",
         "tags": [],
-        "brands":["hatton","anthonymarshall.io"],
-        "ref":"redux"
+         "ref":"redux"
         
     },
     {
@@ -98,8 +88,7 @@
         "name": "Magento",
         "fileName": "magento.png",
         "tags":[],
-        "brands":["gfsmith","johnlobb","hatton"],
-        "ref":"magento"
+         "ref":"magento"
     },
     {
         "width": 300,
@@ -107,8 +96,7 @@
         "name": "MySql",
         "fileName": "mysql.png",
         "tags":[],
-        "brands":["kinder","carlsberg","channel4","colorplan","ebay","gfsmith","investec","johnlobb","hatton"],
-        "ref":"mysql"
+         "ref":"mysql"
     },
     {
         "width": 300,
@@ -116,8 +104,7 @@
         "name": "Nginx",
         "fileName": "nginx.png",
         "tags":[],
-        "brands":["gfsmith"],
-        "ref":"nginx"
+         "ref":"nginx"
     },
     {
         "width": 300,
@@ -125,8 +112,7 @@
         "name": "PHP",
         "fileName": "php.png",
         "tags":[],
-        "brands":["kinder","channel4","colorplan","ebay","gfsmith","investec","johnlobb","hatton"],
-        "ref":"php"
+          "ref":"php"
     },
     {
         "width": 300,
@@ -134,8 +120,7 @@
         "name": "React",
         "fileName": "react.png",
         "tags":[],
-        "brands":["anthonymarshall.io"],
-        "ref":"react"
+         "ref":"react"
     
     },
     {
@@ -144,8 +129,7 @@
         "name": "Sass",
         "fileName": "sass.png",
         "tags":["core-skill"],
-        "brands":["kinder","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay","hatton","johnlobb"],
-        "ref":"sass"
+         "ref":"sass"
     },
     {
         "width": 300,
@@ -153,8 +137,7 @@
         "name": "Sql Server",
         "fileName": "sql-server.png",
         "tags": ["core-skill"],
-        "brands": ["cadbury","westpac","anz","asb","anz","westpac", "asb", "jti", "cadbury","vitaminwater","pcuk","sony","pfizer","debeers","avis","carlsberg","converse","morrisons"],
-        "ref":"sqlserver"
+         "ref":"sqlserver"
     },
     {
         "width": 300,
@@ -162,8 +145,7 @@
         "name": "Team City",
         "fileName": "teamcity.png",
         "tags":[],
-        "brands":["cadbury","morrisons"],
-        "ref":"teamcity"
+         "ref":"teamcity"
     },
     {
         "width": 300,
@@ -171,8 +153,7 @@
         "name": "Ubuntu",
         "fileName": "ubuntu.png",
         "tags":[],
-         "brands":["kinder","channel4","colorplan","converse","ebay","gfsmith","investec","jti","pcuk","ebay","hatton","johnlobb"],
-        "ref":"ubuntu"
+         "ref":"ubuntu"
     },
     {
         "width": 300,
@@ -180,8 +161,7 @@
         "name": "Varnish",
         "fileName": "varnish.png",
         "tags":[],
-        "brands":["gfsmith","johnlobb"],
-        "ref":"varnish"
+         "ref":"varnish"
     },
     
     {
@@ -190,8 +170,7 @@
         "name": "WPF.Net",
         "fileName": "wpf_logo_2.png",
         "tags":[],
-        "brands":["converse"],
-        "ref":"wpf"
+         "ref":"wpf"
     }
    
 ]

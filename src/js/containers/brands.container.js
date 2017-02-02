@@ -20,8 +20,8 @@ const mapDispatchToProps = (dispatch) => {
     },
 
     fetchBrandsAndSkills: (deepLinkBrand) => {
-      dispatch(fetchBrands(deepLinkBrand)).then(() => {        
-        dispatch(fetchSkills());
+      dispatch(fetchSkills()).then(() => {        
+        dispatch(fetchBrands(deepLinkBrand));
       });
      
     },

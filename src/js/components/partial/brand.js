@@ -21,7 +21,11 @@ class Brand extends React.Component {
   }
 
 
-  
+  getSkillName(ref){
+    
+     let skill = this.props.skills.filter(f=>f.ref.toLowerCase() == ref.toLowerCase());
+     return skill && skill.length > 0 ? skill[0].name : null;
+  }
 
   renderCarousel(){    
    
@@ -34,8 +38,8 @@ class Brand extends React.Component {
       <section className="tags">
         <h3>Tech stack:</h3>
         <ul className="tags">
-            {this.props.brand.tags.map((item, i) =>
-                <li key={i}  onClick={this.gotoSkill.bind(this, item, i)}>{item}</li>
+            {this.props.brand.tags.filter((item )=>{return this.getSkillName(item) !== null;} ).map((item, i) =>
+                <li key={i}  onClick={this.gotoSkill.bind(this, item, i)}>{this.getSkillName(item)}</li>
             )}   
         </ul> 
       </section>

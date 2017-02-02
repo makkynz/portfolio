@@ -28,7 +28,7 @@ class Skill extends React.Component {
   }
 
   renderBrands(){
-    if(this.props.skill.brands === undefined) return;
+    
     return (
       <section className="tags">   
           
