@@ -21,7 +21,8 @@ class About extends React.Component {
           <p>In 2003 I graduated from Auckland University of Technology with a bachelor's degree in Applied Science. </p>
           <p>My key technical experiences revolve around (buy not limited to) both back and front end web development using the Microsoft stack of technologies.  i.e C#, Asp.net, Sql Server, Html, CSS, JS (Angular) </p>
           
-          <p className="resume"><a href="/resume.pdf" target="_blank">View my resume <span className="ion-ios-paper"></span></a></p>
+          <p className="attachment"><a href="/resume.pdf" target="_blank">Resume <span className="ion-ios-paper-outline"></span></a></p>
+          <p className="attachment"><a href="https://www.linkedin.com/in/anthonymarshallnz" target="_blank">LinkedIn <span className="ion-social-linkedin-outline"></span></a></p>
         </div>
       </div>
     );

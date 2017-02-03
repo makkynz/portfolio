@@ -1366,19 +1366,19 @@ p {
     display: none; }
   .about-page .content .text {
     display: inline-block;
-    display: inline-block;
     width: 100%;
     text-align: left; }
-    .about-page .content .text p.resume {
+    .about-page .content .text p.attachment {
       margin-top: 40px; }
-      .about-page .content .text p.resume a {
-        position: relative; }
-        .about-page .content .text p.resume a span {
+      .about-page .content .text p.attachment a {
+        position: relative;
+        padding-left: 40px; }
+        .about-page .content .text p.attachment a span {
           font-size: 40px;
           /* margin-top: -10px; */
           display: block;
           position: absolute;
-          left: 130px;
+          left: 0px;
           top: -15px;
           /* right: 10px; */ }
 

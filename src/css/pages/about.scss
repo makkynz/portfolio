@@ -25,21 +25,22 @@
         }
 
         .text{
-            display: inline-block;
-            display: inline-block;
+            display: inline-block;           
             width: 100%;
             text-align: left;
 
-            p.resume{
+            p.attachment{
                 margin-top: 40px;
+              
                 a{
                     position: relative;
+                      padding-left: 40px;
                     span{
                         font-size: 40px;
                         /* margin-top: -10px; */
                         display: block;
                         position: absolute;
-                        left: 130px;
+                        left: 0px;
                         top: -15px;
                         /* right: 10px; */
                     }
