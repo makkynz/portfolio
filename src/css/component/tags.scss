@@ -3,7 +3,7 @@ ul.tags{
     margin-left: $spacingMin;
     
     @include mobile {
-        margin: $spacingSuperMin 0 0 0;  
+        margin: $spacingSuperMin 0 0 $spacingSuperMin;  
     }
 
     li{
