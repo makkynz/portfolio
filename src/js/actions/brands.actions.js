@@ -59,7 +59,7 @@ export const fetchBrandHTML = (brand) => {
         dispatch({
             type: 'FETCH_BRAND_HTML'            
         })
-       return  fetch('/data/brand-html/'+brand.ref+'.html')
+       return  fetch('/data/brand-html/'+brand.ref+'.html?r='+ Math.floor(Math.random()*100))
            
             .then(response => {   
                
