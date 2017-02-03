@@ -1369,7 +1369,9 @@ p {
     width: 100%;
     text-align: left; }
     .about-page .content .text p.attachment {
-      margin-top: 40px; }
+      margin-top: 40px;
+      display: inline-block;
+      margin-right: 20px; }
       .about-page .content .text p.attachment a {
         position: relative;
         padding-left: 40px; }

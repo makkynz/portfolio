@@ -30,11 +30,12 @@
             text-align: left;
 
             p.attachment{
-                margin-top: 40px;
-              
+                margin-top: $spacingMin * 2;                
+                display: inline-block;
+                margin-right: $spacingMin;
                 a{
                     position: relative;
-                      padding-left: 40px;
+                      padding-left: $spacingMin * 2;
                     span{
                         font-size: 40px;
                         /* margin-top: -10px; */
