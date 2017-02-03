@@ -10,7 +10,7 @@ export const fetchSkills = (selectedSkill) => {
             
         })
 
-        fetch('/data/skills.json')
+        fetch('/data/skills.json?r='+ Math.floor(Math.random()*100))
             .then(response => response.json())
             .then(json=>   {
                     dispatch(receiveSkills(json));

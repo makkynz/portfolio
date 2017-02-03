@@ -38,10 +38,7 @@ install LiveReload Chrome extension
 
 Deploy  (via DeployHq.com)
 ---
-Hosted on Azure
-Live IP: 13.70.95.31
-FTP:  user = makkynz
-
+Hosted on Amazon AWS S3
 Run following command before deploying
 npm run deploy
 then git commit and push to master branch.

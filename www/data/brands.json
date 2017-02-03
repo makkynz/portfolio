@@ -5,6 +5,7 @@
         "year": 2010,
         "tags": [
             "aspnet",
+            "csharp",
             "sqlserver",
             "ssis",
             "crystal",
@@ -25,9 +26,8 @@
             },
             {
                 "image": "2017-01-31-07_28_30-ANZ-World-Visa.png",
-                "caption": ""
+                "caption": "ANZ World Visa site"
             }
-           
         ]
     },
     {
@@ -35,7 +35,7 @@
         "height": 115,
         "year": 2016,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "ssis",
             "crystal",
@@ -52,11 +52,11 @@
             },
             {
                 "image": "2017-01-31-07_30_22-True-Rewards.png",
-                "caption": ""
+                "caption": "ASB True Rewards site"
             },
             {
                 "image": "2017-01-31-07_30_58-True-Rewards.png",
-                "caption": ""
+                "caption": "ASB True Rewards site"
             }
         ]
     },
@@ -65,7 +65,7 @@
         "height": 94,
         "year": 2016,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "ssis",
             "html-js-css"
@@ -77,11 +77,11 @@
         "carousel": [
             {
                 "image": "2017-01-29-05_14_52-Westpac-hotpoints.png",
-                "caption": ""
+                "caption": "Westpac Hotpoints site"
             },
             {
                 "image": "2017-01-29-05_15_57-Westpac-hotpoints.png",
-                "caption": ""
+                "caption": "Westpac Hotpoints site"
             }
         ]
     },
@@ -104,19 +104,19 @@
         "carousel": [
             {
                 "image": "ebay_nightAndDay.gif",
-                "caption": ""
+                "caption": "Ebay Global by Design site"
             },
             {
                 "image": "mobileGameScreens.jpg",
-                "caption": ""
+                "caption": "Ebay Global by Design site"
             },
             {
                 "image": "profile.jpg",
-                "caption": ""
+                "caption": "Ebay Global by Design site"
             },
             {
                 "image": "questionsOnMobile.gif",
-                "caption": ""
+                "caption": "Ebay Global by Design site"
             }
         ]
     },
@@ -125,7 +125,7 @@
         "height": 260,
         "year": 2016,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "html-js-css",
             "angular",
@@ -141,23 +141,23 @@
         "carousel": [
             {
                 "image": "main1.png",
-                "caption": ""
+                "caption": "prostatecanceruk.org"
             },
             {
                 "image": "2017-01-31-07_18_35-Men-United---Prostate-Cancer-UK.png",
-                "caption": ""
+                "caption": "menunited.org"
             },
             {
                 "image": "2017-01-31-07_19_13-Men-United---Prostate-Cancer-UK.png",
-                "caption": ""
+                "caption": "menunited.org"
             },
             {
                 "image": "2017-01-31-07_19_34-Men-United---Prostate-Cancer-UK.png",
-                "caption": ""
+                "caption": "menunited.org"
             },
             {
                 "image": "2017-01-31-07_18_15-Men-United---Prostate-Cancer-UK.png",
-                "caption": ""
+                "caption": "menunited.org"
             }
         ]
     },
@@ -166,7 +166,7 @@
         "height": 70,
         "year": 2016,
         "tags": [
-            "wpf",
+            "wpf","csharp",
             "sql-lite"
         ],
         "name": "Converse",
@@ -252,15 +252,15 @@
         "carousel": [
             {
                 "image": "hero_ipad01.jpg",
-                "caption": ""
+                "caption": "Kinder Story Makers site"
             },
             {
                 "image": "Book_MockUp.jpg",
-                "caption": ""
+                "caption": "Kinder Story Makers site"
             },
             {
                 "image": "choose.jpg",
-                "caption": ""
+                "caption": "Kinder Story Makers site"
             }
         ]
     },
@@ -269,7 +269,7 @@
         "height": 245,
         "year": 2016,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "html-js-css",
             "tfs",
@@ -279,7 +279,22 @@
         "name": "Japanese Tobacco International",
         "fileName": "jti-vector-logo.png",
         "description": "Lorem Ipsum",
-        "ref": "jti"
+        "ref": "jti",
+        "carousel": [
+           
+            {
+                "image": "4.jpg",
+                "caption": ""
+            },
+            {
+                "image": "one-verified-dev.png",
+                "caption": ""
+            },
+             {
+                "image": "3.jpg",
+                "caption": ""
+            }
+        ]
     },
     {
         "width": 233,
@@ -329,7 +344,7 @@
         "height": 194,
         "year": 2016,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "html-js-css",
             "sass",
@@ -359,7 +374,7 @@
         "height": 90,
         "year": 2016,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "html-js-css",
             "episerver",
@@ -390,7 +405,7 @@
         "height": 94,
         "year": 2013,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "ssis",
             "html-js-css"
@@ -415,7 +430,7 @@
         "height": 94,
         "year": 2013,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "ssis",
             "html-js-css"
@@ -448,7 +463,7 @@
         "height": 90,
         "year": 2016,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "html-js-css"
         ],
@@ -476,7 +491,7 @@
         "height": 94,
         "year": 2016,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "ssis",
             "html-js-css"
@@ -513,7 +528,7 @@
         "height": 168,
         "year": 2016,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "html-js-css"
         ],
@@ -582,7 +597,7 @@
         "height": 581,
         "year": 2016,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "html-js-css"
         ],
@@ -596,7 +611,7 @@
         "height": 87,
         "year": 2016,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "html-js-css"
         ],
@@ -610,7 +625,7 @@
         "height": 94,
         "year": 2013,
         "tags": [
-            "aspnet",
+            "aspnet","csharp",
             "sqlserver",
             "ssis",
             "html-js-css"

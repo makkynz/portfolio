@@ -10,7 +10,7 @@ export const fetchBrands = (selectedBrand) => {
             
         })
 
-        fetch('/data/brands.json')
+        fetch('/data/brands.json?r='+ Math.floor(Math.random()*100))
             .then(response => response.json())
             .then(json=> {  
                     dispatch(receiveBrands(json));
