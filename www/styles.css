@@ -1470,6 +1470,7 @@ p {
   margin: 0 auto; }
 
 .skill .brands {
+  text-align: center;
   margin: 0 auto; }
   .skill .brands li {
     width: 100px;
