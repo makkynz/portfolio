@@ -211,7 +211,6 @@
                 "image": "half_side.jpg",
                 "caption": "Converse Sneaker Snap"
             },
-            
             {
                 "image": "ss_cover.jpg",
                 "caption": ""
@@ -257,21 +256,6 @@
                 "caption": ""
             }
         ]
-    },
-    {
-        "width": 419,
-        "height": 140,
-        "year": 2016,
-        "tags": [
-            "php",
-            "mysql",
-            "wordpress",
-            "html-js-css"
-        ],
-        "name": "Investec",
-        "fileName": "Investec_logo.png",
-        "description": "Yeah boi<h1>test</h2>",
-        "ref": "investec"
     },
     {
         "width": 500,
@@ -323,7 +307,25 @@
         "name": "G.F Smith",
         "fileName": "header-gfsmith-logo.png",
         "description": "Lorem Ipsum",
-        "ref": "gfsmith"
+        "ref": "gfsmith",
+        "carousel": [
+            {
+                "image": "2017-02-07-21_27_08-Collection.png",
+                "caption": ""
+            },
+            {
+                "image": "2017-02-07-21_30_06-Make-Frame-Make-Yours.png",
+                "caption": ""
+            },
+            {
+                "image": "2017-02-07-21_31_01-Papersmith-Homepage.png",
+                "caption": ""
+            },
+            {
+                "image": "2017-02-07-21_31_59-G-.-F-SMITH.png",
+                "caption": ""
+            }
+        ]
     },
     {
         "width": 189,
@@ -406,6 +408,36 @@
             },
             {
                 "image": "1.png",
+                "caption": ""
+            },
+            {
+                "image": "3.png",
+                "caption": ""
+            }
+        ]
+    },
+    {
+        "width": 419,
+        "height": 140,
+        "year": 2016,
+        "tags": [
+            "php",
+            "mysql",
+            "wordpress",
+            "html-js-css",
+            "sass"
+        ],
+        "name": "Investec",
+        "fileName": "Investec_logo.png",
+        "description": "Yeah boi<h1>test</h2>",
+        "ref": "investec",
+        "carousel": [
+            {
+                "image": "1.png",
+                "caption": ""
+            },
+            {
+                "image": "2.png",
                 "caption": ""
             },
             {
@@ -654,7 +686,6 @@
                 "image": "3.png",
                 "caption": "Adidas Micoach compare stats site"
             }
-            
         ]
     },
     {

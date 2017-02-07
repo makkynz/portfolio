@@ -24,7 +24,7 @@ class Brand extends React.Component {
   getSkillName(ref){
     
      let skill = this.props.skills.filter(f=>f.ref.toLowerCase() == ref.toLowerCase());
-     return skill && skill.length > 0 ? skill[0].name : null;
+     return skill && skill.length > 0 ? skill[0].name : ref;
   }
 
   renderCarousel(){    
