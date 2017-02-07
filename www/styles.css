@@ -1293,6 +1293,21 @@ p {
 .ltrspc {
   letter-spacing: 1px; }
 
+.home-page.bg-1::before {
+  background-image: url(/imgs/bg-1.jpg); }
+
+.home-page.bg-2::before {
+  background-image: url(/imgs/bg-2.jpg); }
+
+.home-page.bg-3::before {
+  background-image: url(/imgs/bg-3.jpg); }
+
+.home-page::before {
+  filter: grayscale(75%); }
+
+.home-page nav {
+  background: none; }
+
 .home-page section.content {
   display: block;
   margin: 0 auto; }

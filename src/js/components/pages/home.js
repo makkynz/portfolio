@@ -2,17 +2,20 @@ import React from 'react';
  
 
 class Home extends React.Component {
+  
   constructor() {
     super();
-    this.state = {
-      count: 0,
-    };
+    this.backgroundIndex = Math.floor(Math.random() * 3) + 1;
+   
   }
   componentWillMount(){
+   
     document.body.classList.add('home-page');
+    document.body.classList.add('bg-'+this.backgroundIndex);
   }
   componentWillUnmount(){
      document.body.classList.remove('home-page');
+     document.body.classList.remove('bg-'+this.backgroundIndex);
   }
   
   render() {

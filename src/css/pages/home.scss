@@ -1,9 +1,29 @@
 .home-page{   
 
-    &::before {       
-        // background-image: url(/imgs/bg-1.jpg);       
-    }      
+    &.bg-1{
+        &::before {       
+            background-image: url(/imgs/bg-1.jpg);      
+        }  
+    }
+     &.bg-2{
+        &::before {       
+            background-image: url(/imgs/bg-2.jpg);      
+        }  
+    }
+     &.bg-3{
+        &::before {       
+            background-image: url(/imgs/bg-3.jpg);      
+        }  
+    }
 
+    &::before {       
+            
+         filter: grayscale(75%);
+    }  
+
+    nav{
+        background: none;
+    }
     section.content{
        display: block;
        margin: 0 auto;

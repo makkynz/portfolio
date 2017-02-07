@@ -17,7 +17,7 @@ export const fetchBrands = (selectedBrand) => {
                     if(selectedBrand){
                         dispatch(selectBrand(json.filter(b=>b.ref === selectedBrand)[0]));
                     }
-                    console.log('a');
+                    
                     resolve();
                 }
             )
