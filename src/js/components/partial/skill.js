@@ -28,7 +28,13 @@ class Skill extends React.Component {
   }
 
   renderBrands(){
-    
+    if(this.props.skill.description){
+      return (
+        <section>
+          <p>{this.props.skill.description}</p>
+        </section>
+      )
+    }
     return (
       <section className="tags">   
           

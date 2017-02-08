@@ -100,6 +100,15 @@
     },
     {
         "width": 300,
+        "height": 155,
+        "name": "Oracle PL/Sql",
+        "fileName": "oracle.png",
+        "tags":[],
+         "ref":"oracle",
+         "description": "I used Oracle 9i DB and wrote PL/SQL code in my role as Analyst Programmer at Kinetiq Ltd. Oracle was also used extensively during Bachelor of Applied Science degree course at university."
+    },
+    {
+        "width": 300,
         "height": 63,
         "name": "Nginx",
         "fileName": "nginx.png",
