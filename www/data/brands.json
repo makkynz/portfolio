@@ -98,7 +98,8 @@
             "html-js-css",
             "angular",
             "sass",
-            "git"
+            "git",
+            "gulp"
         ],
         "name": "Kinder Chocolate",
         "fileName": "kinder-logo-1210x447.png",
@@ -132,7 +133,8 @@
             "umbraco",
             "aws",
             "sass",
-            "git"
+            "git",
+            "gulp"
         ],
         "name": "Prostate Cancer UK",
         "fileName": "logo_pc.png",
@@ -236,7 +238,8 @@
             "html-js-css",
             "tfs",
             "sass",
-            "git"
+            "git",
+            "gulp"
         ],
         "name": "Japanese Tobacco International",
         "fileName": "jti-vector-logo.png",
@@ -267,7 +270,10 @@
             "laravel",
             "ubuntu",
             "html-js-css",
-            "angular"
+            "angular",
+            "gulp",
+            "angular",
+            "sass"
         ],
         "name": "Ebay",
         "fileName": "EBay_logo.png",
@@ -305,7 +311,8 @@
             "html-js-css",
             "git",
             "sass",
-            "angular"
+            "angular",
+            "gulp"
         ],
         "name": "G.F Smith",
         "fileName": "header-gfsmith-logo.png",
@@ -399,7 +406,8 @@
             "html-js-css",
             "episerver",
             "sass",
-            "git"
+            "git",
+            "gulp"
         ],
         "name": "De Beers",
         "fileName": "de-beers.png",
@@ -492,7 +500,8 @@
             "php",
             "mysql",
             "sass",
-            "git"
+            "git",
+            "gulp"
 
         ],
         "name": "Hatton by Design",
@@ -557,7 +566,8 @@
             "php",
             "mysql",
             "sass",
-            "git"
+            "git",
+            "gulp"
         ],
         "name": "John Lobb",
         "fileName": "johnlobb.png",
@@ -709,7 +719,8 @@
             "react",
             "redux",
             "html-js-css",
-            "sass"
+            "sass",
+            "aws"
         ],
         "name": "Anthonymarshall.io Portfolio site",
         "fileName": "anthonymarshall.io.png",
