@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.90">
+  <url>
+    <loc>http://anthonymarshall.io/</loc>
+    <lastmod>2017-02-27T23:55:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://anthonymarshall.io/about</loc>
+    <lastmod>2017-02-26T17:24:27+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://anthonymarshall.io/skills</loc>
+    <lastmod>2017-02-26T15:35:07+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+ <url>
+    <loc>http://anthonymarshall.io/projects</loc>
+    <lastmod>2017-02-26T15:35:07+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
