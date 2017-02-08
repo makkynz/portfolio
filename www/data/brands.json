@@ -302,7 +302,10 @@
             "magento",
             "ubuntu",
             "varnish",
-            "html-js-css"
+            "html-js-css",
+            "git",
+            "sass",
+            "angular"
         ],
         "name": "G.F Smith",
         "fileName": "header-gfsmith-logo.png",
@@ -336,7 +339,8 @@
             "mysql",
             "ubuntu",
             "html-js-css",
-            "yii framework"
+            "yii framework",
+            "git"
         ],
         "name": "Colorplan",
         "fileName": "colourplan.png",
@@ -425,7 +429,8 @@
             "mysql",
             "wordpress",
             "html-js-css",
-            "sass"
+            "sass",
+            "git"
         ],
         "name": "Investec",
         "fileName": "Investec_logo.png",
@@ -453,9 +458,11 @@
         "tags": [
             "aspnet",
             "csharp",
-            "sqlserver",
-            "ssis",
-            "html-js-css"
+            "sqlserver",            
+            "html-js-css",
+            "salesforce",
+            "episerver",
+            "teamcity"
         ],
         "name": "Morrisons",
         "fileName": "morrisons.png",
@@ -477,11 +484,16 @@
         "height": 94,
         "year": 2013,
         "tags": [
-            "aspnet",
-            "csharp",
-            "sqlserver",
-            "ssis",
-            "html-js-css"
+            "angular",
+            "redux",
+           
+            "magento",
+            "html-js-css",
+            "php",
+            "mysql",
+            "sass",
+            "git"
+
         ],
         "name": "Hatton by Design",
         "fileName": "hatton.png",
@@ -540,11 +552,12 @@
         "height": 94,
         "year": 2016,
         "tags": [
-            "aspnet",
-            "csharp",
-            "sqlserver",
-            "ssis",
-            "html-js-css"
+             "magento",
+            "html-js-css",           
+            "php",
+            "mysql",
+            "sass",
+            "git"
         ],
         "name": "John Lobb",
         "fileName": "johnlobb.png",
@@ -607,7 +620,8 @@
             "mysql",
             "laravel",
             "ubuntu",
-            "html-js-css"
+            "html-js-css",
+            "sass"
         ],
         "name": "Channel 4",
         "fileName": "Channel4.png",
@@ -665,8 +679,7 @@
         "tags": [
             "aspnet",
             "csharp",
-            "sqlserver",
-            "ssis",
+            "sqlserver",            
             "html-js-css"
         ],
         "name": "Adidas",
@@ -695,7 +708,8 @@
         "tags": [
             "react",
             "redux",
-            "html-js-css"
+            "html-js-css",
+            "sass"
         ],
         "name": "Anthonymarshall.io Portfolio site",
         "fileName": "anthonymarshall.io.png",
