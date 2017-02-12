@@ -35,9 +35,9 @@ class Modal extends React.Component {
   }
 
    getStyle(){   
-    
+  
      var top  = window.pageYOffset || document.documentElement.scrollTop;
-   
+    
       return  {                      
           top:  (top + 20) +"px"      
       };

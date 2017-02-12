@@ -1,13 +1,15 @@
 
-@import "lib/_component";
-@import "lib/_demo";
-@import "lib/_modal";    
 
 @import "shared/reset";
 @import "shared/variables";
 @import "shared/mixins";
 @import "shared/layout";
 @import "shared/fonts";
+
+@import "lib/_component";
+@import "lib/_demo";
+@import "lib/_modal";    
+
 
 @import "pages/home";
 @import "pages/about";

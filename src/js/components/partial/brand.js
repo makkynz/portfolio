@@ -22,7 +22,7 @@ class Brand extends React.Component {
 
 
   getSkillName(ref){
-    
+    if(!this.props.skills) return ref;
      let skill = this.props.skills.filter(f=>f.ref.toLowerCase() == ref.toLowerCase());
      return skill && skill.length > 0 ? skill[0].name : ref;
   }

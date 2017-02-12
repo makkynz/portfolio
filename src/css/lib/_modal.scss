@@ -1,6 +1,6 @@
 .md-modal {
-	position: fixed;
-	top: 50%;
+	position: absolute;
+	top: 20px;
 	left: 50%;
 	width: 50%;
 	max-width: 630px;
@@ -9,7 +9,9 @@
 	z-index: 2000;
 	visibility: hidden;
 	backface-visibility: hidden;
-	transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) ;  
+
+	 
 
 	.close{
 		cursor: pointer;
