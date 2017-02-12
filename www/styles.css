@@ -1337,7 +1337,7 @@ p {
   .home-page .detail h2 {
     text-align: left;
     margin: 0 0 10px 0;
-    letter-spacing: 7.2px; }
+    letter-spacing: 5.8px; }
     @media (max-width: 767px) {
       .home-page .detail h2 {
         letter-spacing: 0; } }
