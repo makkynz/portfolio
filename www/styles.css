@@ -1652,7 +1652,8 @@ ul.tags {
     width: 70px;
     height: 70px;
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    display: none; }
   .profileTopRight .detail {
     padding-left: 10px;
     display: table-cell;

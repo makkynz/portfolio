@@ -652,36 +652,7 @@
             }
         ]
     },
-    {
-        "width": 1000,
-        "height": 581,
-        "year": 2016,
-        "tags": [
-            "aspnet",
-            "csharp",
-            "sqlserver",
-            "html-js-css"
-        ],
-        "name": "Pfizer",
-        "fileName": "pfizer.png",
-        "description": "Lorem Ipsum",
-        "ref": "pfizer"
-    },
-    {
-        "width": 500,
-        "height": 87,
-        "year": 2016,
-        "tags": [
-            "aspnet",
-            "csharp",
-            "sqlserver",
-            "html-js-css"
-        ],
-        "name": "Sony",
-        "fileName": "Sony_logo.svg.png",
-        "description": "Lorem Ipsum",
-        "ref": "sony"
-    },
+    
     {
         "width": 499,
         "height": 94,
