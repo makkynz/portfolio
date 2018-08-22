@@ -12,7 +12,7 @@
         "height": 76,
         "name": "Angular",
         "fileName": "angular.png",
-        "tags": ["core-skill"],
+        "tags": [],
          "ref":"angular"
     },
     {
@@ -128,7 +128,7 @@
         "height": 100,
         "name": "React",
         "fileName": "react.png",
-        "tags":[],
+        "tags": ["core-skill"],
          "ref":"react"
     
     },
