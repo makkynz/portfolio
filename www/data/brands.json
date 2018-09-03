@@ -7,6 +7,60 @@
             "aspnet",
             "csharp",
             "sqlserver",
+            "react",
+            "redux",
+            "sass",
+            "webpack"
+            
+        ],
+        "name": "Barfoot & Thompson",
+        "fileName": "barfoot-logo-sized.png",
+        "description": "<p>Lead developer on Barfoot's SalesKit project while I was working at Datacom.  This is a highly interactive web application used by sales agents to create and design professionally printed promotional material and property listing documentation.</p>",
+        "ref": "barfoot",
+        "carousel": [
+            {
+                "image": "saleskit-1.png",
+                "caption": "SalesKit"
+            },
+            {
+                "image": "saleskit-2.png",
+                "caption": "SalesKit"
+            },
+            {
+                "image": "saleskit-3.png",
+                "caption": "SalesKit"
+            },
+            {
+                "image": "saleskit-4.png",
+                "caption": "SalesKit"
+            },
+            {
+                "image": "saleskit-5.png",
+                "caption": "SalesKit"
+            },
+            {
+                "image": "saleskit-6.png",
+                "caption": "SalesKit"
+            },
+            {
+                "image": "saleskit-7.png",
+                "caption": "SalesKit"
+            },
+            
+            {
+                "image": "saleskit-8.png",
+                "caption": "SalesKit"
+            }
+        ]
+    },
+    {
+        "width": 499,
+        "height": 157,
+        "year": 2010,
+        "tags": [
+            "aspnet",
+            "csharp",
+            "sqlserver",
             "ssis",
             "crystal",
             "html-js-css"
@@ -691,7 +745,9 @@
             "redux",
             "html-js-css",
             "sass",
+            "webpack",
             "aws"
+            
         ],
         "name": "Anthonymarshall.io Portfolio site",
         "fileName": "anthonymarshall.io.png",

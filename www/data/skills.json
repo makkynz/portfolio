@@ -78,7 +78,7 @@
         "height": 385,
         "name": "Redux",
         "fileName": "logo-redux.png",
-        "tags": [],
+        "tags": ["core-skill"],
          "ref":"redux"
         
     },
@@ -180,6 +180,15 @@
         "fileName": "wpf_logo_2.png",
         "tags":[],
          "ref":"wpf"
+    },
+    {
+        "width": 300,
+        "height": 49,
+        "name": "Webpack",
+        "fileName": "webpack.png",
+        "tags":[],
+         "ref":"webpack"
     }
+   
    
 ]

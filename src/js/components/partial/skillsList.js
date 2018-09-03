@@ -27,7 +27,7 @@ class SkillsList extends React.Component {
   renderCoreSkills(){
     return (
       <section>
-          <h2>Core technologies that I usually working with. </h2> 
+          <h2>Technologies I usually work with</h2> 
           <ul className="skills">
             {this.props.skills.filter(s=>s.tags.indexOf('core-skill') > -1).map(skill =>
                 <li 
@@ -44,7 +44,7 @@ class SkillsList extends React.Component {
   renderOtherSkills(){
     return (
       <section>
-          <h2>Other technologies that I have good experience with. </h2> 
+          <h2>Other technologies I have good experience with </h2> 
           <ul className="skills">
             {this.props.skills.filter(s=>s.tags.indexOf('core-skill') == -1).map(skill =>
                 <li 
@@ -61,7 +61,7 @@ class SkillsList extends React.Component {
   renderSoftSkills(){
     return (
       <section>
-        <h2>Soft skills that I have acquired.</h2>
+        <h2>Soft skills</h2>
         <div className="softSkillWrapper">
         <ul className="softSkills">
           <li> Exceptional verbal and written communication skills.</li>

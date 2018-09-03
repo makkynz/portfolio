@@ -1333,11 +1333,15 @@ a:focus {
       margin-left: 0; } }
   .home-page .detail h1 {
     text-align: left;
-    margin: 0 0 10px 0; }
+    margin: 0 0 10px 0;
+    font-size: 56px; }
+    @media (max-width: 767px) {
+      .home-page .detail h1 {
+        font-size: 36px; } }
   .home-page .detail h2 {
     text-align: left;
     margin: 0 0 10px 0;
-    letter-spacing: 5.8px; }
+    letter-spacing: 9.8px; }
     @media (max-width: 767px) {
       .home-page .detail h2 {
         letter-spacing: 0; } }

@@ -8,11 +8,10 @@ class ProfileThumb extends React.Component {
      return (
        <div className="profileTopRight">
        <div className="photo"></div>
-        <div className="detail">
-          <h1>Anthony Marshall</h1>          
-          <a href="mailto:hello@anthonymarshall.io" >hello@anthonymarshall.io</a>
+        <div className="detail">             
+          <a href="mailto:anthonymarshall@gmail.com" >anthonymarshall@gmail.com</a>
         </div>
-       </div>
+       </div> 
      )
   }
 }

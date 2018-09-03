@@ -24,8 +24,8 @@ class Home extends React.Component {
         <div className="photo"></div>
         <div className="detail">
           <h1>Anthony Marshall</h1>
-          <h2>Full Stack Developer</h2>
-          <a href="mailto:hello@anthonymarshall.io" >hello@anthonymarshall.io</a>
+          <h2>Software Developer</h2>
+          <a href="mailto:anthonymarshall@gmail.com" >anthonymarshall@gmail.com</a>
           
         </div>
       

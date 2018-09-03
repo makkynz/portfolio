@@ -57,12 +57,16 @@
         h1{
             text-align: left;  
             margin: 0 0  $spacingSuperMin 0;    
+            font-size: 56px;
+            @include mobile { 
+                font-size: 36px;
+            }   
         }
 
         h2{
             text-align: left;    
             margin: 0 0  $spacingSuperMin 0;   
-            letter-spacing: 5.8px; 
+            letter-spacing: 9.8px; 
 
             @include mobile { 
                 letter-spacing: 0; 
