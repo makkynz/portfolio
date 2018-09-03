@@ -10,8 +10,8 @@
             "react",
             "redux",
             "sass",
-            "webpack"
-            
+            "webpack",
+            "teamcity"
         ],
         "name": "Barfoot & Thompson",
         "fileName": "barfoot-logo-sized.png",
