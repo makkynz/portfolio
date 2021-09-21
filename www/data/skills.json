@@ -67,11 +67,30 @@
     },
     {
         "width": 300,
+        "height": 246,
+        "name": "Java",
+        "fileName": "java-logo.png",
+        "tags": ["core-skill"],
+        "ref":"java"
+        
+    },
+    
+    {
+        "width": 300,
         "height": 72,
         "name": "Laravel",
         "fileName": "laravel.png",
         "tags":[],
          "ref":"laravel"
+    },
+    {
+        "width": 300,
+        "height": 246,
+        "name": "Power BI",
+        "fileName": "powerbi-logo.png",
+        "tags": ["core-skill"],
+        "ref":"powerbi"
+        
     },
     {
         "width": 299,

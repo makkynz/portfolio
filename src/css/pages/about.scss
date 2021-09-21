@@ -28,24 +28,43 @@
             display: inline-block;           
             width: 100%;
             text-align: left;
+            .attachments{
+                  position: relative;
+                    a{
+                        position: relative;
+                        padding-left: $spacingMin * 2;
+                        margin-top: $spacingMin * 2;                
+                        display: inline-block;
+                        margin-right: $spacingMin;
 
-            p.attachment{
-                margin-top: $spacingMin * 2;                
-                display: inline-block;
-                margin-right: $spacingMin;
-                a{
-                    position: relative;
-                      padding-left: $spacingMin * 2;
-                    span{
-                        font-size: 40px;
-                        /* margin-top: -10px; */
-                        display: block;
-                        position: absolute;
-                        left: 0px;
-                        top: -15px;
-                        /* right: 10px; */
+                        span{
+                            font-size: 40px;
+                            /* margin-top: -10px; */
+                            display: block;
+                            position: absolute;
+                            left: 0px;
+                            top: -15px;
+                            /* right: 10px; */
+                        }
+
+                        img{
+                            width:100px;
+                        }
+                        
                     }
-                }
+                    a.ms-cert{
+                        position: absolute;
+                        top: -10px;
+                        margin: 0;
+                        @include mobile { 
+                            position: relative;
+                            top: 40px;
+                            padding: 0;
+                           
+                        }      
+                    }
+                
+              
             }
         }
     }

@@ -67,6 +67,7 @@ class Brands extends React.Component {
         <ul className="brands">
             {brands.map(brand =>
                 <li 
+                className={brand.ref} 
                 key={brand.key}  
                 style={this.getStyle(brand)} 
                 onClick={this.setSelectedBrand.bind(this, brand)}

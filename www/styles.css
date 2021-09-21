@@ -1387,14 +1387,15 @@ a:focus {
     display: inline-block;
     width: 100%;
     text-align: left; }
-    .about-page .content .text p.attachment {
-      margin-top: 40px;
-      display: inline-block;
-      margin-right: 20px; }
-      .about-page .content .text p.attachment a {
+    .about-page .content .text .attachments {
+      position: relative; }
+      .about-page .content .text .attachments a {
         position: relative;
-        padding-left: 40px; }
-        .about-page .content .text p.attachment a span {
+        padding-left: 40px;
+        margin-top: 40px;
+        display: inline-block;
+        margin-right: 20px; }
+        .about-page .content .text .attachments a span {
           font-size: 40px;
           /* margin-top: -10px; */
           display: block;
@@ -1402,6 +1403,17 @@ a:focus {
           left: 0px;
           top: -15px;
           /* right: 10px; */ }
+        .about-page .content .text .attachments a img {
+          width: 100px; }
+      .about-page .content .text .attachments a.ms-cert {
+        position: absolute;
+        top: -10px;
+        margin: 0; }
+        @media (max-width: 767px) {
+          .about-page .content .text .attachments a.ms-cert {
+            position: relative;
+            top: 40px;
+            padding: 0; } }
 
 .resume-page {
   background: #FF9800; }
@@ -1496,6 +1508,8 @@ a:focus {
   .skill .brands li {
     width: 100px;
     height: 50px; }
+    .skill .brands li.nzgovt {
+      width: 200px; }
 
 nav {
   margin: 20px 0 0 40px;
