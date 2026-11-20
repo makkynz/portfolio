@@ -1,6 +1,7 @@
 .about-page{
      
-    &::before {       
+    &::before {
+        position: fixed;
         background-color: $offWhite;       
     }  
 
@@ -28,40 +29,78 @@
             display: inline-block;           
             width: 100%;
             text-align: left;
+
+            h2{
+                margin-top: $spacingMin;
+            }
+
+            .technology-list{
+                list-style: disc;
+                padding-left: $spacingMin;
+                line-height: 20px;
+
+                li{
+                    margin-bottom: $spacingSuperMin;
+                }
+
+                strong{
+                    font-weight: bold;
+                }
+            }
+
             .attachments{
-                  position: relative;
-                    a{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: $spacingMin;
+                    margin-top: $spacingMin * 2;
+
+                    > a{
                         position: relative;
                         padding-left: $spacingMin * 2;
-                        margin-top: $spacingMin * 2;                
                         display: inline-block;
-                        margin-right: $spacingMin;
 
                         span{
                             font-size: 40px;
-                            /* margin-top: -10px; */
                             display: block;
                             position: absolute;
                             left: 0px;
-                            top: -15px;
-                            /* right: 10px; */
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    .certifications{
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        max-width: 100%;
+                        gap: $spacingSuperMin;
+
+                        a{
+                            display: block;
+
+                            img{
+                                display: block;
+                                width: 66.6667px;
+                            }
                         }
 
-                        img{
-                            width:100px;
-                        }
-                        
-                    }
-                    a.ms-cert{
-                        position: absolute;
-                        top: -10px;
-                        margin: 0;
-                        @include mobile { 
+                        .snowpro-cert{
                             position: relative;
-                            top: 40px;
-                            padding: 0;
-                           
-                        }      
+                            width: 80px;
+                            height: 66.6667px;
+                            overflow: hidden;
+
+                            // The Credly thumbnail has transparent margins around the badge.
+                            img{
+                                position: absolute;
+                                width: auto;
+                                height: 80px;
+                                left: 50%;
+                                top: 54%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
                     }
                 
               
