@@ -9,6 +9,14 @@
     },
     {
         "width": 300,
+        "height": 300,
+        "name": "Azure",
+        "fileName": "azure.png",
+        "tags": ["core-skill"],
+        "ref":"azure"
+    },
+    {
+        "width": 300,
         "height": 76,
         "name": "Angular",
         "fileName": "angular.png",
@@ -33,11 +41,11 @@
     },
     {
         "width": 300,
-        "height": 39,
-        "name": "Episerver CMS 6",
-        "fileName": "episerver-logo.png",
-        "tags":[],
-        "ref":"episerver"
+        "height": 300,
+        "name": "Coalesce",
+        "fileName": "coalesce.png",
+        "tags": ["core-skill"],
+        "ref":"coalesce"
     },
     {
         "width": 300,
@@ -67,16 +75,6 @@
     },
     {
         "width": 300,
-        "height": 246,
-        "name": "Java",
-        "fileName": "java-logo.png",
-        "tags": ["core-skill"],
-        "ref":"java"
-        
-    },
-    
-    {
-        "width": 300,
         "height": 72,
         "name": "Laravel",
         "fileName": "laravel.png",
@@ -100,14 +98,6 @@
         "tags": ["core-skill"],
          "ref":"redux"
         
-    },
-    {
-        "width": 300,
-        "height": 82,
-        "name": "Magento",
-        "fileName": "magento.png",
-        "tags":[],
-         "ref":"magento"
     },
     {
         "width": 300,
@@ -136,6 +126,14 @@
     },
     {
         "width": 300,
+        "height": 300,
+        "name": "Palantir",
+        "fileName": "palantir.png",
+        "tags": [],
+        "ref":"palantir"
+    },
+    {
+        "width": 300,
         "height": 158,
         "name": "PHP",
         "fileName": "php.png",
@@ -153,14 +151,6 @@
     },
     {
         "width": 300,
-        "height": 224,
-        "name": "Sass",
-        "fileName": "sass.png",
-        "tags":["core-skill"],
-         "ref":"sass"
-    },
-    {
-        "width": 300,
         "height": 75,
         "name": "Sql Server",
         "fileName": "sql-server.png",
@@ -169,11 +159,27 @@
     },
     {
         "width": 300,
+        "height": 300,
+        "name": "Snowflake",
+        "fileName": "snowflake.png",
+        "tags": ["core-skill"],
+        "ref":"snowflake"
+    },
+    {
+        "width": 300,
         "height": 65,
         "name": "Team City",
         "fileName": "teamcity.png",
         "tags":[],
          "ref":"teamcity"
+    },
+    {
+        "width": 300,
+        "height": 300,
+        "name": "Terraform",
+        "fileName": "terraform.png",
+        "tags": ["core-skill"],
+        "ref":"terraform"
     },
     {
         "width": 300,
