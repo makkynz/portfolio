@@ -1565,7 +1565,7 @@ a:focus {
 .home-page .detail h2 {
   text-align: left;
   margin: 0 0 10px 0;
-  letter-spacing: 9.8px;
+  letter-spacing: 3.8px;
 }
 @media (max-width: 767px) {
   .home-page .detail h2 {
