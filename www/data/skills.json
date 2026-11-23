@@ -28,7 +28,7 @@
         "height": 192,
         "name": "Asp.Net",
         "fileName": "asp.net.png",
-        "tags": ["core-skill"],
+        "tags": [],
          "ref":"aspnet"
     },
     {
@@ -89,6 +89,14 @@
         "tags": ["core-skill"],
         "ref":"powerbi"
         
+    },
+    {
+        "width": 3840,
+        "height": 2160,
+        "name": "Python",
+        "fileName": "python.png",
+        "tags": ["core-skill"],
+        "ref":"python"
     },
     {
         "width": 299,

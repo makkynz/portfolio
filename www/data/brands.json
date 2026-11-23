@@ -1,5 +1,30 @@
 [
     {
+        "width": 1180,
+        "height": 729,
+        "tags": [
+            "snowflake",
+            "azure",
+            "coalesce",
+            "python",
+            "sqlserver",
+            "csharp",
+            "react",
+            "redux",
+            "html-js-css"
+        ],
+        "name": "The NZ Super Fund",
+        "fileName": "nzsuperfund/nzsf_logo.png",
+        "description": "Data technology and investment data platform transformation.",
+        "ref": "nzsuperfund",
+        "carousel": [
+            {
+                "image": "website.jpg",
+                "caption": "The NZ Super Fund | Investment Data Platform Transformation"
+            }
+        ]
+    },
+    {
         "width": 499,
         "height": 157,
         "year": 2010,
@@ -7,6 +32,7 @@
             "aspnet",
             "csharp",
             "sqlserver",
+            "ssis",
             "react",
             "redux",
             "sass",
