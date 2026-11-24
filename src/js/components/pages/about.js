@@ -36,7 +36,7 @@ class About extends React.Component {
           <h2>Let's Connect</h2>
           <p>I'm always happy to connect with others working in software engineering, data platforms and cloud technology. Feel free to reach out through <a href="https://www.linkedin.com/in/anthonymarshallnz" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
           <div className="attachments">
-          <a href="/AnthonyMarshall-Full-Resume.pdf" target="_blank">Resume <span className="ion-ios-paper-outline"></span></a>
+          <a href="/Anthony-Marshall-Data-Engineering-CV.pdf" target="_blank">Resume <span className="ion-ios-paper-outline"></span></a>
           <a href="https://www.linkedin.com/in/anthonymarshallnz" target="_blank">LinkedIn <span className="ion-social-linkedin-outline"></span></a>
           <div className="certifications">
             <a href="https://www.credly.com/badges/1b102671-77bf-4a2c-b44d-182f944dabae/linked_in" target="_blank" rel="noopener noreferrer">

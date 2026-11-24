@@ -1593,6 +1593,68 @@ a:focus {
     font-size: 20px;
   }
 }
+.home-page .detail .attachments {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+.home-page .detail .attachments > a {
+  position: relative;
+  padding-left: 40px;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0;
+  margin: 0;
+}
+.home-page .detail .attachments > a span {
+  font-size: 40px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home-page .detail .attachments .certifications {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 10px;
+}
+.home-page .detail .attachments .certifications a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0;
+}
+.home-page .detail .attachments .certifications a img {
+  display: block;
+  width: 66.6667px;
+}
+.home-page .detail .attachments .certifications .snowpro-cert {
+  position: relative;
+  width: 80px;
+  height: 66.6667px;
+  overflow: hidden;
+}
+.home-page .detail .attachments .certifications .snowpro-cert img {
+  position: absolute;
+  width: auto;
+  height: 80px;
+  left: 50%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .home-page .detail .attachments {
+    justify-content: center;
+  }
+  .home-page .detail .attachments > a {
+    margin-bottom: 0;
+  }
+}
 .home-page .note {
   margin: 30px 0 0 0;
   color: #8d8a8a;
