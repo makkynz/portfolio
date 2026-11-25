@@ -418,33 +418,6 @@
         ]
     },
     {
-        "width": 189,
-        "height": 144,
-        "year": 2016,
-        "tags": [
-            "php",
-            "mysql",
-            "ubuntu",
-            "html-js-css",
-            "yii framework",
-            "git"
-        ],
-        "name": "Colorplan",
-        "fileName": "colourplan.png",
-        "description": "Lorem Ipsum",
-        "ref": "colorplan",
-        "carousel": [
-            {
-                "image": "colorplan_responsive.jpg",
-                "caption": "Colorplan site"
-            },
-            {
-                "image": "colorplan_swatches.jpg",
-                "caption": "Colorplan site"
-            }
-        ]
-    },
-    {
         "width": 499,
         "height": 194,
         "year": 2016,
